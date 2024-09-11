@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <ul> <!--Essa lista deve estar alinhado no alto do site-->
+            <li><a href="#Sobre Nós">Sobre Nós</a></li>
+            <li><a href="#Informações">Informações</a></li>
+            <li><a href="#Ongs">Ong's</a></li>
+            <li><a href="#Mapa">Mapa</a></li>
+        </ul>
+    </nav>
+    <br>
+    <section id="Informações">
+        <h1>Informações</h1>
+        <!--Aqui será o texto-->
+    </section>
+    <br>
+    <footer>
+        <hr>
+        <br>
+        <h4>Nossos contatos</h4>
+        <!--Exemplos de contatos-->
+        <p>WhatsApp(XX) XXXXX-XXXX</p>
+        <p>Instagram: @XXXXXXXX</p>
+        <p>Nosso e-mail: <a href="mailto:alessandracris393@gmail.com" subject="Fale conosco">Enviar email</a></p>
+    </footer>
+</body>
+</html>
