@@ -6,7 +6,7 @@
     <title>Login</title>
 </head>
 <body>
-    <header>
+    <header id="topo1">
         <h1>Login</h1>
     </header>
     <div id="comeco">
@@ -18,7 +18,7 @@
         <button>ENTRAR</button>
         <button>CADASTRA-SE</button>
         <br>
-        <p><a href="telaesqueci.html">Esqueci minha senha</a></p>
+        <p><a href="telaesquecisenha.html">Esqueci minha senha</a></p>
     </div>
 </body>
 </html>
