@@ -11,10 +11,8 @@
     </header>
     <section id="esquecisenha">
         <br>
-        <p>Siga as orientações:</p>
-        <br>
+        <h2>Siga as orientações:</h2>
         <p>Primiero: Para obter uma nova senha digite seu e-mail.</p>
-        <br>
         <p>Segundo: Clique no link que será enviado para o e-mail digitado e coloque uma nova senha.</p>
         <br>
         <input type="text" placeholder="Digite seu e-mail cadastrado: ">
