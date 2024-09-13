@@ -3,22 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Esqueci Minha Senha</title>
 </head>
 <body>
-    <header id="topo1">
-        <h1>Login</h1>
+    <header id="topo2">
+        <h1>Esqueci minha senha</h1>
     </header>
-    <div id="comeco">
+    <section id="esquecisenha">
         <br>
-        <input type="text" placeholder="Usuário: ">
+        <p>Siga as orientações:</p>
         <br>
-        <input type="password" placeholder="Senha: ">
+        <p>Primiero: Para obter uma nova senha digite seu e-mail.</p>
         <br>
-        <button>ENTRAR</button>
-        <button>CADASTRA-SE</button>
+        <p>Segundo: Clique no link que será enviado para o e-mail digitado e coloque uma nova senha.</p>
         <br>
-        <p><a href="telaesquecisenha.html">Esqueci minha senha</a></p>
-    </div>
+        <input type="text" placeholder="Digite seu e-mail cadastrado: ">
+        <br>
+        <br>
+        <input type="text" placeholder="Confirme o e-mail:">
+    </section>
 </body>
 </html>
