@@ -16,7 +16,7 @@
     <input type="password" placeholder="Crie sua senha:"> <!--Precisa ter o minimo e o máximo de letras-->
     <br>
     <br>
-    <input type="password" placeholder="Confirme a senha:"> <!--Precisa ter o minimo e o máximo de letras-->
+    <input type="password" placeholder="Confirme sua senha:"> <!--Precisa ter o minimo e o máximo de letras-->
     <br>
     <br>
     <h3>Informações Complementares</h3>
