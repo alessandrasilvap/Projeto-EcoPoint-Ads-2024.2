@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ong's</title>
 </head>
 <body>
-    <nav>
+    <nav id="menu">
         <ul> <!--Essa lista deve estar alinhado no alto do site-->
             <li><a href="#Sobre Nós">Sobre Nós</a></li>
             <li><a href="#Informações">Informações</a></li>
@@ -15,12 +15,12 @@
         </ul>
     </nav>
     <br>
-    <section id="Ongs">
+    <section id="ongs">
         <h1>Ong's</h1>
         <!--Aqui será o texto-->
     </section>
     <br>
-    <footer>
+    <footer id="rodape">
         <hr>
         <br>
         <h4>Nossos contatos</h4>
