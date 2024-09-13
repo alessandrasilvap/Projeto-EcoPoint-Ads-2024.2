@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cadastro</title>
 </head>
 <body>
-    <h1>Cadastro</h1>
+    <header id="topo3">
+        <h1>Cadastro</h1>
+    </header>
+    <section id="cadastro">
+    <input type="text" placeholder="Crie seu usuário:"> <!--Precisa ter o minimo e o máximo de letras-->
     <br>
-    <input type="text" placeholder="Crie seu usuário:" maxlength="6"> <!--Precisa ter o minimo e o máximo de letras-->
     <br>
-    <br>
-    <input type="password" placeholder="Crie sua senha:" maxlength="8"> <!--Precisa ter o minimo e o máximo de letras-->
+    <input type="password" placeholder="Crie sua senha:"> <!--Precisa ter o minimo e o máximo de letras-->
     <br>
     <br>
     <input type="password" placeholder="Confirme a senha:"> <!--Precisa ter o minimo e o máximo de letras-->
@@ -33,5 +35,6 @@
     <br>
     <!--Os butões precisam estar distantes um do outro-->
     <button>CADASTRAR</button> <button>VOLTAR</button> <button>LIMPAR</button>
+    </section>
 </body>
 </html>
