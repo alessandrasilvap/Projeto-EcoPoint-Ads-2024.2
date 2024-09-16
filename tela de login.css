@@ -1,0 +1,50 @@
+body {
+    background-image: url(images/fotodofundo.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+input, select, textarea { /*formatação dos campos de entrada*/
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+input:focus, select:focus, textarea:focus { /*troca de cor do fundo quando clicar*/
+    background-color: rgb(190, 204, 190);
+}
+input:hover, select:hover, textarea:hover { /*ativa borda e sombra ao passar o mouse*/
+    border: 1px solid blue;
+    box-shadow: 1px 1px 2px silver;
+}
+
+
+button {
+    border-radius: 4px;
+    padding: 5px;
+    margin: 5px;
+}
+p {
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+}
+h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#comeco {
+    width: 400px;
+    height: 400px;
+    top: 33%;
+    left: 38%;
+    border: 1px double black;
+    position: absolute;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: rotate(90);
+    background-color: aquamarine;
+    opacity: 0.10;
+}
