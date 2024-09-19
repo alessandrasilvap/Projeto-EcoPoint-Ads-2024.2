@@ -1,40 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicongreen.ico" type="image/x-icon">
+    
     <title>Cadastro</title>
+
 </head>
+
 <body>
+    
     <header id="topo3">
-        <h1>Cadastro</h1>
+       <h1>Cadastro</h1>
     </header>
-    <section id="cadastro">
-    <input type="text" placeholder="Crie seu usuário:"> <!--Precisa ter o minimo e o máximo de letras-->
-    <br>
-    <br>
-    <input type="password" placeholder="Crie sua senha:"> <!--Precisa ter o minimo e o máximo de letras-->
-    <br>
-    <br>
-    <input type="password" placeholder="Confirme sua senha:"> <!--Precisa ter o minimo e o máximo de letras-->
-    <br>
-    <br>
-    <h3>Informações Complementares</h3>
-    <br>
-    <input type="text" placeholder="Digite seu e-mail:">
-    <br>
-    <br>
-    <input type="number" placeholder="CEP:"> <!--Precisar ser inserido o CEP e o campo endereçoser preenchido automaticamente pelo JavaScript-->
-    <br>
-    <br>
-    <input type="text" placeholder="Endereço:">
-    <br>
-    <br>
-    <input type="text" placeholder="Complemento:">
-    <br>
-    <br>
-    <!--Os butões precisam estar distantes um do outro-->
-    <button>CADASTRAR</button> <button>VOLTAR</button> <button>LIMPAR</button>
-    </section>
+
+    <form>
+
+        <section id="cadastro">
+
+            <input type="text" placeholder="Qual é o seu nome?: " required minlength="15" maxlength="80"> 
+            <br>
+            <p>Data de nascimento</p>
+            <input type="date">
+            <br>
+            <br>
+            <input type="text" placeholder="Crie seu usuário:" required> <!--Precisa ter o minimo e o máximo de letras-->
+            <br>
+            <br>
+            <input type="password" placeholder="Crie sua senha:" required> <!--Precisa ter o minimo e o máximo de letras-->
+            <br>
+            <br>
+            <input type="password" placeholder="Confirme sua senha:" required> <!--Precisa ter o minimo e o máximo de letras-->
+            <br>
+            <br>
+            <h3>Informações Complementares</h3>
+            <br>
+            <input type="text" placeholder="Digite seu e-mail:" required>
+            <br>
+            <br>
+            <input type="number" placeholder="CEP:" required> <!--Precisar ser inserido o CEP e o campo endereço ser preenchido automaticamente pelo JavaScript-->
+            <br>
+            <br>
+            <input type="text" placeholder="Endereço:">
+            <br>
+            <br>
+            <input type="text" placeholder="Complemento:">
+            <br>
+            <br>
+
+            <!--Os butões precisam estar distantes um do outro-->
+            <button type="submit">CADASTRAR</button> <button>VOLTAR</button> <button type="reset">LIMPAR</button> 
+            <!--O button voltar precisa ser programado com javascript para voltar a tela desejada-->
+
+        </section>
+
+    </form> 
+
 </body>
 </html>
