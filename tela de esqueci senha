@@ -1,24 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicongreen.ico" type="image/x-icon">
+    
+    
+    
     <title>Esqueci Minha Senha</title>
 </head>
+
 <body>
-    <header id="topo2">
-        <h1>Esqueci minha senha</h1>
-    </header>
-    <section id="esquecisenha">
-        <br>
-        <h2>Siga as orientações:</h2>
-        <p>Primiero: Para obter uma nova senha digite seu e-mail.</p>
-        <p>Segundo: Clique no link que será enviado para o e-mail digitado e coloque uma nova senha.</p>
-        <br>
-        <input type="text" placeholder="Digite seu e-mail cadastrado: ">
-        <br>
-        <br>
-        <input type="text" placeholder="Confirme o e-mail:">
-    </section>
+    <form>
+
+        <header id="topo2">
+            <h1>Esqueci minha senha</h1>
+        </header>
+
+        <section id="esquecisenha">
+            <br>
+            <h2>Siga as orientações:</h2>
+            <p>Primiero: Para obter uma nova senha digite seu e-mail.</p>
+            <p>Segundo: Clique no link que será enviado para o e-mail digitado e coloque uma nova senha.</p>
+            <br>
+            <input type="text" placeholder="Digite seu e-mail cadastrado: " required>
+            <br>
+            <br>
+            <input type="text" placeholder="Confirme o e-mail:" required>
+            <br>
+            <button type="submit">Enviar para o e-mail cadastrado</button>
+        </section>
+
+    </form>
 </body>
 </html>
