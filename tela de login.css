@@ -1,5 +1,5 @@
 body {
-    background-image: url(images/fotodofundo.jpg);
+    background-image: url(../imagens/fotodofundo.png); /*Configurações da imagem de fundo*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -10,29 +10,49 @@ input, select, textarea { /*formatação dos campos de entrada*/
     border-radius: 4px;
     padding: 5px;
     margin: 5px;
+
 }
 input:focus, select:focus, textarea:focus { /*troca de cor do fundo quando clicar*/
     background-color: rgb(190, 204, 190);
 }
+
+
 input:hover, select:hover, textarea:hover { /*ativa borda e sombra ao passar o mouse*/
     border: 1px solid blue;
     box-shadow: 1px 1px 2px silver;
 }
 
 
-button {
-    border-radius: 4px;
-    padding: 5px;
-    margin: 5px;
+.esquecisenha {
+    display: inline-block; /* Faz o link se comportar como um botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #117429; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 4px; /* Bordas arredondadas */
 }
+
+.botaoverde {
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color: #0a3f17; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+
+
 p {
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
 }
+
+
 h1 {
     color: white;
     font-family: 'Times New Roman', Times, serif;
+    
 }
 
 #comeco {
@@ -45,6 +65,6 @@ h1 {
     padding: 20px;
     box-sizing: border-box;
     transform: rotate(90);
-    background-color: aquamarine;
-    opacity: 0.10;
+    background-color: rgb(29, 78, 37);
+    
 }
