@@ -2,26 +2,24 @@
     width: 325px;
     height: 400px;
     top: 32%;
-    left: 41.5%;
+    left: 39.5%;
     border: 1px double black;
     position: absolute;
     padding: 20px;
     border-radius: 5%;
     box-sizing: border-box;
     transform: rotate(90);
-    background-color: rgb(116, 211, 124);
+    background-color: #4CAA38;
     text-indent: 95px;
-    opacity: 60%;
+    opacity: 1;
+
 }
 
-input:hover, button:hover, select:hover, textarea:hover { /*ativa borda e sombra ao passar o mouse*/
-    border: 1px solid blue;
-    box-shadow: 1px 1px 2px silver;
-}
 
 input[type="text"], input[type="password"] {
     margin-left: 9px; /* Move ambos os inputs 20px para a direita */
-    margin-top: 2%;  /* Move ambos os inputs 10px para baixo */
+    margin-top: 2%;  /* Move ambos os inputs 10px para baixo */ 
+    padding: 8px;
 }
 
 h1 {
@@ -37,6 +35,7 @@ button {
     top: 32%;
     left: 40;
     text-decoration: none; /* Remove o sublinhado */
+    
 }
 
 input[type="submit"] {
@@ -54,6 +53,13 @@ a {
     border-radius: 4px; /* Bordas arredondadas */
     text-indent:10px;
     margin-left: 2px; /* Move ambos os inputs 20px para a direita */
+}
+
+body {
+    background-image: url(imagens/fotodefundo.jpeg); /*Configurações da imagem de fundo*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 
