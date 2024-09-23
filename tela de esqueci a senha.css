@@ -1,0 +1,30 @@
+fieldset {
+    width: 800px;
+    height: 400px;
+    top: 32%;
+    left: center;
+    border: 1px double black;
+    position: absolute;
+    padding: 20px;
+    border-radius: 5%;
+    box-sizing: border-box;
+    transform: rotate(90);
+    background-color: rgb(116, 211, 124);
+    text-indent: 95px;
+    opacity: 65%;
+}
+
+h1 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 6px;
+    margin-top: 2%;
+}
+
+body {
+    background-image: url(imagens/fotodofundo.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+}
