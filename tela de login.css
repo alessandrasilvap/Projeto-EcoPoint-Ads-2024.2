@@ -1,50 +1,61 @@
-body {
-    background-image: url(images/fotodofundo.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+#comeco {
+    width: 325px;
+    height: 400px;
+    top: 32%;
+    left: 41.5%;
+    border: 1px double black;
+    position: absolute;
+    padding: 20px;
+    border-radius: 5%;
+    box-sizing: border-box;
+    transform: rotate(90);
+    background-color: rgb(116, 211, 124);
+    text-indent: 95px;
+    opacity: 60%;
 }
 
-
-input, select, textarea { /*formatação dos campos de entrada*/
-    border-radius: 4px;
-    padding: 5px;
-    margin: 5px;
-}
-input:focus, select:focus, textarea:focus { /*troca de cor do fundo quando clicar*/
-    background-color: rgb(190, 204, 190);
-}
-input:hover, select:hover, textarea:hover { /*ativa borda e sombra ao passar o mouse*/
+input:hover, button:hover, select:hover, textarea:hover { /*ativa borda e sombra ao passar o mouse*/
     border: 1px solid blue;
     box-shadow: 1px 1px 2px silver;
 }
 
+input[type="text"], input[type="password"] {
+    margin-left: 9px; /* Move ambos os inputs 20px para a direita */
+    margin-top: 2%;  /* Move ambos os inputs 10px para baixo */
+}
+
+h1 {
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 6px;
+    margin-top: 2%;
+}
 
 button {
-    border-radius: 4px;
-    padding: 5px;
-    margin: 5px;
-}
-p {
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
-}
-h1 {
-    color: white;
-    font-family: 'Times New Roman', Times, serif;
+    width: 265px;
+    height: 32px;
+    top: 32%;
+    left: 40;
+    text-decoration: none; /* Remove o sublinhado */
 }
 
-#comeco {
-    width: 400px;
-    height: 400px;
-    top: 33%;
-    left: 38%;
-    border: 1px double black;
-    position: absolute;
-    padding: 20px;
-    box-sizing: border-box;
-    transform: rotate(90);
-    background-color: aquamarine;
-    opacity: 0.10;
+input[type="submit"] {
+    width: 265px;
+    height: 32px;
+    top: 32%;
+    left: 41.5%;
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+a {
+    padding: 10px 20px; /* Espaçamento interno */
+    color: black; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 4px; /* Bordas arredondadas */
+    text-indent:10px;
+    margin-left: 2px; /* Move ambos os inputs 20px para a direita */
+}
+
+
+@media screen and (max-width: 1020px){ /*torna o site responsivo*/
 }
