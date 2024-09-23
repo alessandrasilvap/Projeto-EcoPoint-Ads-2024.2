@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Login</title>
     <link rel="shortcut icon" href="./imagens/favicongreen.ico" type="image/x-icon">
     <link rel="stylesheet" href="login.css">
@@ -17,7 +18,7 @@
             <input type="password" placeholder="Senha:" maxlength="8" size="31" required>
             <br>
             <br>
-            <input type="submit" value="ENTRAR"> <!-- fazer de um jeito que vá para a proxima pagina quando for preenchidos-->
+            <button type="submit" class="botaoverde"> ENTRAR</button> <!-- fazer de um jeito que vá para a proxima pagina quando for preenchidos-->
             <br>
             <br>
             <button><a href="telacadastro.html" class="botaoverde">CADASTRE-SE</a></button>
@@ -25,5 +26,6 @@
             <p><a href="telaesquecisenha.html">Esqueci minha senha</a></p>
         </div>
     </form>
+
 </body>
 </html>
