@@ -4,25 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link rel="icon" type="image/png" href="images/ecologo2.png"> <!--imagem de icone pequeno na parte de cima da aba-->
-    <link rel="stylesheet" type="text/css" href="login.css"> <!--link para vincular o css no html(tem que ter em todos)-->
+    <link rel="shortcut icon" href="./imagens/favicongreen.ico" type="image/x-icon">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div id="comeco">
-        <h1>Login</h1>
-        <br>
-        <input type="text" placeholder="Usuário: ">
-        <br>
-        <br>
-        <input type="password" placeholder="Senha: ">
-        <br>
-        <br>
-        <button>ENTRAR</button>
-        <br>
-        <br>
-        <button>CADASTRA-SE</button>
-        <br>
-        <p><a href="telaesquecisenha.html">Esqueci minha senha</a></p>
-    </div>
+    <form name="formulariologin" action="action_page.php" method="post" autocomplete="off" target="_blank" novalidate>
+        <div id="comeco">
+            <h1>Login</h1>
+            <input type="text" placeholder="Usuário:" maxlength="6" size="31" required>
+            <br>
+            <br>
+            <input type="password" placeholder="Senha:" maxlength="8" size="31" required>
+            <br>
+            <br>
+            <input type="submit" value="ENTRAR"> <!-- fazer de um jeito que vá para a proxima pagina quando for preenchidos-->
+            <br>
+            <br>
+            <button><a href="telacadastro.html" class="botaoverde">CADASTRE-SE</a></button>
+            <br>
+            <p><a href="telaesquecisenha.html">Esqueci minha senha</a></p>
+        </div>
+    </form>
 </body>
 </html>
