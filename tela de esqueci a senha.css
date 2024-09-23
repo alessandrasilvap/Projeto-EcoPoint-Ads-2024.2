@@ -3,28 +3,53 @@ fieldset {
     height: 400px;
     top: 32%;
     left: center;
-    border: 1px double black;
+    right: 24.5%;
+    border: 1px double rgb(255, 255, 255);
     position: absolute;
     padding: 20px;
-    border-radius: 5%;
+    border-radius: 2%;
     box-sizing: border-box;
     transform: rotate(90);
     background-color: rgb(116, 211, 124);
-    text-indent: 95px;
+    text-indent: 10px;
     opacity: 65%;
+    margin:0 auto;
+    
 }
+
+
+
 
 h1 {
     color: black;
     font-family: 'Times New Roman', Times, serif;
     margin-left: 6px;
     margin-top: 2%;
+    text-indent:250px;
 }
 
 body {
-    background-image: url(imagens/fotodofundo.png);
+    background-image: url(imagens/fotodefundo.jpeg); /*Configurações da imagem de fundo*/
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    width: 100%;
+}
+
+p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin-top: 0.5px;
+
+}
+
+
+/*botões de digitar e-mail e enviar e-mail*/
+input[type="email"]{
+     padding: 8px;
+}
+
+button[type="submit"]{
+    background-color: green;
+    padding:10px;
+    border:none;
 }
