@@ -4,27 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-</head>
+    <link rel="shortcut icon" href="./imagens/favicongreen.ico" type="image/x-icon">
+    </head>
 <body>
     <header id="topo3">
         <h1>Cadastro</h1>
     </header>
     <section id="cadastro">
-    <input type="text" placeholder="Crie seu usuário:"> <!--Precisa ter o minimo e o máximo de letras-->
+    <br>
+    <input type="text" placeholder="Nome Completo:" minlength="15" maxlength="80">
     <br>
     <br>
-    <input type="password" placeholder="Crie sua senha:"> <!--Precisa ter o minimo e o máximo de letras-->
+    <input type="text" placeholder="Crie seu usuário:" maxlength="6">
     <br>
     <br>
-    <input type="password" placeholder="Confirme sua senha:"> <!--Precisa ter o minimo e o máximo de letras-->
+    <input type="password" placeholder="Crie sua senha:" maxlength="8">
+    <br>
+    <br>
+    <input type="password" placeholder="Confirme sua senha:" maxlength="8">
     <br>
     <br>
     <h3>Informações Complementares</h3>
     <br>
-    <input type="text" placeholder="Digite seu e-mail:">
+    <input type="email" placeholder="Digite seu e-mail:">
     <br>
     <br>
-    <input type="number" placeholder="CEP:"> <!--Precisar ser inserido o CEP e o campo endereçoser preenchido automaticamente pelo JavaScript-->
+    <input type="number" placeholder="CEP:" pattern="\d{5}-\d{3}$"> <!--Precisar ser inserido o CEP e o campo endereçoser preenchido automaticamente pelo JavaScript-->
     <br>
     <br>
     <input type="text" placeholder="Endereço:">
