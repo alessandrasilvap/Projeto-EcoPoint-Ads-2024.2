@@ -9,17 +9,15 @@
 </head>
 <body>
     <form action="action_page.php">
-        <header id="topo2"></header>
-            <h1>Recuperação de senha</h1>
-            <hr>
-        </header>
+    
         <fieldset>
             <section id="esquecisenha">
-            <h2>Siga as orientações:</h2>
+                <h1>Recuperação de senha</h1>
+                <h2>Siga as orientações:</h2>
+
                 <br>
-                <p>Primiero: Para obter uma nova senha digite seu e-mail.</p>
+                <p>Primeiro: Para obter uma nova senha digite seu e-mail.</p>
                 <p>Segundo: Clique no link que será enviado para o e-mail digitado e coloque uma nova senha.</p>
-                <br>
                 <input type="email" placeholder="Digite seu e-mail cadastrado:" required size="50">
                 <br>
                 <br>
