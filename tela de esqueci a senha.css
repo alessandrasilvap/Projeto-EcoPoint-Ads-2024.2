@@ -1,55 +1,42 @@
-fieldset {
-    width: 800px;
-    height: 400px;
-    top: 32%;
-    left: center;
-    right: 24.5%;
-    border: 1px double rgb(255, 255, 255);
-    position: absolute;
-    padding: 20px;
-    border-radius: 2%;
-    box-sizing: border-box;
-    transform: rotate(90);
-    background-color: rgb(116, 211, 124);
-    text-indent: 10px;
-    opacity: 65%;
-    margin:0 auto;
-    
+fieldset { /*Formatação da caixa no meio*/
+    width: 800px; /* Largura da caixa*/
+    height: 400px; /* Altura da caixa*/
+    top: 32%; /* Move a caixa 32% para baixo */
+    left: 30%; /* Move a caixa 41.5% para a direita */
+    border: 1px double black; /*Tipo e espessura*/
+    position: absolute; /*Representação do layout da caixa*/
+    padding: 2px; /* Espaçamento entre o conteudo e borda*/
+    border-radius: 2%; /* Bordas arredondadas */
+    box-sizing: border-box; /*Largura e altura compreenderãp o tamanho maximo do box*/
+    transform: rotate(90); /*Rotação da caixa*/
+    background-color: #4caa38; /*Cor da caixa*/
+    text-indent: 10px; /*Define o recuo do texto*/
+    opacity: 65%; /* Deixa meio transparente*/
 }
-
-
-
 
 h1 {
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 6px;
-    margin-top: 2%;
-    text-indent:250px;
-}
-
-body {
-    background-image: url(imagens/fotodefundo.jpeg); /*Configurações da imagem de fundo*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-}
-
-p {
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    margin-top: 0.5px;
+    font-size: 200%; /*Altera o tamanho do texto*/
+    text-align: center;  /*Define o alinhamento do texto*/
 
 }
 
-
-/*botões de digitar e-mail e enviar e-mail*/
-input[type="email"]{
-     padding: 8px;
+h1, h2, h3 {
+    color: black; /*Cor do texto*/
+    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
-button[type="submit"]{
-    background-color: green;
-    padding:10px;
-    border:none;
+input, select, button, textarea { /*formatação dos campos de entrada*/
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 5px; /* Espaçamento entre o conteudo e borda*/
+    margin: 5px; /* Espaço entre caixa e marguem da página*/
+    height: 6%; /* Altura da caixa*/
+    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+}
+
+body { /*Imagem de fundo*/
+    background-image: url(imagens/fotodofundo.png); /*Imagem inserida*/
+    background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
+    background-attachment: fixed; /*Fixa a imagem no fundo*/
+    background-size: cover; 
+    width: 100%; /* Largura da imagem*/
 }
