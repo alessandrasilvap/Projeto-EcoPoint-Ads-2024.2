@@ -1,49 +1,59 @@
-#comeco {
-    width: 325px;
-    height: 400px;
-    top: 32%;
-    left: 39.5%;
-    border: 1px double black;
-    position: absolute;
-    padding: 20px;
-    border-radius: 5%;
-    box-sizing: border-box;
-    transform: rotate(90);
-    background-color: #4CAA38;
-    text-indent: 95px;
-    opacity: 1;
-
+body { /*Imagem de fundo*/
+    background-image: url(imagens/fotodofundo.png); /*Imagem inserida*/
+    background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
+    background-attachment: fixed; /*Fixa a imagem no fundo*/
+    background-size: cover;
+    width: 100%; /* Largura da imagem*/
 }
 
+input, select, button, textarea { /*formatação dos campos de entrada*/
+    border-radius: 4px; /* Bordas arredondadas */
+    padding: 5px; /* Espaçamento entre o conteudo e borda*/
+    margin: 5px; /* Espaço entre caixa e marguem da página*/
+    height: 6%; /* Altura da caixa*/
+    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+}
+
+#comeco { /*Formatação da caixa no meio*/
+    width: 325px; /* Largura da caixa*/
+    height: 400px; /* Altura da caixa*/
+    top: 32%; /* Move a caixa 32% para baixo */
+    left: 41.5%; /* Move a caixa 41.5% para a direita */
+    border: 1px double black; /*Tipo e espessura*/
+    position: absolute; /*Representação do layout da caixa*/
+    padding: 20px; /* Espaçamento entre o conteudo e borda*/
+    border-radius: 5%; /* Bordas arredondadas */
+    box-sizing: border-box; /*Largura e altura compreenderãp o tamanho maximo do box*/
+    transform: rotate(90); /*Rotação da caixa*/
+    background-color: #4caa38; /*Cor da caixa*/
+    text-indent: 95px; /*Define o recuo do texto*/
+    opacity: 60%; /* Deixa meio transparente*/
+}
+
+input:hover, button:hover, select:hover, textarea:hover { /*ativa borda e sombra ao passar o mouse*/
+    border: 1px solid blue;
+    box-shadow: 1px 1px 2px silver;
+}
 
 input[type="text"], input[type="password"] {
-    margin-left: 9px; /* Move ambos os inputs 20px para a direita */
-    margin-top: 2%;  /* Move ambos os inputs 10px para baixo */ 
-    padding: 8px;
+    margin-left: 9px; /* Move ambos os inputs 9px para a direita */
+    margin-top: 2%;  /* Move ambos os inputs 2% para baixo */
 }
 
-h1 {
-    color: black;
-    font-family: 'Times New Roman', Times, serif;
-    margin-left: 6px;
-    margin-top: 2%;
+h1 { 
+    color: black; /*cor*/
+    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+    margin-left: 6px; /* Move o título 6px para a direita */
+    margin-top: 2%; /* Move o título 2% para baixo */
 }
 
 button {
-    width: 265px;
-    height: 32px;
-    top: 32%;
-    left: 40;
+    width: 265px; /* Largura do button*/
+    height: 10%; /* Altura do button*/
+    top: 32%; /* Move ambos os button 32% para baixo */
+    left: 40px; /* Move ambos os button 40px para a direita */
     text-decoration: none; /* Remove o sublinhado */
-    
-}
-
-input[type="submit"] {
-    width: 265px;
-    height: 32px;
-    top: 32%;
-    left: 41.5%;
-    border-radius: 4px; /* Bordas arredondadas */
+    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
 a {
@@ -51,15 +61,9 @@ a {
     color: black; /* Cor do texto */
     text-decoration: none; /* Remove o sublinhado */
     border-radius: 4px; /* Bordas arredondadas */
-    text-indent:10px;
-    margin-left: 2px; /* Move ambos os inputs 20px para a direita */
-}
-
-body {
-    background-image: url(imagens/fotodefundo.jpeg); /*Configurações da imagem de fundo*/
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    text-indent: 5px; /*Define o recuo do texto*/
+    margin-left: 2px; /* Move ambos os inputs 2px para a direita */
+    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
 
