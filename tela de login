@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Login</title>
+    <title>Eco Point</title>
     <link rel="shortcut icon" href="./imagens/favicongreen.ico" type="image/x-icon">
     <link rel="stylesheet" href="login.css">
 </head>
@@ -18,14 +17,13 @@
             <input type="password" placeholder="Senha:" maxlength="8" size="31" required>
             <br>
             <br>
-            <button type="submit" class="botaoverde"> ENTRAR</button> <!-- fazer de um jeito que vá para a proxima pagina quando for preenchidos-->
+            <button><a href="telasobrenos.html" class="botaoverde">ENTRAR</a></button> <!-- fazer de um jeito que vá para a proxima pagina quando for preenchidos-->
             <br>
             <br>
             <button><a href="telacadastro.html" class="botaoverde">CADASTRE-SE</a></button>
             <br>
-            <p><a href="telaesquecisenha.html">Esqueci minha senha</a></p>
+            <p><a href="telaesquecisenha.html" target="_blank">Esqueci minha senha</a></p>
         </div>
     </form>
-
 </body>
 </html>
