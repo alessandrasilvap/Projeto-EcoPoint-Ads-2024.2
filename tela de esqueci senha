@@ -3,29 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esqueci Minha Senha</title>
+    <title>Esqueci minha senha - Eco Point</title>
     <link rel="shortcut icon" href="./imagens/favicongreen.ico" type="image/x-icon">
     <link rel="stylesheet" href="esquecisenha.css">
 </head>
 <body>
     <form action="action_page.php">
-    
         <fieldset>
             <section id="esquecisenha">
-                <h1>Recuperação de senha</h1>
+                <h1>Redefinição de senha</h1> 
                 <h2>Siga as orientações:</h2>
-
-                <br>
-                <p>Primeiro: Para obter uma nova senha digite seu e-mail.</p>
-                <p>Segundo: Clique no link que será enviado para o e-mail digitado e coloque uma nova senha.</p>
+                <h3>Primeiro: Preencha os campos abaixo para solicitar a redefinição de senha.</h3>
+                <h3>Segundo: Clique no link com instruções, que será enviado para o e-mail informado, dessa maneira poderá redefinir sua senha.</h3>
                 <input type="email" placeholder="Digite seu e-mail cadastrado:" required size="50">
                 <br>
                 <br>
                 <input type="email" placeholder="Confirme o e-mail:" required size="50">
                 <br>
-                <br>
-                <button type="submit">Enviar para o e-mail</button> <!--inserir uma tela de javascript 
-                informando que o e-mail de recuperação de senha foi encaminhado-->
+                <button type="submit">Enviar</button> <!--inserir uma tela de javascript informando que o e-mail de recuperação de senha foi encaminhado-->
             </section>
         </fieldset>
     </form>
