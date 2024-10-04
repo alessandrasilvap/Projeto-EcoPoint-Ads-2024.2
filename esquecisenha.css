@@ -1,54 +1,55 @@
-button {
-    width: 100px; /*Largura do button*/
-    height: 10%; /*Altura do button*/
-    top: 32%; /*Move ambos os button 32% para baixo */
-    left: 40px; /*Move ambos os button 40px para a esquerda */
-    text-decoration: none; /*Remove o sublinhado */
+fieldset { /*Formatação da caixa no meio*/
+    width: 800px; /*Largura da caixa*/
+    height: 400px; /*Altura da caixa*/
+    top: 32%; /*Move a caixa 32% para baixo */
+    left: 30%; /*Move a caixa 41.5% para a esquerda */
+    border: 1px double black; /*Tipo e espessura*/
+    position: absolute; /*Representação do layout da caixa*/
+    padding: 2px; /*Espaçamento entre o conteudo e borda*/
+    border-radius: 2%; /*Bordas arredondadas */
+    box-sizing: border-box; /*Largura e altura compreenderãp o tamanho maximo do box*/
+    transform: rotate(90); /*Rotação da caixa*/
+    background-color: #4caa38; /*Cor da caixa*/
+    text-indent: 10px; /*Define o recuo do texto*/
+    opacity: 65%; /*Deixa meio transparente*/
+}
+
+h1 { /*Título*/
+    font-size: 200%; /*Altera o tamanho do texto*/
+    text-align: center;  /*Define o alinhamento do texto*/
+
+}
+
+h1, h2, h3 { /*Textos*/
+    color: black; /*Cor do texto*/
     font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
+input, select, button, textarea { /*Formatação dos campos de entrada*/
+    border-radius: 4em; /*Bordas arredondadas*/
+    padding: 5px; /*Espaçamento entre o conteudo e borda*/
+    margin: 5px; /*Espaço entre caixa e marguem da página*/
+    height: 6%; /*Altura da caixa*/
+    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+}
+
+
+
 body { /*Imagem de fundo*/
-    background-image: url(imagens/fotodofundo.png); /*Imagem inserida*/
+    background-image: url(../imagens/fotodofundo.png); /*Imagem inserida*/
     background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
     background-attachment: fixed; /*Fixa a imagem no fundo*/
-    background-size: cover; 
+    background-size: cover; /*Ajusta a imagem*/
     width: 100%; /*Largura da imagem*/
 }
 
-@media screen and (max-width: 600px) { /*Design responsivo*/
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+
+
+/*Tela responsiva*/
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    button {
+        width: 100%; /* Botões ocupam 100% em telas menores */
+        margin-bottom: 10px;
     }
 }
-
-@media only screen and (min-width: 600px) { /*Design responsivo*/
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) { /*Design responsivo*/
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
