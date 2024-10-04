@@ -1,13 +1,15 @@
 body { /*Imagem de fundo*/
-    background-image: url(imagens/fotodofundo.png); /*Imagem inserida*/
+    background-image: url(../imagens/fotodofundo.png); /*Imagem*/
     background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
-    background-attachment: fixed; /*Fixa a imagem no fundo*/
-    background-size: cover;
-    width: 100%; /*Largura da imagem*/
+    background-attachment: fixed; /*Fixa a imagem */
+    background-size: cover; /*Ajusta a imagem*/
+    width: 100%; /*Largura*/
 }
 
+
+
 input, select, button, textarea { /*Formatação dos campos de entrada*/
-    border-radius: 4px; /*Bordas arredondadas */
+    border-radius: 4em; /*Bordas arredondadas */
     padding: 5px; /*Espaçamento entre o conteudo e borda*/
     margin: 5px; /*Espaço entre caixa e marguem da página*/
     height: 6%; /*Altura da caixa*/
@@ -28,6 +30,7 @@ input, select, button, textarea { /*Formatação dos campos de entrada*/
     background-color: #4caa38; /*Cor da caixa*/
     text-indent: 95px; /*Define o recuo do texto*/
     opacity: 60%; /*Deixa meio transparente*/
+    position: fixed; /*Fixa o quadrado na tela*/
 }
 
 input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra ao passar o mouse*/
@@ -40,66 +43,39 @@ input[type="text"], input[type="password"] {
     margin-top: 2%;  /*Move ambos os inputs 2% para baixo */
 }
 
-h1 { 
+h1 { /*Título*/
     color: black; /*Cor*/
-    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+    font-family: 'Times New Roman', Times, serif; /*Fonte*/
     margin-left: 6px; /*Move o título 6px para a esquerda */
     margin-top: 2%; /*Move o título 2% para baixo */
 }
 
-button {
-    width: 265px; /*Largura do button*/
-    height: 10%; /*Altura do button*/
+button { /*Botões*/
+    width: 265px; /*Largura*/
+    height: 10%; /*Altura*/
     top: 32%; /*Move ambos os button 32% para baixo */
     left: 40px; /*Move ambos os button 40px para a esquerda */
-    text-decoration: none; /*Remove o sublinhado */
+    text-decoration: none; /*Remove o sublinhado*/
     font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
-a {
-    padding: 10px 20px; /*Espaçamento interno */
+a { /*Links*/
+    padding: 10px 20px; /*Espaçamento interno*/
     color: black; /*Cor do texto */
-    text-decoration: none; /*Remove o sublinhado */
-    border-radius: 4px; /*Bordas arredondadas */
+    text-decoration: none; /*Remove o sublinhado*/
+    border-radius: 4px; /*Bordas arredondadas*/
     text-indent: 5px; /*Define o recuo do texto*/
-    margin-left: 2px; /*Move ambos os inputs 2px para a esquerda */
+    margin-left: 2px; /*Move ambos os inputs 2px para a esquerda*/
     font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
-@media screen and (max-width: 600px) { /*Design responsivo*/
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+
+
+/*Tela responsiva*/
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    button {
+        width: 100%; /* Botões ocupam 100% em telas menores */
+        margin-bottom: 10px;
     }
 }
-
-@media only screen and (min-width: 600px) { /*Design responsivo*/
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) { /*Design responsivo*/
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
