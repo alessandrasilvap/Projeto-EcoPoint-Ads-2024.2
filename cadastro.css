@@ -1,10 +1,12 @@
 header { /*Imagem no topo*/
-    background-image: url(imagens/headercadastro.png);
-    padding: 60px; /*Espaçamento entre o conteudo e borda*/
-  }
+    background-image: url(../imagens/barracadastro.png); /*Imagem*/
+    padding: 6em; /*Espaçamento entre o conteudo e borda*/
+}
 
-  input, select, button, textarea { /*Formatação dos campos de entrada*/
-    border-radius: 4px; /*Bordas arredondadas */
+
+
+input, select, button, textarea { /*Formatação dos campos de entrada*/
+    border-radius: 4em; /*Bordas arredondadas */
     padding: 5px; /*Espaçamento entre o conteudo e borda*/
     margin: 5px; /*Espaço entre caixa e marguem da página*/
     height: 6%; /*Altura da caixa*/
@@ -24,26 +26,28 @@ input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra
     border: 1px double black; /*Tipo e espessura*/
     position: absolute; /*Representação do layout da caixa*/
     padding: 10px; /*Espaçamento entre o conteudo e borda*/
-    border-radius: 5%; /*Bordas arredondadas */
+    border-radius: 5%; /*Bordas arredondadas*/
     box-sizing: border-box; /*Largura e altura compreenderãp o tamanho maximo do box*/
     transform: rotate(90); /*Rotação da caixa*/
     background-color: white; /*Cor da caixa*/
     text-indent: 95px; /*Define o recuo do texto*/
+    position: fixed; /*Fixa o quadrado na tela*/
 }
 
 #cadastro2 { /*Formatação da caixa no meio*/
     width: 650px; /*Largura da caixa*/
     height: 400px; /*Altura da caixa*/
     top: 32%; /*Move a caixa 32% para baixo */
-    left: 50%; /*Move a caixa 41.5% para a esquerda*/
+    left: 50%; /*Move a caixa 50% para a esquerda*/
     border: 1px double black; /*Tipo e espessura*/
     position: absolute; /*Representação do layout da caixa*/
     padding: 10px; /*Espaçamento entre o conteudo e borda*/
-    border-radius: 5%; /*Bordas arredondadas */
+    border-radius: 5%; /*Bordas arredondadas*/
     box-sizing: border-box; /*Largura e altura compreenderãp o tamanho maximo do box*/
     transform: rotate(90); /*Rotação da caixa*/
     background-color: white; /*Cor da caixa*/
     text-indent: 50px; /*Define o recuo do texto*/
+    position: fixed; /*Fixa o quadrado na tela*/
 }
 
 #botoes { /*Posição dos botões*/
@@ -51,37 +55,37 @@ input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra
     text-align: center;
 }
 
-button {
-    width: 265px; /*Largura do button*/
-    height: 10%; /*Altura do button*/
-    top: 32%; /*Move ambos os button 32% para baixo */
+button { /*Botões*/
+    width: 265px; /*Largura*/
+    height: 10%; /*Altura*/
+    top: 32%; /*Move ambos os button 32% para baixo*/
     left: 40px; /*Move ambos os button 40px para a esquerda*/
-    text-decoration: none; /*Remove o sublinhado */
+    text-decoration: none; /*Remove o sublinhado*/
     font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
-    background-color: #2c612f;
+    background-color: #2c612f; /*Cor dos botões*/
     color: white; /*Cor do texto */
 }
 
-a {
-    padding: 10px 20px; /*Espaçamento interno */
-    color: white; /*Cor do texto */
-    text-decoration: none; /*Remove o sublinhado */
-    border-radius: 4px; /*Bordas arredondadas */
+a { /*Links*/
+    padding: 10px 20px; /*Espaçamento interno*/
+    color: white; /*Cor do texto*/
+    text-decoration: none; /*Remove o sublinhado*/
+    border-radius: 4px; /*Bordas arredondadas*/
     text-indent: 5px; /*Define o recuo do texto*/
     margin-left: 2px; /*Move ambos os inputs 2px para a esquerda*/
     font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
-h2 {
+h2 { /*Título*/
     font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
     margin-left: 6px; /*Move o título 6px para a esquerda*/
-    margin-top: 1%; /*Move o título 2% para baixo */
+    margin-top: 1%; /*Move o título 2% para baixo*/
     font-size: 350%; /*Tamanho da letra*/
     color: #468749; /*Cor*/
     text-indent: 25px; /*Define o recuo do texto*/
 }
 
-h3 {
+h3 { /*Título da primeira caixa*/
     color: #468749; /*cor*/
     font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
     margin-left: 6px; /*Move o título 6px para a esquerda*/
@@ -89,48 +93,21 @@ h3 {
     font-size: 130%; /*Tamanho da letra*/
 }
 
-h4 {
+h4 { /*Título da segunda caixa*/
     font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
     margin-left: 6px; /*Move o título 6px para a esquerda*/
-    margin-top: 1%; /*Move o título 2% para baixo */
+    margin-top: 1%; /*Move o título 2% para baixo*/
     font-size: 150%; /*Tamanho da letra*/
     color: #468749; /*Cor*/
 }
 
-@media screen and (max-width: 600px) { /*Design responsivo*/
-    .col-25, .col-75, input[type=submit] {
-      width: 100%;
-      margin-top: 0;
+
+
+/*Tela responsiva*/
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    button {
+        width: 100%; /* Botões ocupam 100% em telas menores */
+        margin-bottom: 10px;
     }
 }
-
-@media only screen and (min-width: 600px) { /*Design responsivo*/
-    /* For tablets: */
-    .col-s-1 {width: 8.33%;}
-    .col-s-2 {width: 16.66%;}
-    .col-s-3 {width: 25%;}
-    .col-s-4 {width: 33.33%;}
-    .col-s-5 {width: 41.66%;}
-    .col-s-6 {width: 50%;}
-    .col-s-7 {width: 58.33%;}
-    .col-s-8 {width: 66.66%;}
-    .col-s-9 {width: 75%;}
-    .col-s-10 {width: 83.33%;}
-    .col-s-11 {width: 91.66%;}
-    .col-s-12 {width: 100%;}
-  }
-  @media only screen and (min-width: 768px) { /*Design responsivo*/
-    /* For desktop: */
-    .col-1 {width: 8.33%;}
-    .col-2 {width: 16.66%;}
-    .col-3 {width: 25%;}
-    .col-4 {width: 33.33%;}
-    .col-5 {width: 41.66%;}
-    .col-6 {width: 50%;}
-    .col-7 {width: 58.33%;}
-    .col-8 {width: 66.66%;}
-    .col-9 {width: 75%;}
-    .col-10 {width: 83.33%;}
-    .col-11 {width: 91.66%;}
-    .col-12 {width: 100%;}
-  }
