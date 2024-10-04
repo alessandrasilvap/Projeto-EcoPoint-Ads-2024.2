@@ -4,42 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro - Eco Point</title>
-    <link rel="shortcut icon" href="./imagens/favicongreen.ico" type="image/x-icon">
-    <link rel="stylesheet" href="cadastro.css">
+    <link rel="shortcut icon" href="../imagens/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/cadastro.css">
     </head>
 <body>
-    <header></header> <!--Vê como fazer com que o layout da página fique boa quando a página for diminuida.-->
-    <!--E ajeitar a foto que está no HEADER-->
+    <header></header>
     <h2>Cadastra-se</h2>
     <section id="cadastro">
     <h3>ENTRE NO MUNDO MAIS VERDE.</h3>
     <br>
-    <input type="text" placeholder="Nome Completo:" minlength="15" maxlength="80" size="50">
+    <input type="text" placeholder="Nome Completo:" minlength="15" maxlength="80" size="50" required>
     <br>
     <br>
-    <input type="text" placeholder="Crie seu usuário:" maxlength="6" size="50">
+    <input type="text" placeholder="Crie seu usuário:" maxlength="6" size="50" required>
     <br>
     <br>
-    <input type="password" placeholder="Crie sua senha:" maxlength="8" size="50">
+    <input type="password" placeholder="Crie sua senha:" maxlength="8" size="50" required>
     <br>
     <br>
-    <input type="password" placeholder="Confirme sua senha:" maxlength="8" size="50">
+    <input type="password" placeholder="Confirme sua senha:" maxlength="8" size="50" required>
     <br>
     <br>
     </section>
     <section id="cadastro2">
     <h4>Informações Complementares:</h4>
     <br>
-    <input type="number" placeholder="CEP:" pattern="\d{5}-\d{3}$"> <!--Precisar ser inserido o CEP e o campo endereçoser preenchido automaticamente pelo JavaScript-->
+    <input type="number" placeholder="CEP:" pattern="/^[0-9]{8}$/" required>
     <br>
     <br>
-    <input type="text" placeholder="Endereço:" size="50">
+    <input type="text" placeholder="Endereço:" size="50" >
     <br>
     <br>
     <input type="text" placeholder="Complemento:" size="50">
     <br>
     <br>
-    <input type="email" placeholder="Digite seu e-mail:" size="50">
+    <input type="email" placeholder="Digite seu e-mail:" size="50" required>
     <br>
     <br>
     <br>
