@@ -20,7 +20,7 @@ input, select, button, textarea { /*Formatação dos campos de entrada*/
     width: 325px; /*Largura da caixa*/
     height: 400px; /*Altura da caixa*/
     top: 32%; /*Move a caixa 32% para baixo */
-    left: 41.5%; /*Move a caixa 41.5% para a esquerda */
+    left: 40%; /*Move a caixa 41.5% para a esquerda */
     border: 1px double black; /*Tipo e espessura*/
     position: absolute; /*Representação do layout da caixa*/
     padding: 20px; /*Espaçamento entre o conteudo e borda*/
