@@ -43,7 +43,8 @@ img {
   margin: 0px; /*Espaço entre caixa e marguem da página*/
   padding: 14px; /*Espaçamento entre o conteudo e borda*/ 
   background-color: #468749; /*Cor da caixa*/
-  text-indent: 700px; /*Recuo da linha*/
+  text-indent: 40px; /*Recuo da linha*/
+  text-align: center;
 }
 
 a { /*Os links no menu*/
