@@ -23,7 +23,7 @@ input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra
     width: 650px; /*Largura da caixa*/
     height: 400px; /*Altura da caixa*/
     top: 32%; /*Move a caixa 32% para baixo */
-    left: 10%; /*Move a caixa 41.5% para a esquerda*/
+    left: 5%; /*Move a caixa 41.5% para a esquerda*/
     border: 1px double black; /*Tipo e espessura*/
     position: absolute; /*Representação do layout da caixa*/
     padding: 10px; /*Espaçamento entre o conteudo e borda*/
