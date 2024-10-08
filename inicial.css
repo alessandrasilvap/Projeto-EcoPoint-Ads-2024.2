@@ -5,6 +5,14 @@ header { /*Imagem no topo*/
 }
 
 
+input { /*Formatação do campo*/
+    border-radius: 1em; /*Bordas arredondadas*/
+    padding: 5px; /*Espaçamento entre o conteúdo e borda*/
+    margin-left: 30%; /*Espaço entre caixa e margem da página*/
+    height: 6%; /*Altura da caixa*/
+}
+
+
 
 button { /*Botão ENTRAR*/
     text-align: center; /*Centralizar texto*/
