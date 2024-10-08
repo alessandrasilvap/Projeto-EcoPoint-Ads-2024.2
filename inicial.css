@@ -1,5 +1,77 @@
 header { /*Imagem no topo*/
-  background-image: url(../imagens/barracadastro.png); /*Imagem*/
-  padding: 6em; /*Espaçamento entre o conteudo e borda*/
-  background-position: center;
+    background-image: url(../imagens/barracadastro.png); 
+    padding: 6em;
+    background-position: center;
+}
+
+
+
+button { /*Botão ENTRAR*/
+    text-align: center; /*Centralizar texto*/
+    width: 7em; /*Largura*/
+    height: 2em; /*Altura*/
+    margin-left: 93%; 
+    background-color: #468749;
+}
+
+a { /*Link de ENTRAR*/
+    text-decoration: none;
+    color: white;
+}
+
+
+
+footer { /*Rodape completo*/
+    background-color: #468749; /*Cor do rodape*/
+    color: white; /*Cor do texto*/
+    padding: 20px; /*Espaçamento entre o conteudo e borda*/
+}
+
+.footer-container { /*Todos os div estão dentro dessa classe*/
+  display: flex; 
+  justify-content: space-between;   
+  width: 70%; /*Largura*/
+}
+
+.integrantes, .contatos { /*As duas listas*/
+    margin: 0 20px; 
+}
+
+.contatos { /*Lista de contato*/
+    margin-bottom: 10px; 
+}
+
+.lista { /*Lista dos nomes */
+    list-style-type: none; 
+    padding: 0; /*Espaçamento entre o conteudo e borda*/
+}
+
+.nome { /*Os próprios nomes*/
+    margin: 5px 0; 
+}
+
+.contact-item { /*Os próprios itens*/
+  display: flex; 
+  align-items: center; 
+  margin: 5px 0; 
+}
+
+.contact-item i { /*Icones*/
+  margin-right: 5px; 
+  color: #fff; /*Cor do ícone */
+}
+
+.fas, .fab { /*Estilos para ícones*/
+    font-size: 18px;
+}
+
+
+
+/*Tela responsiva*/
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+    button {
+        width: 100%; /* Botões ocupam 100% em telas menores */
+        margin-bottom: 10px;
+    }
 }
