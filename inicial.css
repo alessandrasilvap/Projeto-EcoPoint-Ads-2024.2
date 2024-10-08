@@ -1,1 +1,5 @@
-
+header { /*Imagem no topo*/
+  background-image: url(../imagens/barracadastro.png); /*Imagem*/
+  padding: 6em; /*Espaçamento entre o conteudo e borda*/
+  background-position: center;
+}
