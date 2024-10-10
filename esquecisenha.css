@@ -1,55 +1,54 @@
+body { /*Imagem de fundo*/
+  background-image: url(../imagens/fotodofundo.png); /*Imagem inserida*/
+  background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
+  background-attachment: fixed; /*Fixa a imagem no fundo*/
+  background-size: cover; /*Ajusta a imagem*/
+  width: 100%; /*Largura da imagem*/
+}
+
+
+
 fieldset { /*Formatação da caixa no meio*/
-    width: 800px; /*Largura da caixa*/
-    height: 400px; /*Altura da caixa*/
-    top: 32%; /*Move a caixa 32% para baixo */
-    left: 30%; /*Move a caixa 41.5% para a esquerda */
-    border: 1px double black; /*Tipo e espessura*/
-    position: absolute; /*Representação do layout da caixa*/
-    padding: 2px; /*Espaçamento entre o conteudo e borda*/
-    border-radius: 2%; /*Bordas arredondadas */
-    box-sizing: border-box; /*Largura e altura compreenderãp o tamanho maximo do box*/
-    transform: rotate(90); /*Rotação da caixa*/
-    background-color: #4caa38; /*Cor da caixa*/
-    text-indent: 10px; /*Define o recuo do texto*/
-    opacity: 65%; /*Deixa meio transparente*/
+  width: 800px; /*Largura da caixa*/
+  height: 400px; /*Altura da caixa*/
+  top: 32%; /*Move a caixa 32% para baixo*/
+  left: 30%; /*Move a caixa 30% para a esquerda*/
+  border: 1px double black; /*Tipo e espessura*/
+  position: absolute; /*Representação do layout da caixa*/
+  padding: 2px; /*Espaçamento entre o conteudo e borda*/
+  border-radius: 2%; /*Bordas arredondadas*/
+  box-sizing: border-box; /*Largura e altura compreenderãp o tamanho maximo do box*/
+  transform: rotate(90); /*Rotação da caixa*/
+  background-color: #4caa38; /*Cor da caixa*/
+  text-indent: 10px; /*Define o recuo do texto*/
+  opacity: 65%; /*Deixa meio transparente*/
 }
 
 h1 { /*Título*/
-    font-size: 200%; /*Altera o tamanho do texto*/
-    text-align: center;  /*Define o alinhamento do texto*/
-
+  font-size: 200%; /*Altera o tamanho do texto*/
+  text-align: center;  /*Define o alinhamento do texto*/
 }
 
 h1, h2, h3 { /*Textos*/
-    color: black; /*Cor do texto*/
-    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+  color: black; /*Cor do texto*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
 input, select, button, textarea { /*Formatação dos campos de entrada*/
-    border-radius: 4em; /*Bordas arredondadas*/
-    padding: 5px; /*Espaçamento entre o conteudo e borda*/
-    margin: 5px; /*Espaço entre caixa e marguem da página*/
-    height: 6%; /*Altura da caixa*/
-    font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
-}
-
-
-
-body { /*Imagem de fundo*/
-    background-image: url(../imagens/fotodofundo.png); /*Imagem inserida*/
-    background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
-    background-attachment: fixed; /*Fixa a imagem no fundo*/
-    background-size: cover; /*Ajusta a imagem*/
-    width: 100%; /*Largura da imagem*/
+  border-radius: 4em; /*Bordas arredondadas*/
+  padding: 5px; /*Espaçamento entre o conteudo e borda*/
+  margin: 5px; /*Espaço entre caixa e marguem da página*/
+  height: 6%; /*Altura da caixa*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
 
 
 /*Tela responsiva*/
-/* Estilos para telas menores */
+/*Estilos para telas menores*/
 @media (max-width: 768px) {
-    button {
-        width: 100%; /* Botões ocupam 100% em telas menores */
-        margin-bottom: 10px;
-    }
+  button {
+    width: 100%; /*Botões ocupam 100% em telas menores*/
+    margin-bottom: 10px;
+  }
 }
