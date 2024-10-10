@@ -4,28 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eco Point</title>
-    <link rel="stylesheet" href="inicial.css">
+    <link rel="shortcut icon" href="../imagens/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../js/inicial.js">
+    <link rel="stylesheet" href="../css/inicial.css">
 </head>
 <body>
     <header></header>
-    <input type="search" placeholder="Pesquisar...">
-    <button><a href="telalogin.html">ENTRAR</a></button>
     <br>
+    <button><a href="telalogin.html">ENTRAR</a></button>   
     <hr>
+    <input type="search" size="100" placeholder="Pesquisar...">
     <br>
     <br>
+    <div class="noticias">
+        <div class="item" onclick="toggleNews(this)"> <!--OnClick é um evento do JavaScript que esta sendo chamado com o "this"-->
+            <img src="../imagens/imglink1.png" alt="Imagem da Notícia 1" class="news-image">
+            <div class="titulo">Brasil é o maior gerador de resíduo eletrônico da América do Sul</div>
+            <a href="https://monitormercantil.com.br/brasil-e-o-maior-gerador-de-residuos-eletronicos-na-america-do-sul/" class="lermais">Ler mais</a>
+        </div>
+
+
+        <div class="item" onclick="toggleNews(this)"> <!--OnClick é um evento do JavaScript que esta sendo chamado com o "this"-->
+            <img src="../imagens/imglink2.png" alt="Imagem da Notícia 2" class="news-image">
+            <div class="titulo">Agenda 2030</div>
+            <a href="https://portal.stf.jus.br/hotsites/agenda-2030/" class="lermais">Ler mais</a>
+        </div>
+
+
+        <div class="item" onclick="toggleNews(this)">
+            <img src="../imagens/imglink3.png" alt="Imagem da Notícia 3" class="news-image">
+            <div class="titulo">Maior parte do lixo eletrônico do Brasil é descartada irregularmente, mas poderia ser reciclada</div>
+            <a href="https://g1.globo.com/jornal-nacional/noticia/2023/12/09/maior-parte-do-lixo-eletronico-do-brasil-e-descartada-irregularmente-mas-poderia-ser-reciclada.ghtml" class="lermais">Ler mais</a>
+        </div>
+
+
+        <div class="item" onclick="toggleNews(this)">
+            <img src="../imagens/imglink4.png" alt="Imagem da Notícia 4" class="news-image">
+            <div class="titulo">Lixo eletrônico chegou a nível recorde; entenda o problema</div>
+            <a href="https://www.cnnbrasil.com.br/tecnologia/lixo-eletronico-chegou-a-nivel-recorde-entenda-o-problema/" class="lermais">Ler mais</a>
+        </div>
+
+
+        <div class="item" onclick="toggleNews(this)">
+            <img src="../imagens/imglink5.png" alt="Imagem da Notícia 5" class="news-image">
+            <div class="titulo">E-waste Monitor 2024: ONU lança relatório atualizado sobre resíduos eletrônico</div>
+            <a href="https://circulare.com.br/dados-brasil-e-mundo-the-global-ewaste-monitor-2024/#:~:text=Os%20n%C3%BAmeros%20mostrados%20no%20E,de%20maneira%20adequada%20e%20segura" class="lermais">Ler mais</a>
+        </div>
+
+
+        <div class="item" onclick="toggleNews(this)">
+            <img src="../imagens/imglink6.png" alt="Imagem da Notícia 6" class="news-image">
+            <div class="titulo">Reciclagem de resíduos: 6 benefícios de ser um reciclador de REEE da Rede Circulare</div>
+            <a href="https://circulare.com.br/reciclagem-de-residuos-beneficios-parceiro-circulare/" class="lermais">Ler mais</a>
+        </div>
+
+
+        <div class="item" onclick="toggleNews(this)">
+            <img src="../imagens/imglink7.png" alt="Imagem da Notícia 7" class="news-image">
+            <div class="titulo">Qual é a legislação no Brasil que trata da gestão do lixo eletrônico?</div>
+            <a href="https://sucatadigital.com.br/qual-e-a-legislacao-no-brasil-que-trata-da-gestao-do-lixo-eletronico/" class="lermais">Ler mais</a>
+        </div>
+
+
+        <div class="item" onclick="toggleNews(this)">
+            <img src="../imagens/imglink8.png" alt="Imagem da Notícia 8" class="news-image">
+            <div class="titulo">Produção mundial de lixo eletrônico é cinco vezes maior do que sua reciclagem, diz ONU</div>
+            <a href="https://www.jb.com.br/brasil/meio-ambiente/2024/03/1049208-producao-mundial-de-lixo-eletronico-e-cinco-vezes-maior-do-que-sua-reciclagem-diz-onu.html" class="lermais">Ler mais</a>
+        </div>
+    </div>
     <br>
     <br>
-    <br> /*COLOCAR AS INFORMAÇÕES*/
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+    <h1>Sobre Nós</h1>
+    <p>Sejam bem-vindos ao <strong>Eco Point</strong>, o site criado e pensado para um projeto da faculdade Unisuam para o curso Análise e Desenvolvimento de Sistemas, porém imaginamos que poderá ir além.</p>
+    <p>Somos uma equipe apaixonada por sustentabilidade e tecnologia, acreditando que pequenas ações podem gerar grandes transformações. Desde o início, nosso compromisso tem sido... <strong><a href="../html/telalogin.html" class="ler">Ler mais</a></strong></p>
     <br>
     <footer>
         <div class="footer-container">
