@@ -10,43 +10,62 @@
 <body>
     <header></header>
     <h2>Cadastra-se</h2>
-    <section id="cadastro">
-    <h3>ENTRE NO MUNDO MAIS VERDE.</h3>
-    <br>
-    <input type="text" placeholder="Nome Completo:" minlength="15" maxlength="80" size="50" required>
-    <br>
-    <br>
-    <input type="text" placeholder="Crie seu usuário:" maxlength="6" size="50" required>
-    <br>
-    <br>
-    <input type="password" placeholder="Crie sua senha:" maxlength="8" size="50" required>
-    <br>
-    <br>
-    <input type="password" placeholder="Confirme sua senha:" maxlength="8" size="50" required>
-    <br>
-    <br>
-    </section>
-    <section id="cadastro2">
-    <h4>Informações Complementares:</h4>
-    <br>
-    <input type="number" placeholder="CEP:" pattern="/^[0-9]{8}$/" required>
-    <br>
-    <br>
-    <input type="text" placeholder="Endereço:" size="50" >
-    <br>
-    <br>
-    <input type="text" placeholder="Complemento:" size="50">
-    <br>
-    <br>
-    <input type="email" placeholder="Digite seu e-mail:" size="50" required>
-    <br>
-    <br>
-    <br>
+    <section class="cadastro">
+        <div id="caixaesquerda">
+            <h3>ENTRE NO MUNDO MAIS VERDE.</h3>
+            <br>
+            <input type="text" placeholder="Nome Completo:" minlength="15" maxlength="80" size="50" required>
+            <br>
+            <br>
+            <strong><p>Data de nascimento:</p></strong>
+            <input type="date" size="50" required>
+            <br>
+            <br>
+            <strong><p>Sexo:</p></strong>
+            <select id="genero">
+                <option value="1">Feminino</option>
+                <option value="2">Masculino</option>
+                <option value="3">Outro</option>
+            </select>
+            <br>
+            <br>
+            <input type="text" placeholder="Crie seu usuário:" maxlength="6" size="50" required>
+            <br>
+            <br>
+            <input type="password" placeholder="Crie sua senha:" maxlength="8" size="50" required>
+            <br>
+            <br>
+            <input type="password" placeholder="Confirme sua senha:" maxlength="8" size="50" required>
+            <br>
+            <br>
+        </div>
+        <div id="caixadireita">
+            <h4>Informações Complementares:</h4>
+            <br>
+            <input type="number" placeholder="CEP:" pattern="[0-9]{8}" required>
+            <br>
+            <br>
+            <input type="text" placeholder="Endereço:" size="50">
+            <br><br>
+            <input type="text" placeholder="Complemento:" size="50">
+            <br>
+            <br>
+            <strong><p>Telefone:</p></strong>
+            <input type="text" placeholder=" (DD) 9 9999-9999" size="50" required>
+            <br>
+            <br>
+            <input type="text" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="Digite seu CPF" size="50" required>
+            <br>
+            <br>
+            <input type="email" placeholder="Digite seu e-mail:" size="50" required>
+            <br>
+            <br>
+        </div>
     </section>
     <section id="botoes">
-    <button><a href="telalogin.html">CADASTRAR</a></button> 
-    <button><a href="telalogin.html">VOLTAR</a></button> 
-    <button>LIMPAR</button>
+        <button><a href="telalogin.html">CADASTRAR</a></button> 
+        <button><a href="telalogin.html">VOLTAR</a></button> 
+        <button value="reset">LIMPAR</button>
     </section>
 </body>
 </html>
