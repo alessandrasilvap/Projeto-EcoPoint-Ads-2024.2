@@ -1,26 +1,26 @@
 header { /*Imagem no topo*/
   background-image: url(../imagens/barracadastro.png); /*Imagem*/
   padding: 6em; /*Espaçamento entre o conteudo e borda*/
-  background-position: center;
+  background-position: center; /*Colocando a imagem no centro*/
 }
 
 
+
 img {
-  max-width: 100%;
-  height: auto;
+  max-width: 100%; /*Define a largura máxima que um elemento pode ter*/
+  height: auto; /*Altura*/
 }
 
 img { /*Ajeitando as imagens*/
   width: 600px; /*Largura*/
   height: 400px; /*Altura*/
   padding: 50px; /*Espaçamento entre o conteudo e borda*/
-  
 }
 
 
 
 section {
-  margin: 5%;
+  margin: 5%; /*Espaço entre caixa e marguem da página*/
 }
 
 .menu2 { /*Menu no topo da página*/
@@ -28,7 +28,7 @@ section {
   padding: 14px; /*Espaçamento entre o conteudo e borda*/
   background-color: #468749; /*Cor da caixa*/
   text-indent: 40px; /*Recuo da linha*/
-  text-align: center;
+  text-align: center; /*Alinha o texto no centro*/
 }
 
 a { /*Os links no menu*/
@@ -52,9 +52,9 @@ a:hover:not(#menu) { /*Ativa quando passa o mouse por cima dos links no menu*/
 p { /*O texto escrito no site*/
   font-size: 20px; /*Tamanho*/
   font-family: 'Times New Roman', Times, serif; /*Fonte*/
-  margin: 20px;
-  flex: 1;
-  margin-right: 20px; /* Espaço entre texto e imagem */
+  margin: 20px; /*Margem lateral*/
+  flex: 1; /*Alinha espaços*/
+  margin-right: 20px; /*Espaço entre texto e imagem*/
 }
 
 h1 { /*Título do site*/
@@ -72,50 +72,50 @@ footer { /*Rodape completo*/
 }
 
 .footer-container { /*Todos os div estão dentro dessa classe*/
-  display: flex; 
-  justify-content: space-between;   
+  display: flex; /*Utilizada para organizar os elementos*/
+  justify-content: space-between; /*Distribui os elementos de forma igual ao longo da linha*/
   width: 70%; /*Largura*/
 }
 
 .integrantes, .contatos { /*As duas listas*/
-  margin: 0 20px; 
+  margin: 0 20px; /*Margem lateral*/
 }
 
 .contatos { /*Lista de contato*/
-  margin-bottom: 10px; 
+  margin-bottom: 10px; /*Margem de botão*/
 }
 
 .lista { /*Lista dos nomes */
-  list-style-type: none; 
+  list-style-type: none; /*Maneira abreviada de se escrever uma só declaração para duas das propriedades para listas*/
   padding: 0; /*Espaçamento entre o conteudo e borda*/
 }
 
 .nome { /*Os próprios nomes*/
-  margin: 5px 0; 
+  margin: 5px 0; /*Margem lateral*/
 }
 
 .contact-item { /*Os próprios itens*/
-  display: flex; 
-  align-items: center; 
-  margin: 5px 0; 
+  display: flex; /*Utilizada para organizar os elementos*/
+  align-items: center; /*Controlar o alinhamento de itens*/
+  margin: 5px 0; /*Margem lateral*/
 }
 
 .contact-item i { /*Icones*/
-  margin-right: 5px; 
+  margin-right: 5px; /*Move os itens a 5px para a esquerda*/
   color: #fff; /*Cor do ícone */
 }
 
 .fas, .fab { /*Estilos para ícones*/
-  font-size: 18px;
+  font-size: 18px; /*Tamanho da fonte*/
 }
 
 
 
 /*Tela responsiva*/
-/* Estilos para telas menores */
+/*Estilos para telas menores*/
 @media (max-width: 768px) {
   button {
-      width: 100%; /* Botões ocupam 100% em telas menores */
-      margin-bottom: 10px;
+    width: 100%; /*Botões ocupam 100% em telas menores*/
+    margin-bottom: 10px;
   }
 }
