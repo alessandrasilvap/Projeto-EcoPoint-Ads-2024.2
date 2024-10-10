@@ -1,114 +1,115 @@
 header { /*Imagem no topo*/
-    background-image: url(../imagens/barracadastro.png); /*Imagem*/
-    padding: 6em; /*Espaçamento entre o conteudo e borda*/
-    background-position: center;
+  background-image: url(../imagens/barracadastro.png); /*Imagem*/
+  padding: 6em; /*Espaçamento entre o conteudo e borda*/
+  background-position: center; /*Colocando a imagem no centro*/
 }
+
 
 
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%; /*Define a largura máxima que um elemento pode ter*/
+  height: auto; /*Altura*/
 }
 
 .imagree {
-    width: 100px; /*Largura*/
-    height: 100px; /*Altura*/
-    padding: 5px; /*Espaçamento entre o conteudo e borda*/
-    float: right;
+  width: 100px; /*Largura*/
+  height: 100px; /*Altura*/
+  padding: 5px; /*Espaçamento entre o conteudo e borda*/
+  float: right; /*tirar um elemento do fluxo normal*/
 }
 
 
 
 .menu4 { /*Menu no topo da página*/
-    margin: 0px; /*Espaço entre caixa e marguem da página*/
-    padding: 14px; /*Espaçamento entre o conteudo e borda*/
-    background-color: #468749; /*Cor da caixa*/
-    text-indent: 40px; /*Recuo da linha*/
-    text-align: center;
+  margin: 0px; /*Espaço entre caixa e marguem da página*/
+  padding: 14px; /*Espaçamento entre o conteudo e borda*/
+  background-color: #468749; /*Cor da caixa*/
+  text-indent: 40px; /*Recuo da linha*/
+  text-align: center; /*Alinha o texto no centro*/
 }
 
 a { /*Os links no menu*/
-    font-size: 20px; /*Tamanho da fonte*/
-    font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
-    color: white; /*Cor do texto*/
-    padding: 14px 14px; /*Espaçamento entre o conteudo e borda*/
-    text-decoration: none; /*Remove o sublinhado de links*/
+  font-size: 20px; /*Tamanho da fonte*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
+  color: white; /*Cor do texto*/
+  padding: 14px 14px; /*Espaçamento entre o conteudo e borda*/
+  text-decoration: none; /*Remove o sublinhado de links*/
 }
   
 a:hover:not(#menu) { /*Ativa quando passa o mouse por cima dos links no menu*/
-    background-color: #2c612f; /*Cor da caixa*/
+  background-color: #2c612f; /*Cor da caixa*/
 }
   
 #menu { /*Os links no menu*/
-    background-color: #04AA6D; /*Cor da caixa*/
+  background-color: #04AA6D; /*Cor da caixa*/
 }
 
 
-  
+
 p, ol { /*O texto escrito no site*/
-    font-size: 20px; /*Tamanho*/
-    font-family: 'Times New Roman', Times, serif; /*Fonte*/
+  font-size: 20px; /*Tamanho*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte*/
 }
 
 h1 { /*Título do site*/
-    color: #468749; /*Cor do texto*/
-    font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
-    font-size: 35px; /*Tamanho da fonte*/
+  color: #468749; /*Cor do texto*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
+  font-size: 35px; /*Tamanho da fonte*/
 }
 
 
 
 footer { /*Rodape completo*/
-    background-color: #468749; /*Cor do rodape*/
-    color: white; /*Cor do texto*/
-    padding: 20px; /*Espaçamento entre o conteudo e borda*/
+  background-color: #468749; /*Cor do rodape*/
+  color: white; /*Cor do texto*/
+  padding: 20px; /*Espaçamento entre o conteudo e borda*/
 }
 
 .footer-container { /*Todos os div estão dentro dessa classe*/
-  display: flex; 
-  justify-content: space-between;   
+  display: flex; /*Utilizada para organizar os elementos*/
+  justify-content: space-between; /*Distribui os elementos de forma igual ao longo da linha*/
   width: 70%; /*Largura*/
 }
 
 .integrantes, .contatos { /*As duas listas*/
-    margin: 0 20px; 
+  margin: 0 20px; /*Margem lateral*/
 }
 
 .contatos { /*Lista de contato*/
-    margin-bottom: 10px; 
+  margin-bottom: 10px; /*Margem de botão*/
 }
 
 .lista { /*Lista dos nomes */
-    list-style-type: none; 
-    padding: 0; /*Espaçamento entre o conteudo e borda*/
+  list-style-type: none; /*Maneira abreviada de se escrever uma só declaração para duas das propriedades para listas*/
+  padding: 0; /*Espaçamento entre o conteudo e borda*/
 }
 
 .nome { /*Os próprios nomes*/
-    margin: 5px 0; 
+  margin: 5px 0; /*Margem lateral*/
 }
 
 .contact-item { /*Os próprios itens*/
-  display: flex; 
-  align-items: center; 
-  margin: 5px 0; 
+  display: flex; /*Utilizada para organizar os elementos*/
+  align-items: center; /*Controlar o alinhamento de itens*/
+  margin: 5px 0; /*Margem lateral*/
 }
 
 .contact-item i { /*Icones*/
-  margin-right: 5px; 
-  color: #fff; /*Cor do ícone */
+  margin-right: 5px; /*Move os itens a 5px para a esquerda*/
+  color: #fff; /*Cor do ícone*/
 }
 
 .fas, .fab { /*Estilos para ícones*/
-    font-size: 18px;
+  font-size: 18px; /*Tamanho da fonte*/
 }
 
 
 
 /*Tela responsiva*/
-/* Estilos para telas menores */
+/*Estilos para telas menores*/
 @media (max-width: 768px) {
-    button {
-        width: 100%; /* Botões ocupam 100% em telas menores */
-        margin-bottom: 10px;
-    }
+  button {
+    width: 100%; /*Botões ocupam 100% em telas menores*/
+    margin-bottom: 10px;
+  }
 }
