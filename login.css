@@ -1,7 +1,7 @@
 body { /*Imagem de fundo*/
   background-image: url(../imagens/fotodofundo.png); /*Imagem*/
   background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
-  background-attachment: fixed; /*Fixa a imagem */
+  background-attachment: fixed; /*Fixa a imagem*/
   background-size: cover; /*Ajusta a imagem*/
   width: 100%; /*Largura*/
 }
@@ -9,33 +9,33 @@ body { /*Imagem de fundo*/
 
 
 input, select, button, textarea { /*Formatação dos campos de entrada*/
-  border-radius: 4em; /*Bordas arredondadas */
+  border-radius: 4em; /*Bordas arredondadas*/
   padding: 5px; /*Espaçamento entre o conteudo e borda*/
-  margin: 5px; /*Espaço entre caixa e marguem da página*/
-  height: 6%; /*Altura da caixa*/
+  margin: 5px; /*Espaçamento externo do elemento*/
+  height: 6%; /*Altura*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
 #comeco { /*Formatação da caixa no meio*/
-  width: 325px; /*Largura da caixa*/
-  height: 400px; /*Altura da caixa*/
+  width: 325px; /*Largura*/
+  height: 400px; /*Altura*/
   top: 32%; /*Move a caixa 32% para baixo*/
   left: 40%; /*Move a caixa 40% para a esquerda*/
-  border: 1px double black; /*Tipo e espessura*/
-  position: absolute; /*Representação do layout da caixa*/
+  border: 1px double black; /*Bordas para as caixas*/
+  position: absolute; /*Alterar a posição de um elemento em relação à sua posição inicial*/
   padding: 20px; /*Espaçamento entre o conteudo e borda*/
   border-radius: 5%; /*Bordas arredondadas*/
-  box-sizing: border-box; /*Largura e altura compreenderãp o tamanho maximo do box*/
+  box-sizing: border-box; /*Altera a forma como o navegador calcula a largura e a altura de um elemento*/
   transform: rotate(90); /*Rotação da caixa*/
-  background-color: #4caa38; /*Cor da caixa*/
+  background-color: #4caa38; /*Cor do fundo*/
   text-indent: 95px; /*Define o recuo do texto*/
   opacity: 60%; /*Deixa meio transparente*/
   position: fixed; /*Fixa o quadrado na tela*/
 }
 
 input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra ao passar o mouse*/
-  border: 1px solid blue;
-  box-shadow: 1px 1px 2px silver;
+  border: 1px solid blue; /*Bordas para as caixas*/
+  box-shadow: 1px 1px 2px silver; /*Sombra sutil*/
 }
 
 input[type="text"], input[type="password"] {
@@ -44,8 +44,8 @@ input[type="text"], input[type="password"] {
 }
 
 h1 { /*Título*/
-  color: black; /*Cor*/
-  font-family: 'Times New Roman', Times, serif; /*Fonte*/
+  color: black; /*Cor do texto*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
   margin-left: 6px; /*Move o título 6px para a esquerda */
   margin-top: 2%; /*Move o título 2% para baixo */
 }
@@ -60,22 +60,11 @@ button { /*Botões*/
 }
 
 a { /*Links*/
-  padding: 10px 20px; /*Espaçamento interno*/
+  padding: 10px 20px; /*Espaçamento entre o conteudo e borda*/
   color: black; /*Cor do texto*/
   text-decoration: none; /*Remove o sublinhado*/
   border-radius: 4px; /*Bordas arredondadas*/
   text-indent: 5px; /*Define o recuo do texto*/
   margin-left: 2px; /*Move ambos os inputs 2px para a esquerda*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
-}
-
-
-
-/*Tela responsiva*/
-/*Estilos para telas menores*/
-@media (max-width: 768px) {
-  button {
-    width: 100%; /*Botões ocupam 100% em telas menores*/
-    margin-bottom: 10px;
-  }
 }
