@@ -43,16 +43,15 @@
             </div>
             <div id="caixadireita">
                 <h4>Informações Complementares:</h4>
-                <input type="text" id="cep" placeholder="00000-000" required oninput="formatarCEP(this)">
+                <br>
+                <input type="text" placeholder="00000-000" required oninput="formatarCEP(this)" id="cep"> <button type="button" id="buscar" onclick="this">Buscar</button>
                 <br>
                 <br>
-                <input type="text" id="rua" placeholder="Endereço:" size="50" disabled>
-                <br>
-                <br>
-                <input type="text" id="bairro" placeholder="Bairro:" size="50" disabled>
-                <br>
-                <br>
-                <input type="text" id="complemento" placeholder="Complemento:" size="50">
+                <input type="text"  placeholder="Endereço:" size="50"  id="rua">
+                <br><br>
+                <input type="text" placeholder="Bairro:" size="50" id="bairro">
+                <br></br>
+                <input type="text"  placeholder="Complemento:" size="50" id="complemento">
                 <br>
                 <br>
                 <strong><p>Telefone:</p></strong>
