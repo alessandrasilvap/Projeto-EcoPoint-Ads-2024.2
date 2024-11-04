@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> <!-- Inclui o CSS do Leaflet, onde Leaflet é uma biblioteca JavaScript de código aberto que permite a criação de aplicativos de mapeamento virtuais-->
 </head>
 <body>
-    <header></header>
+    <header> <!--Aqui fica a foto do Eco point, hospedada no CSS --> </header>
     <nav id="menu">
         <ul class="menu5">
             <a href="./telasobrenos.html">Sobre Nós</a>
@@ -19,6 +19,15 @@
             <a href="#Mapa">Mapa</a>
         </ul>
     </nav>
+    <br>
+    <div id="user-info" style="position: absolute; top: 16em; right: 10px; display: none;">
+        <span id="nomenatela"></span>
+        <span id="arrow" onclick="toggleMenu()">▼</span>
+        <!--O dropdown aparecerá ao clicar na setinha, permitindo que o usuário saia da sessão-->
+        <div id="dropdown" style="display: none;">
+            <div id="logout" onclick="logout()">Sair</div>
+        </div>
+    </div>
     <br>
     <section id="mapa">
         <h1>Mapa</h1>
@@ -77,7 +86,7 @@
         </script>
         <br>
         <p>Para mais informações sobre os pontos indicados e outros locais de reciclagem eletrônica, entre em contato conosco ou acesse o site da Comlubr.</p>
-        <h4>Site: https://comlurb.prefeitura.rio/servico/coleta-seletiva/onde-descartar-materiais-que-nao-sao-coletados/</h4>
+        <h4 class="comlurb">https://comlurb.prefeitura.rio/servico/coleta-seletiva/onde-descartar-materiais-que-nao-sao-coletados/</h4>
         <br>
         <br>
     </section>
@@ -112,5 +121,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/menulateral.js"></script>
 </body>
 </html>
