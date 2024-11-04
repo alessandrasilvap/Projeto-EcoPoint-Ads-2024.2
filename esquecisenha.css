@@ -3,21 +3,21 @@ body { /*Imagem de fundo*/
   background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
   background-attachment: fixed; /*Fixa a imagem no fundo*/
   background-size: cover; /*Ajusta a imagem*/
-  width: 100%; /*Largura da imagem*/
+  width: 100%; /*Largura*/
 }
 
 
 
 fieldset { /*Formatação da caixa no meio*/
-  width: 800px; /*Largura da caixa*/
-  height: 400px; /*Altura da caixa*/
+  width: 800px; /*Largura*/
+  height: 400px; /*Altura*/
   top: 32%; /*Move a caixa 32% para baixo*/
   left: 30%; /*Move a caixa 30% para a esquerda*/
-  border: 1px double black; /*Tipo e espessura*/
+  border: 1px double black; /*Bordas para as caixas*/
   position: absolute; /*Representação do layout da caixa*/
   padding: 2px; /*Espaçamento entre o conteudo e borda*/
   border-radius: 2%; /*Bordas arredondadas*/
-  box-sizing: border-box; /*Largura e altura compreenderãp o tamanho maximo do box*/
+  box-sizing: border-box; /*Altera a forma como o navegador calcula a largura e a altura de um elemento*/
   transform: rotate(90); /*Rotação da caixa*/
   background-color: #4caa38; /*Cor da caixa*/
   text-indent: 10px; /*Define o recuo do texto*/
@@ -25,8 +25,8 @@ fieldset { /*Formatação da caixa no meio*/
 }
 
 h1 { /*Título*/
-  font-size: 200%; /*Altera o tamanho do texto*/
-  text-align: center;  /*Define o alinhamento do texto*/
+  font-size: 200%; /*Tamanho do texto*/
+  text-align: center; /*Centraliza o conteúdo de elementos*/
 }
 
 h1, h2, h3 { /*Textos*/
@@ -37,18 +37,21 @@ h1, h2, h3 { /*Textos*/
 input, select, button, textarea { /*Formatação dos campos de entrada*/
   border-radius: 4em; /*Bordas arredondadas*/
   padding: 5px; /*Espaçamento entre o conteudo e borda*/
-  margin: 5px; /*Espaço entre caixa e marguem da página*/
-  height: 6%; /*Altura da caixa*/
+  margin: 5px; /*Espaçamento externo do elemento*/
+  height: 6%; /*Altura*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
+button { /*Botões*/
+  width: 9em; /*Largura*/
+  height: 2em; /*Altura*/
+  text-decoration: none; /*Remove o sublinhado*/
+  text-align: center; /*Centraliza o conteúdo de elementos*/
+}
 
-
-/*Tela responsiva*/
-/*Estilos para telas menores*/
-@media (max-width: 768px) {
-  button {
-    width: 100%; /*Botões ocupam 100% em telas menores*/
-    margin-bottom: 10px;
-  }
+a { /*Links*/
+  color: black; /*Cor do texto*/
+  text-decoration: none; /*Remove o sublinhado*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+  text-align: center; /*Centraliza o conteúdo de elementos*/
 }
