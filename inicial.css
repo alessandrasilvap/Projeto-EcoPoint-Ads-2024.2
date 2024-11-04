@@ -8,34 +8,34 @@ header { /*Imagem no topo*/
 
 input { /*Formatação do campo*/
   border-radius: 1em; /*Bordas arredondadas*/
-  padding: 5px; /*Espaçamento entre o conteúdo e borda*/
-  margin-top: 1em; /*Move o input 1em para a baixo*/
-  margin-left: 30%; /*Espaço entre caixa e margem da página*/
-  height: 6%; /*Altura da caixa*/
+  padding: 5px; /*Espaçamento entre o conteudo e borda*/
+  margin-top: 1em; /*Dimensão da margem de baixo*/
+  margin-left: 30%; /*Dimensão da margem esquerda*/
+  height: 6%; /*Altura*/
 }
 
 
 
 .noticias { /*Todas as notícias juntas*/
-  display: flex; /*Organiza os elementos*/
-  justify-content: center; /*Alinha os elementos no centro*/
-  gap: 20px; /*Espaçamento entre os elementos*/
-  padding: 4%; /*Espaçamento interno nas caixas*/
+  display: flex; /*Permite organizar elementos em um container de forma flexível*/
+  justify-content: center; /*Alinha os elementos horizontalmente*/
+  gap: 20px; /*Define o espaçamento entre as linhas e colunas de um grid ou flexbox*/
+  padding: 4%; /*Espaçamento entre o conteudo e borda*/
 }
 
 .item { /*Cada item por si só*/
   width: 200px; /*Largura*/
   background-color: white; /*Cor do fundo*/
-  border-radius: 8px; /*Bordas arredondadas para a seção*/
+  border-radius: 8px; /*Bordas arredondadas*/
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
-  overflow: hidden; /*Dimensões eccedidas*/
+  overflow: hidden; /*Elemento que excede o seu tamanho não deve ser exibido*/
 }
 
 .item:hover {
-  transform: scale(1.05); /*Modifica as dimensões do objeto proporcionalmente*/
+  transform: scale(1.05); /*Redimensiona um elemento em 2D com uma escala de 1.05*/
 }
 
-.news-image { /*imagem*/
+.nova-image { /*imagem*/
   width: 100%; /*Largura*/
   height: auto; /*Mantém a proporção da imagem*/
 }
@@ -43,19 +43,19 @@ input { /*Formatação do campo*/
 .titulo {
   font-weight: bold; /*Deixa em negrito*/
   padding: 10px; /*Espaçamento entre o conteudo e borda*/
-  background-color: #468749; /*Cor da caixa*/
+  background-color: #468749; /*Cor do fundo*/
   color: white; /*Cor da fonte*/
 }
 
 .item.expanded .noticias {
-  display: block; /*Mostra o conteúdo ao expandir*/
+  display: block; /*Elemento será exibido como um bloco, ocupando toda a linha e gerando quebras de linha antes e depois do elemento*/
 }
 
 .lermais {
-  display: block; /*Mostra o conteúdo ao expandir*/
+  display: block; /*Elemento será exibido como um bloco, ocupando toda a linha e gerando quebras de linha antes e depois do elemento*/
   text-align: center; /*Alinha o texto no centro*/
   padding: 10px; /*Espaçamento entre o conteudo e borda*/
-  background-color: #468749; /*Cor da caixa*/
+  background-color: #468749; /*Cor do fundo*/
   color: white; /*Cor da fonte*/
   text-decoration: none; /*Remove o sublinhado*/
 }
@@ -71,51 +71,80 @@ input { /*Formatação do campo*/
 }
 
 p { /*O texto escrito no site*/
-  font-size: 20px; /*Tamanho*/
+  font-size: 20px; /*Tamanho do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte*/
-  margin: 20px; /*Margem lateral*/
+  margin-left: 7%; /*Move o button 7% para a esquerda*/
   flex: 1; /*Alinha espaços*/
-  margin-right: 20px; /*Espaço entre texto e imagem*/
 }
   
 h1 { /*Título do site*/
   color: #468749; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
   font-size: 35px; /*Tamanho da fonte*/
+  margin-left: 5%; /*Move o button 5% para a esquerda*/
+}
+
+h2 {
+  color: #468749; /*Cor do texto*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
+  font-size: 30px; /*Tamanho da fonte*/
+  margin-left: 5%; /*Move o button 5% para a esquerda*/
 }
 
 
+#botoes { /*Posição dos botões*/
+  margin-left: 85%; /*Move o button 85% para a esquerda*/
+  text-align: center; /*Alinha o texto no centro*/
+}
 
-button { /*Botão ENTRAR*/
-  text-align: center; /*Centralizar texto*/
-  width: 7em; /*Largura*/
+button { /*Botões*/
+  width: 9em; /*Largura*/
   height: 2em; /*Altura*/
-  margin-left: 93%; /*Move o button 93% para a esquerda*/
-  background-color: #468749; /*Cor do botão*/
+  text-decoration: none; /*Remove o sublinhado*/
+  margin-left: 5%; /*Move ambos os inputs 5% para a esquerda*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+  background-color: #468749; /*Cor do fundo*/
+  color: white; /*Cor do texto*/
 }
 
-a { /*Link de ENTRAR*/
+a { /*Links*/
+  color: white; /*Cor do texto*/
   text-decoration: none; /*Remove o sublinhado*/
-  color: white; /*Cor da letra*/
-  font-family: 'Times New Roman', Times, serif; /*Fonte*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+}
+
+.chamada {
+  font-size: 14px; /*Tamanho da fonte*/
+  color: #0f0808; /*Cor do texto*/
+  text-align: right; /*Alinha o texto na direita*/
+  margin-top: 10px; /*Distância entre um elemento e o elemento que está acima dele*/
+}
+
+.chamada strong {
+  color: #468749; /*Cor do texto*/
+  cursor: pointer; /*Altera o cursor do mouse quando ele passa sobre um elemento específico*/
+}
+
+.chamada strong:hover {
+  text-decoration: underline; /*Usada para definir a formatação de sublinhado de um texto*/
 }
 
 
 
 footer { /*Rodape completo*/
-  background-color: #468749; /*Cor do rodape*/
+  background-color: #468749; /*Cor do fundo*/
   color: white; /*Cor do texto*/
   padding: 20px; /*Espaçamento entre o conteudo e borda*/
 }
 
 .footer-container { /*Todos os div estão dentro dessa classe*/
-  display: flex; /*Utilizada para organizar os elementos*/
-  justify-content: space-between; /*Distribui os elementos de forma igual ao longo da linha*/
+  display: flex; /*Permite organizar elementos em um container de forma flexível*/
+  justify-content: space-between; /*Alinha os elementos horizontalmente*/
   width: 70%; /*Largura*/
 }
 
 .integrantes, .contatos { /*As duas listas*/
-  margin: 0 20px; /*Margem lateral*/
+  margin: 0 20px; /*Espaçamento externo do elemento*/
 }
 
 .contatos { /*Lista de contato*/
@@ -123,36 +152,25 @@ footer { /*Rodape completo*/
 }
 
 .lista { /*Lista dos nomes */
-  list-style-type: none; /*Maneira abreviada de se escrever uma só declaração para duas das propriedades para listas*/
+  list-style-type: none; /*Remove o marcador de lista*/
   padding: 0; /*Espaçamento entre o conteudo e borda*/
 }
 
 .nome { /*Os próprios nomes*/
-  margin: 5px 0; /*Margem lateral*/
+  margin: 5px 0; /*Espaçamento externo do elemento*/
 }
 
 .contact-item { /*Os próprios itens*/
-  display: flex; /*Utilizada para organizar os elementos*/
-  align-items: center; /*Controlar o alinhamento de itens*/
-  margin: 5px 0; /*Margem lateral*/
+  display: flex; /*Permite organizar elementos em um container de forma flexível*/
+  align-items: center; /*Alinha os elementos horizontalmente*/
+  margin: 5px 0; /*Espaçamento externo do elemento*/
 }
 
 .contact-item i { /*Icones*/
-  margin-right: 5px; /*Move os itens a 5px para a esquerda*/
+  margin-right: 5px; /*Move os itens a 5px para a direita*/
   color: #fff; /*Cor do ícone */
 }
 
 .fas, .fab { /*Estilos para ícones*/
   font-size: 18px; /*Tamanho da fonte*/
-}
-
-
-
-/*Tela responsiva*/
-/*Estilos para telas menores*/
-@media (max-width: 768px) {
-  button {
-    width: 100%; /*Botões ocupam 100% em telas menores*/
-    margin-bottom: 10px;
-  }
 }
