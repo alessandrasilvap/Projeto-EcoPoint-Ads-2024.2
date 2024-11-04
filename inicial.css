@@ -11,7 +11,7 @@ input { /*Formatação do campo*/
   padding: 5px; /*Espaçamento entre o conteudo e borda*/
   margin-top: 1em; /*Dimensão da margem de baixo*/
   margin-left: 30%; /*Dimensão da margem esquerda*/
-  height: 6%; /*Altura*/
+  height: 2em; /*Altura*/
 }
 
 
@@ -60,8 +60,13 @@ input { /*Formatação do campo*/
   text-decoration: none; /*Remove o sublinhado*/
 }
 
-.lermais:hover {
-  background-color: #2c612f; /*Cor de fundo*/
+
+button, .lermais {
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover, .lermais:hover {
+  transform: translateY(-2px); /* Suave elevação ao passar o mouse */
 }
 
 
