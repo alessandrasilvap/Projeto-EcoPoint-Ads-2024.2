@@ -4,8 +4,8 @@ button {
 
 .container {
     margin: 0 auto; /*  margin: 0px; /*Espaçamento externo do elemento*/
-    background-color: #83c28d; /*Cor de fundo da caixa*/
-    color: #fff; /*Cor do texto*/
+    background-color: #e6f0ff; /*Cor de fundo da caixa*/
+    color: #333; /*Cor do texto*/
     width: 98%; /*Largura*/
     max-width: 800px; /*Largura máxima*/
 
@@ -18,7 +18,7 @@ button {
     flex-direction: column; /*Indica que os elementos flexíveis serão exibidos em uma única coluna, de cima para baixo*/
     justify-content: center; /*Alinha os elementos horizontalmente*/
     align-items: center; /*Alinha os itens no centro*/
-}
+}   
 
 .questions-container {
     display: flex; /*Permite organizar elementos em um container de forma flexível*/
