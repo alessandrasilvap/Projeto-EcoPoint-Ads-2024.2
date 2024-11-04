@@ -7,22 +7,25 @@
     <link rel="shortcut icon" href="../imagens/icone.ico" type="image/x-icon">
     <link rel="stylesheet" href="../css/login.css">
 </head>
+<script src="../js/validacaologin.js"></script> <!--JavaScript deve sempre estar no meio da tag HEAD e da tag BODY, caso seja chamada de outra pasta-->
 <body>
-    <form name="formulariologin" action="action_page.php" method="post" autocomplete="off" target="_blank" novalidate>
+    <form name="formulariologin" action="#" method="post" autocomplete="off" target="_blank" novalidate onsubmit="recuperarDados()">
         <div id="comeco">
             <h1>Login</h1>
-            <input type="text" placeholder="Usuário:" maxlength="6" size="31" required>
+            <input type="text" id="usuario" placeholder="Usuário:" maxlength="6" size="31">
             <br>
             <br>
-            <input type="password" placeholder="Senha:" maxlength="8" size="31" required>
+            <input type="password" id="senha" placeholder="Senha:" maxlength="8" size="31">
             <br>
             <br>
-            <button><a href="telasobrenos.html" class="botaoverde">ENTRAR</a></button>
+            <button class="botaoverde" id="entrar" onclick="validarlogin()">ENTRAR</button>
             <br>
             <br>
             <button><a href="telacadastro.html" class="botaoverde">CADASTRE-SE</a></button>
             <br>
             <p><a href="telaesquecisenha.html" target="_blank">Esqueci minha senha</a></p>
+            <p><a href="telainicial.html">Voltar à tela inicial</a></p>
+            <br>
         </div>
     </form>
 </body>
