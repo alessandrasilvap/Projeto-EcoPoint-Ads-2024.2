@@ -95,11 +95,45 @@ function formatarCEP(input) {
     if (cep.length > 8) { //Verifica se o CEP tem 8 dígitos
         cep = cep.slice(0, 8);
     }
+    
     if (cep.length > 5) { //Adiciona o hífen
         cep = cep.slice(0, 5) + '-' + cep.slice(5); //'.slice' é usado para extrair uma parte de uma string ou de um array e retorná-la como uma nova string
     }
     input.value = cep;
 }
+
+
+document.getElementById('buscar').addEventListener('click', function() {
+    
+    const cep = document.getElementById('cep').value;
+
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    .then(response => response.json())
+    .then(data => {
+        if (data.erro) {
+            alert('CEP não encontrado.');
+            return;
+        }
+        document.getElementById('rua').textContent = data.logradouro;
+        document.getElementById('bairro').textContent = data.bairro;
+        
+    })
+
+    .catch(error => {
+        alert('Erro ao buscar o CEP.');
+        console.error('Erro:', error);
+    });
+});
+
+    document.getElementById('cleanBtn').addEventListener('click', function() {
+    document.getElementById('cep').value = '';
+    document.getElementById('rua').textContent = '';
+    document.getElementById('bairro').textContent = '';
+    document.getElementById('cidade').textContent = '';
+    document.getElementById('estado').textContent = '';
+});
+
+
 
 
 
