@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--Link para utilização de ícones Font Awesome-->
 </head>
 <body>
-    <header></header>
+    <header>  <!-- Aqui fica a foto do Eco point, hospedada no CSS --> </header>
     <nav id="menu">
         <ul class="menu3">
             <a href="./telasobrenos.html">Sobre Nós</a>
@@ -19,6 +19,15 @@
         </ul>
     </nav>
     <br>
+    <div id="user-info" style="position: absolute; top: 16em; right: 10px; display: none;">
+        <span id="nomenatela"></span>
+        <span id="arrow" onclick="toggleMenu()">▼</span>
+        <!--O dropdown aparecerá ao clicar na setinha, permitindo que o usuário saia da sessão-->
+        <div id="dropdown" style="display: none;">
+            <div id="logout" onclick="logout()">Sair</div>
+        </div>
+    </div>
+    <br>
     <br>
     <section>
         <h1>Informações</h1>
@@ -27,7 +36,7 @@
         <ol id="listas">
             <li>Redução de Resíduos: A eletrônica é uma das categorias de resíduos que mais cresce, e a reciclagem ajuda a reduzir o volume que vai para aterros sanitários.</li>
             <li>Recuperação de Materiais: Dispositivos eletrônicos contêm metais preciosos, além de outros materiais recicláveis. A recuperação desses materiais diminui a necessidade de mineração e a extração de recursos naturais.</li>
-            <li>Proteção Ambiental: Muitos produtos eletrônicos contêm substâncias tóxica. O descarte inadequado pode levar à contaminação do solo e da água, prejudicando o meio ambiente e a saúde humana.</li>
+            <li>Proteção Ambiental: Muitos produtos eletrônicos contêm substâncias tóxica como chumbo, mercúrio e cádmio. O descarte inadequado pode levar à contaminação do solo e da água, prejudicando o meio ambiente e a saúde humana.</li>
             <li>Economia Circular: A reciclagem eletrônica contribui para a economia circular, onde os materiais são continuamente reutilizados e reciclados, reduzindo o consumo de recursos novos.</li>
         </ol>
         <img class="imagem" src="../imagens/fotoinfop.jpg" alt="Ilustrando a quantidade absurda de lixo eletrônico">
@@ -71,6 +80,17 @@
             <li>Programas de Recompensa: Algumas empresas oferecem incentivos para consumidores que devolvem eletrônicos usados, promovendo a reciclagem.</li>
             <li>Iniciativas de Educação: Organizações e governos estão desenvolvendo campanhas para educar o público sobre a importância da reciclagem eletrônica e como fazê-la corretamente.</li>
         </ul>
+        <p>Já no Brasil, também ixistem iniciativas como: </p>
+        <ul id="listas">
+            <li>Política Nacional de Resíduos Sólidos (PNRS): É uma lei federal brasileira (Lei nº 12.305/2010) que estabelece diretrizes para a gestão de resíduos sólidos no país. Ela tem como objetivos reduzir a geração de resíduos, promover a reutilização e reciclagem, e minimizar o descarte inadequado. A PNRS é baseada em princípios como responsabilidade compartilhada, prevenção, redução, reutilização, reciclagem e disposição final ambientalmente adequada. Ela também estabelece diretrizes para planejamento e gestão integrada, participação popular, educação ambiental, inclusão social e desenvolvimento sustentável.</li>
+            <li>Associação Brasileira de Reciclagem de Eletroeletrônicos e Eletrodomésticos (ABREE): É uma organização sem fins lucrativos que visa promover a reciclagem responsável de resíduos eletrônicos no Brasil. Fundada em 2011, a ABRE reúne empresas, governos e organizações da sociedade civil para desenvolver soluções para o problema do lixo eletrônico.</li>
+        </ul>
+        <h3>Dúvidas Frequentes</h3>
+        <p>Recigem por flutuação: O processo em questão envolve a separação de materiais utilizando líquidos de diferentes densidades.</p>
+        <p>Pirometálurgia: É um processo de reciclagem que utiliza calor e pressão para extrair metais de resíduos eletrônicos.</p>
+        <P>Protocolo de Basileia: É um acordo internacional que visa reduzir a produção de resíduos perigosos, incluindo resíduos eletrônicos.</P>
+        <p>Relação de países e seus lixos eletrônicos: ISLÂNDIA e SUÉCIA são os países que mais reciclam lixos eletrônicos; ÁUSTRIA e ALEMANHA são os países com menor quantidade de resíduos eletrônicos; CHINA e EUA são os países com maior quantidade resíduos eletrônicos.</p>
+        <br>
         <p>A reciclagem eletrônica é essencial para a sustentabilidade e a proteção do meio ambiente. Ao reciclar dispositivos eletrônicos, você ajuda a preservar recursos, reduzir a poluição e contribuir para um futuro mais sustentável.</p>
         <img class="imagre" src="../imagens/canvain.png" alt="Recicle">
     </section>
@@ -104,5 +124,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/menulateral.js"></script>
 </body>
 </html>
