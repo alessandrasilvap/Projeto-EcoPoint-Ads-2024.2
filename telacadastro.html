@@ -43,18 +43,23 @@
             </div>
             <div id="caixadireita">
                 <h4>Informações Complementares:</h4>
-                <input type="text" id="cep" placeholder="00000-000" required oninput="formatarCEP(this)">
+                <input type="text" id="cep" placeholder="00000-000" required oninput="formatarCEP(this)"> <button type="button" id="buscar">Buscar</button>
+                <br>
+                <strong><p>Rua:</p></strong>
+                <input type="text"  placeholder="Endereço:" size="50"  id="rua" readonly> <!--reandonly faz com que o campo esteja habilidado, mas não pode ser editado-->
+                
+                <strong><p>Bairro:</p></strong>
+                <input type="text" placeholder="Bairro:" size="50" id="bairro" readonly>
+                
+                <strong><p>Cidade:</p></strong>
+                <input type="text" placeholder="Cidade:" size="50" id="cidade" readonly>
+                
+                <strong><p>Estado:</p></strong>
+                <input type="text" placeholder="Estado:" size="50" id="estado" readonly>
                 <br>
                 <br>
-                <input type="text" id="rua" placeholder="Endereço:" size="50" disabled>
-                <br>
-                <br>
-                <input type="text" id="bairro" placeholder="Bairro:" size="50" disabled>
-                <br>
-                <br>
-                <input type="text" id="complemento" placeholder="Complemento:" size="50">
-                <br>
-                <br>
+                <input type="text"  placeholder="Complemento:" size="50" id="complemento">
+                <br><br>
                 <strong><p>Telefone:</p></strong>
                 <input type="text" id="tel" placeholder="(00) 00000-0000" size="50" oninput="formatarTEL(this)">
                 <br>
@@ -67,12 +72,14 @@
                 <br>
             </div>
         </section>
+
+        <section id="botoes">
+            <button type="submit">CADASTRAR</button> <!-- Alterado para submit -->
+            <button type="button" id="botaovoltar" onclick="voltar()">VOLTAR</button> 
+            <button type="reset" id="botaolimpar">LIMPAR</button>
+        </section>
     </form>
-    <section id="botoes">
-        <button onclick="validarcadastro(event)" type="submit"><a href="telalogin.html">CADASTRAR</a></button> <!--Chamando a função para validas os campos caso deixam de ser preenchidos quando o usuário clicar no botão cadastrar-->
-        <button><a href="telalogin.html">VOLTAR</a></button> 
-        <button type="reset">LIMPAR</button>
-    </section>
+    
     <script src="../js/validacaocadastro.js"></script> <!-- Adicionado defer para garantir que o JS seja carregado após o HTML -->
 </body>
 </html>
