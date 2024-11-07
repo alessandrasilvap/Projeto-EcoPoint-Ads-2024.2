@@ -101,6 +101,43 @@ function formatarCEP(input) {
     input.value = cep;
 }
 
+document.getElementById('buscar').addEventListener('click', function() {
+
+    const cep = document.getElementById('cep').value;
+
+    fetch(`https://viacep.com.br/ws/${cep}/json/`)
+    .then(response => response.json())
+    .then(data => {
+        if (data.erro) {
+            alert('CEP não encontrado.');
+            return;
+        }
+        document.querySelector('input#rua').value = data.logradouro;
+        document.querySelector('input#bairro').value = data.bairro;
+        document.querySelector('input#cidade').value = data.localidade;
+        document.querySelector('input#estado').value = data.uf;
+        
+        
+    })
+
+    .catch(error => {
+        alert('Erro ao buscar o CEP.');
+        console.error('Erro:', error);
+    });
+
+});
+
+document.getElementById('cleanBtn').addEventListener('click', function() {
+document.getElementById('cep').value = '';
+document.getElementById('rua').textContent = '';
+document.getElementById('bairro').textContent = '';
+document.getElementById('cidade').textContent = '';
+document.getElementById('estado').textContent = '';
+});
+
+
+
+
 
 
 //Formato (XX) XXXXX-XXXX do TELEFONE
