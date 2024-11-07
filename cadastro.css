@@ -17,7 +17,7 @@ body {
 
 
 input, select, button, textarea { /*Formatação dos campos de entrada*/
-  border-radius: 4em; /*Bordas arredondadas*/
+  border-radius: 1.4em; /*Bordas arredondadas*/
   padding: 5px; /*Espaçamento entre o conteudo e borda*/
   margin: 1px; /*Espaçamento externo do elemento*/
   height: 6%; /*Altura*/
@@ -53,15 +53,34 @@ input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra
   border-radius: 5px; /*Bordas arredondadas*/
   background-color: #ffffff; /*Cor do fundo*/
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
-  height: 600px; /*Altura*/
+  height: 53.5rem; /*Altura*/
   min-width: 300px; /*Largura minima*/
 }
 
+#caixaesquerda input, #caixadireita input{
+  height: 2.2rem; /*Altura*/
+}
 
 
 #botoes { /*Posição dos botões*/
   margin-top: 5%; /*Distância entre um elemento e o elemento que está acima dele*/
   text-align: center; /*Alinha o texto no centro*/
+}
+
+#buscar {
+  width: 100px; /*Largura*/
+  height: 3rem; /*Altura*/
+  top: 32%; /*Move ambos os button 32% para baixo*/
+  left: 40px; /*Move ambos os button 40px para a esquerda*/
+  text-decoration: none; /*Remove o sublinhado*/
+  font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+  background-color: #2c612f; /*Cor do fundo*/
+  color: white; /*Cor do texto*/
+  margin-bottom: 1rem;
+}
+
+#buscar:hover {
+  background-color: #1a4729;
 }
 
 button { /*Botões*/
