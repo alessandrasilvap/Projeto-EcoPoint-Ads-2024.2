@@ -53,7 +53,7 @@ input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra
   border-radius: 5px; /*Bordas arredondadas*/
   background-color: #ffffff; /*Cor do fundo*/
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
-  height: 53.5rem; /*Altura*/
+  height: 40rem; /*Altura*/
   min-width: 300px; /*Largura minima*/
 }
 
@@ -81,6 +81,11 @@ input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra
 
 #buscar:hover {
   background-color: #1a4729;
+}
+
+#num, #complemento {
+  width: 190px; /*Largura*/
+  height: 3rem; /*Altura*/
 }
 
 button { /*Botões*/
