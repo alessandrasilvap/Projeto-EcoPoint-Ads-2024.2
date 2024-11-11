@@ -1,6 +1,6 @@
 /*Estilos Gerais Feedback*/
 #menu-feedback {
-    position: absolute; /*Fixa o menu no lugar*/
+    position: fixed; /*Fixa o menu no lugar*/
     bottom: 10px; /*Fica 10px acima da parte inferior da tela*/
     right: 10px; /*Fica 10px distante da borda direita*/
     z-index: 9999; /*Garante que o menu fique sobre outros elementos*/
