@@ -9,7 +9,6 @@ function generate_uuidv4() {
 }
 
 
-
 /*Essa função é responsável por salvar os dados do campo usuário e campo senha*/
 /*Criei uma variavel chamada usuario e senha, e peguei os elementos do campo de usuario, senha e email, no html e seus valores*/
 function SalvarDados() {
@@ -58,13 +57,14 @@ function validarcadastro(event) {
     var senha = document.getElementById('camposenha').value;
     var confirmasenha = document.getElementById('confirmasenha').value;
     var cep = document.getElementById('cep').value;
+    var num = document.getElementById('num').value;
     var tel = document.getElementById('tel').value;
     var cpf = document.getElementById('cpf').value;
     var Inseriremail = document.getElementById('inserirEmail').value;
 
 
     //Impedindo que o formulário seja enviado com campos em branco
-    if (nomecompleto === '' || datanascimento === '' || genero === '' || senha === '' || confirmasenha === '' || usuario === '' || cep === '' || tel === '' || cpf === '' || Inseriremail === ''){
+    if (nomecompleto === '' || datanascimento === '' || genero === '' || senha === '' || confirmasenha === '' || usuario === '' || cep === '' || num === '' || tel === '' || cpf === '' || Inseriremail === ''){
         alert('[ERRO] Os campos são obrigatórios, por favor não deixe de preencher.')
         return false;
     }
@@ -83,7 +83,7 @@ function validarcadastro(event) {
     //aqui a gente chama a função acima, mas só se os dados forem devidamente validados.
     SalvarDados();
 
-    window.location.href="../html/telasobrenos.html"
+    window.location.href="../html/telalogin.html"
 }
 
 
@@ -115,16 +115,12 @@ document.getElementById('buscar').addEventListener('click', function() {
         document.querySelector('input#rua').value = data.logradouro;
         document.querySelector('input#bairro').value = data.bairro;
         document.querySelector('input#cidade').value = data.localidade;
-        document.querySelector('input#estado').value = data.uf;
-        
-        
     })
 
     .catch(error => {
         alert('Erro ao buscar o CEP.');
         console.error('Erro:', error);
     });
-
 });
 
 document.getElementById('cleanBtn').addEventListener('click', function() {
@@ -132,11 +128,7 @@ document.getElementById('cep').value = '';
 document.getElementById('rua').textContent = '';
 document.getElementById('bairro').textContent = '';
 document.getElementById('cidade').textContent = '';
-document.getElementById('estado').textContent = '';
 });
-
-
-
 
 
 
@@ -221,4 +213,24 @@ function validarEmail(input) {
 - \. : ponto antes da extensão
 - [a-zA-Z]{2,} : extensão do domínio (letras, mínimo 2 caracteres)
 - $ : fim da string*/
+}
+
+
+
+//Restrição de idade
+function validarIdade(dataNascimento) {
+    var data = new Date(dataNascimento); //A data de nascimento é convertida para um objeto
+    var dataAtual = new Date(); //Uma nova instância de Date é criada para obter a data atual
+    var anoAtual = dataAtual.getFullYear(); //O ano atual é extraído da data atual usando o método 'getFullYear()'
+    var anoNascimento = data.getFullYear();
+    
+    var idade = anoAtual - anoNascimento; //A idade é calculada subtraindo o ano de nascimento do ano atual.
+    
+    if (idade < 12) {
+      alert("Você deve ter pelo menos 10 anos para continuar.");
+      document.getElementById("datanascimento").value = ""; // Limpa o campo
+      return false;
+    } else {
+      return true;
+    }
 }
