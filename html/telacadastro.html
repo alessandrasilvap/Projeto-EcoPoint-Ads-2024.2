@@ -14,13 +14,10 @@
         <section class="cadastro">
             <div id="caixaesquerda">
                 <h3>ENTRE NO MUNDO MAIS VERDE.</h3>
-                <br>
                 <input type="text" placeholder="Nome Completo:" id="nomecompleto" minlength="15" maxlength="80" size="50">
                 <br>
-                <br>
                 <strong><p>Data de nascimento:</p></strong>
-                <input type="date" id="datanascimento" size="50">
-                <br>
+                <input type="date" id="datanascimento" size="50" onchange="validarIdade(this.value)"> <!--Foi adicionado o evento 'onchange' ao input de data para chamar a função, pois o evento ocorre quando a parte textual de uma caixa de combinação ou o conteúdo de uma caixa de texto é alterado-->
                 <br>
                 <strong><p>Sexo:</p></strong>
                 <select id="genero">
@@ -40,31 +37,26 @@
                 <input type="password" id="confirmasenha" placeholder="Confirme sua senha:" maxlength="8" size="50">
                 <br>
                 <br>
+                <input type="text" id="cpf" placeholder="Digite seu CPF" size="50">
             </div>
             <div id="caixadireita">
                 <h4>Informações Complementares:</h4>
+                <strong><p>Cep:</p></strong>
                 <input type="text" id="cep" placeholder="00000-000" required oninput="formatarCEP(this)"> <button type="button" id="buscar">Buscar</button>
-                <br>
-                <strong><p>Rua:</p></strong>
                 <input type="text"  placeholder="Endereço:" size="50"  id="rua" readonly> <!--reandonly faz com que o campo esteja habilidado, mas não pode ser editado-->
-                
-                <strong><p>Bairro:</p></strong>
+                <br>
+                <br>
                 <input type="text" placeholder="Bairro:" size="50" id="bairro" readonly>
-                
-                <strong><p>Cidade:</p></strong>
+                <br>
+                <br>
                 <input type="text" placeholder="Cidade:" size="50" id="cidade" readonly>
-                
-                <strong><p>Estado:</p></strong>
-                <input type="text" placeholder="Estado:" size="50" id="estado" readonly>
                 <br>
                 <br>
-                <input type="text"  placeholder="Complemento:" size="50" id="complemento">
-                <br><br>
+                <input type="text"  placeholder="Número:" size="50" id="num"> <input type="text"  placeholder="Complemento:" size="50" id="complemento">
+                <br>
+                <br>
                 <strong><p>Telefone:</p></strong>
                 <input type="text" id="tel" placeholder="(00) 00000-0000" size="50" oninput="formatarTEL(this)">
-                <br>
-                <br>
-                <input type="text" id="cpf" placeholder="Digite seu CPF" size="50">
                 <br>
                 <br>
                 <input type="email" id="inserirEmail" placeholder="exemplo@provedor.com" size="50" oninput="validarEmail(this)">
