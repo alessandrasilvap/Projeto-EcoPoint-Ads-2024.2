@@ -7,7 +7,6 @@ body { /*Imagem de fundo*/
 }
 
 
-
 input, select, button, textarea { /*Formatação dos campos de entrada*/
   border-radius: 4em; /*Bordas arredondadas*/
   padding: 5px; /*Espaçamento entre o conteudo e borda*/
@@ -15,6 +14,7 @@ input, select, button, textarea { /*Formatação dos campos de entrada*/
   height: 6%; /*Altura*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
+
 
 #comeco { /*Formatação da caixa no meio*/
   width: 325px; /*Largura*/
@@ -33,22 +33,26 @@ input, select, button, textarea { /*Formatação dos campos de entrada*/
   position: fixed; /*Fixa o quadrado na tela*/
 }
 
+
 input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra ao passar o mouse*/
   border: 1px solid blue; /*Bordas para as caixas*/
   box-shadow: 1px 1px 2px silver; /*Sombra sutil*/
 }
+
 
 input[type="text"], input[type="password"] {
   margin-left: 9px; /*Move ambos os inputs 9px para a esquerda*/
   margin-top: 2%;  /*Move ambos os inputs 2% para baixo*/
 }
 
+
 h1 { /*Título*/
   color: black; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
-  margin-left: 6px; /*Move o título 6px para a esquerda */
-  margin-top: 2%; /*Move o título 2% para baixo */
+  margin-left: 6px; /*Move o título 6px para a esquerda*/
+  margin-top: 2%; /*Move o título 2% para baixo*/
 }
+
 
 button { /*Botões*/
   width: 265px; /*Largura*/
@@ -58,6 +62,7 @@ button { /*Botões*/
   text-decoration: none; /*Remove o sublinhado*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
+
 
 a { /*Links*/
   padding: 10px 20px; /*Espaçamento entre o conteudo e borda*/
