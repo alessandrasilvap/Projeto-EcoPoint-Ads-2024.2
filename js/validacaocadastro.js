@@ -1,5 +1,5 @@
 /*Essa função faz com que cada usuário tenha um id único ao se cadastrar, não vou saber
-explicar com detalhes porque eu pesquisei sobre como colocar o id e apareceu o código abaixo*/
+explicar com detalhes*/
 function generate_uuidv4() {
     return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,
     function(c) {
@@ -7,6 +7,7 @@ function generate_uuidv4() {
        return uuid.toString(16);
     });
 }
+
 
 
 /*Essa função é responsável por salvar os dados do campo usuário e campo senha*/
@@ -123,7 +124,7 @@ document.getElementById('buscar').addEventListener('click', function() {
     });
 });
 
-document.getElementById('cleanBtn').addEventListener('click', function() {
+document.getElementById('buscar').addEventListener('click', function() {
 document.getElementById('cep').value = '';
 document.getElementById('rua').textContent = '';
 document.getElementById('bairro').textContent = '';
