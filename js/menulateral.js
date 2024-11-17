@@ -11,17 +11,22 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+
+
 //Função para alternar o menu
 function toggleMenu() {
     const dropdown = document.getElementById('dropdown');
     dropdown.style.display = dropdown.style.display === 'none' ? 'block' : 'none';
 }
 
-//Logout: A função de logout agora remove o item usuarioLogado corretamente.
-//Função para logout
+
+
+//A função de logout agora remove o item usuarioLogado corretamente
 function logout() {
     window.location.href = '../html/telainicial.html';
 }
+
+
 
 //A função authenticateUser agora cria um objeto de usuário antes de armazená-lo, para manter a estrutura do seu código.
 //Função para autenticar o usuário
