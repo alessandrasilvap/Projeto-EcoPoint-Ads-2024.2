@@ -2,8 +2,9 @@ button {
     cursor: pointer; /*Altera o cursor do mouse quando ele passa sobre um elemento específico*/
 }
 
+
 .container {
-    margin: 0 auto; /*  margin: 0px; /*Espaçamento externo do elemento*/
+    margin: 0 auto; /*Espaçamento externo do elemento*/
     background-color: #e6f0ff; /*Cor de fundo da caixa*/
     color: #333; /*Cor do texto*/
     width: 98%; /*Largura*/
@@ -18,7 +19,8 @@ button {
     flex-direction: column; /*Indica que os elementos flexíveis serão exibidos em uma única coluna, de cima para baixo*/
     justify-content: center; /*Alinha os elementos horizontalmente*/
     align-items: center; /*Alinha os itens no centro*/
-}   
+}
+
 
 .questions-container {
     display: flex; /*Permite organizar elementos em um container de forma flexível*/
@@ -28,28 +30,33 @@ button {
     gap: 24px; /*Define o espaçamento entre as linhas e colunas de um grid ou flexbox*/
 }
 
+
 .question {
     font-size: 24px; /*Tamanho da letra*/
     font-weight: bold; /*Negrita o texto*/
     text-align: center; /*Centraliza o conteúdo de elementos*/
 }
 
+
 .answers-container {
     width: 50vh; /*Largura*/
-    display: grid; /*Permite dimensões, usando uma grade de linhas e colunas.*/
-    grid-template-columns: 1fr 1fr; /*Define os nomes das linhas e as funções de dimensionamento das colunas do grid.*/
+    display: grid; /*Permite dimensões, usando uma grade de linhas e colunas*/
+    grid-template-columns: 1fr 1fr; /*Define os nomes das linhas e as funções de dimensionamento das colunas do grid*/
     gap: 16px; /*Define o espaçamento entre as linhas e colunas de um grid ou flexbox*/
     margin-right: 9em; /*Move as caixas 20em para a direita*/
 }
+
 
 .answer {
     width: 30vh; /*Largura*/
 }
 
+
 .final-message {
     font-size: 20px; /*Tamanho da letra*/
     text-align: center; /*Centraliza o conteúdo de elementos*/
 }
+
 
 .final-message span {
     display: block; /*Define que um elemento será exibido como um bloco*/
@@ -57,9 +64,11 @@ button {
     text-align: center; /*Centraliza o conteúdo de elementos*/
 }
 
+
 .next-questin {
     margin-top: 32px; /*Define a distância entre um elemento e o elemento que está acima dele*/
 }
+
 
 .button {
     background-color: #4863f7; /*Cor de fundo da caixa*/
@@ -68,27 +77,32 @@ button {
     font-weight: bold; /*Negrita o texto*/
     border: 0; /*Bordas para as caixas*/
     border-radius: 6px; /*Bordas arredondadas*/
-    height: 50px; /*Altura*/
+    height: 55px; /*Altura*/
     padding: 0 32px; /*Espaçamento entre o conteudo e borda*/
 
     transition: filter 0.2s; /*Define um efeito de filtro com uma duração de 0,2 segundos*/
 }
 
+
 .answer:disabled {
     cursor: not-allowed; /*Cursor fica desabilitado depois que a opção for escolhida*/
 }
+
 
 .button:not(:disabled):hover {
     filter: brightness(0.8); /*Aplica um efeito de sombreamento (brightness) ao elemento com a classe .button quando o usuário passa o mouse sobre ele (hover), menos o que estiver 'disabled'*/
 }
 
+
 .hide {
     display: none; /*Indica que um elemento não deve ser exibido na página*/
 }
 
+
 .correct {
     background-color: #049b48; /*Cor do fundo*/
 }
+
 
 .incorrect {
     background-color: #a10101; /*Cor do fundo*/
