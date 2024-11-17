@@ -5,11 +5,11 @@ header { /*Imagem no topo*/
 }
 
 
-
 img {
   max-width: 100%; /*Define a largura máxima que um elemento pode ter*/
   height: auto; /*Altura*/
 }
+
 
 img { /*Ajeitando as imagens*/
   width: 600px; /*Largura*/
@@ -18,10 +18,10 @@ img { /*Ajeitando as imagens*/
 }
 
 
-
 section {
   margin: 5%; /*Espaço entre caixa e marguem da página*/
 }
+
 
 .menu2 { /*Menu no topo da página*/
   margin: 0px; /*Espaço entre caixa e marguem da página*/
@@ -31,6 +31,7 @@ section {
   text-align: center; /*Alinha o texto no centro*/
 }
 
+
 a { /*Os links no menu*/
   font-size: 20px; /*Tamanho da fonte*/
   font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
@@ -38,15 +39,16 @@ a { /*Os links no menu*/
   padding: 14px 14px; /*Espaçamento entre o conteudo e borda*/
   text-decoration: none; /*Remove o sublinhado de links*/
 }
-  
+
+
 a:hover:not(#menu) { /*Ativa quando passa o mouse por cima dos links no menu*/
   background-color: #2c612f; /*Cor da caixa*/
 }
-  
+
+
 #menu { /*Os links no menu*/
   background-color: #04AA6D; /*Cor da caixa*/
 }
-
 
 
 /* Estilo para o header ou navbar */
@@ -57,30 +59,32 @@ a:hover:not(#menu) { /*Ativa quando passa o mouse por cima dos links no menu*/
   border: 2px solid #ccc; /*Bordas para as caixas*/
   border-radius: 5px; /*Bordas arredondadas para a seção*/
   padding: 8px; /*Espaçamento entre o conteudo e borda*/
-  position: relative; /* Para que o dropdown fique posicionado corretamente */
+  position: relative; /*Para que o dropdown fique posicionado corretamente*/
   text-align: center; /*Alinha o texto no centro*/
 }
+
 
 #dropdown {
   width: 6em; /*Largura*/
   height: 2em; /*Altura*/
-  position: absolute; /*definir a posição de um elemento*/
+  position: absolute; /*Definir a posição de um elemento*/
   background-color: #468749; /*Cor do menu*/
   border: 2px solid #ccc; /*Bordas para as caixas*/
   border-radius: 5px; /*Bordas arredondadas para a seção*/
-  display: none; /* Inicialmente escondido */
+  display: none; /*Inicialmente escondido*/
 }
+
 
 #logout {
   padding: 5px; /*Espaçamento entre o conteudo e borda*/
   text-align: center; /*Alinha o texto no centro*/
-  cursor: pointer; /*especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento*/
+  cursor: pointer; /*Especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento*/
 }
+
 
 #logout:hover {
   background-color: #2c612f; /*Cor do menu*/
 }
-
 
 
 p { /*O texto escrito no site*/
@@ -91,12 +95,12 @@ p { /*O texto escrito no site*/
   margin-right: 20px; /*Espaço entre texto e imagem*/
 }
 
+
 h1 { /*Título do site*/
   color: #468749; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
   font-size: 35px; /*Tamanho da fonte*/
 }
-
 
 
 footer { /*Rodape completo*/
@@ -105,28 +109,34 @@ footer { /*Rodape completo*/
   padding: 20px; /*Espaçamento entre o conteudo e borda*/
 }
 
+
 .footer-container { /*Todos os div estão dentro dessa classe*/
   display: flex; /*Utilizada para organizar os elementos*/
   justify-content: space-between; /*Distribui os elementos de forma igual ao longo da linha*/
   width: 70%; /*Largura*/
 }
 
+
 .integrantes, .contatos { /*As duas listas*/
   margin: 0 20px; /*Margem lateral*/
 }
+
 
 .contatos { /*Lista de contato*/
   margin-bottom: 10px; /*Margem de botão*/
 }
 
-.lista { /*Lista dos nomes */
+
+.lista { /*Lista dos nomes*/
   list-style-type: none; /*Maneira abreviada de se escrever uma só declaração para duas das propriedades para listas*/
   padding: 0; /*Espaçamento entre o conteudo e borda*/
 }
 
+
 .nome { /*Os próprios nomes*/
   margin: 5px 0; /*Margem lateral*/
 }
+
 
 .contact-item { /*Os próprios itens*/
   display: flex; /*Utilizada para organizar os elementos*/
@@ -134,10 +144,12 @@ footer { /*Rodape completo*/
   margin: 5px 0; /*Margem lateral*/
 }
 
+
 .contact-item i { /*Icones*/
   margin-right: 5px; /*Move os itens a 5px para a esquerda*/
-  color: #fff; /*Cor do ícone */
+  color: #fff; /*Cor do ícone*/
 }
+
 
 .fas, .fab { /*Estilos para ícones*/
   font-size: 18px; /*Tamanho da fonte*/
