@@ -7,7 +7,6 @@ body { /*Imagem de fundo*/
 }
 
 
-
 fieldset { /*Formatação da caixa no meio*/
   width: 800px; /*Largura*/
   height: 400px; /*Altura*/
@@ -24,15 +23,18 @@ fieldset { /*Formatação da caixa no meio*/
   opacity: 65%; /*Deixa meio transparente*/
 }
 
+
 h1 { /*Título*/
   font-size: 200%; /*Tamanho do texto*/
   text-align: center; /*Centraliza o conteúdo de elementos*/
 }
 
+
 h1, h2, h3 { /*Textos*/
   color: black; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
+
 
 input, select, button, textarea { /*Formatação dos campos de entrada*/
   border-radius: 4em; /*Bordas arredondadas*/
@@ -42,12 +44,14 @@ input, select, button, textarea { /*Formatação dos campos de entrada*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
+
 button { /*Botões*/
   width: 9em; /*Largura*/
   height: 2em; /*Altura*/
   text-decoration: none; /*Remove o sublinhado*/
   text-align: center; /*Centraliza o conteúdo de elementos*/
 }
+
 
 a { /*Links*/
   color: black; /*Cor do texto*/
