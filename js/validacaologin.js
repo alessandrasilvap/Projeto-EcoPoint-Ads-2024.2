@@ -1,3 +1,9 @@
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+  });
+
+
+
 function validarlogin() { //Essa função Verifca se os campos estão preenchidos ou não
     var usuario = document.getElementById('usuario').value; //".value" serve para armazenar os valores que vão ser inseridos no campo
     var senha = document.getElementById('senha').value;
@@ -21,7 +27,7 @@ function recuperarDados() {
     var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
 
     /*Procurando o usuário que corresponde ao login e à senha. Para isso, criei uma variavel,
-    daí coloquei o nome da variável que eu coloquei acima e '.find' para encontrar o objeto e as propriedades usuario e senha*/
+    onde coloquei o nome da variável que eu coloquei acima e '.find' para encontrar o objeto e as propriedades usuario e senha*/
     var usuarioEncontrado = usuarios.find(function(usuario) {
         return usuario.login === campousuario && usuario.senha === camposenha;
     });
@@ -42,6 +48,6 @@ function recuperarDados() {
 
 //Atualiza a função de login
 function login() {
-    if (validarlogin()) return; //Verifica a validação antes de continuar
+    if (!validarlogin()) return; //Verifica a validação antes de continuar
     recuperarDados();
 }
