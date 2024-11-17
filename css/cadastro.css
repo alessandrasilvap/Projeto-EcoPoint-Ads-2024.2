@@ -4,16 +4,17 @@ header { /*Imagem no topo*/
   background-position: center; /*Colocando a imagem no centro*/
 }
 
+
 form {
   margin-left: 20em; /*Move as caixas 20em para a esquerda*/
 }
+
 
 body {
   height: 100%; /*Altura*/
   margin: 0; /*Espaçamento externo do elemento*/
   font-family:Arial, Helvetica, sans-serif /*Fonte do texto*/
 }
-
 
 
 input, select, button, textarea { /*Formatação dos campos de entrada*/
@@ -26,11 +27,18 @@ input, select, button, textarea { /*Formatação dos campos de entrada*/
   max-width: 400px; /*Largura máxima*/
 }
 
+
 input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra ao passar o mouse*/
   border: 1px solid blue; /*Bordas para as caixas*/
   box-shadow: 1px 1px 2px silver; /*Sombra sutil*/
 }
 
+
+select {
+  width: 150px; /*Largura*/
+  height: 40px; /*Altura*/
+  font-size: 18px; /*Ajusta o tamanho do texto*/
+}
 
 
 .cadastro {
@@ -45,6 +53,7 @@ input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra
   flex-wrap: wrap; /*Permite que as caixas quebrem linha se a tela for pequena*/
 }
 
+
 #caixaesquerda, #caixadireita { /*Caixas que estão os campos*/
   flex: 1; /*Ambas as caixas ocupam espaço igual*/
   margin: 0 10px; /*Margem lateral entre as caixas*/
@@ -57,47 +66,49 @@ input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra
   min-width: 300px; /*Largura minima*/
 }
 
+
 #caixaesquerda input, #caixadireita input{
   height: 2.2rem; /*Altura*/
 }
 
 
-#botoes { /*Posição dos botões*/
-  margin-top: 5%; /*Distância entre um elemento e o elemento que está acima dele*/
-  text-align: center; /*Alinha o texto no centro*/
-}
-
 #buscar {
   width: 100px; /*Largura*/
   height: 3rem; /*Altura*/
-  top: 32%; /*Move ambos os button 32% para baixo*/
-  left: 40px; /*Move ambos os button 40px para a esquerda*/
   text-decoration: none; /*Remove o sublinhado*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
   background-color: #2c612f; /*Cor do fundo*/
   color: white; /*Cor do texto*/
-  margin-bottom: 1rem;
+  margin-bottom: 1rem; /*Dimensão da margem do botão*/
 }
 
+
 #buscar:hover {
-  background-color: #1a4729;
+  background-color: #1a4729; /*Cor do fundo*/
 }
+
 
 #num, #complemento {
   width: 190px; /*Largura*/
   height: 3rem; /*Altura*/
 }
 
+
+#botoes { /*Posição dos botões*/
+  margin-left: 230px; /*Dimensão da margem esquerda*/
+  margin-top: 5%; /*Distância entre um elemento e o elemento que está acima dele*/
+}
+
+
 button { /*Botões*/
   width: 265px; /*Largura*/
   height: 10%; /*Altura*/
-  top: 32%; /*Move ambos os button 32% para baixo*/
-  left: 40px; /*Move ambos os button 40px para a esquerda*/
   text-decoration: none; /*Remove o sublinhado*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
   background-color: #2c612f; /*Cor do fundo*/
   color: white; /*Cor do texto*/
 }
+
 
 a { /*Links*/
   padding: 10px 20px; /*Espaçamento entre o conteudo e borda*/
@@ -110,7 +121,6 @@ a { /*Links*/
 }
 
 
-
 h2 { /*Título*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
   margin-left: 6px; /*Dimensão da margem esquerda*/
@@ -120,6 +130,7 @@ h2 { /*Título*/
   text-indent: 25px; /*Define o recuo do texto*/
 }
 
+
 h3 { /*Título da primeira caixa*/
   color: #468749; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
@@ -128,6 +139,7 @@ h3 { /*Título da primeira caixa*/
   font-size: 130%; /*Tamanho da letra*/
 }
 
+
 h4 { /*Título da segunda caixa*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
   margin-left: 6px; /*Dimensão da margem esquerda*/
@@ -135,6 +147,7 @@ h4 { /*Título da segunda caixa*/
   font-size: 150%; /*Tamanho da letra*/
   color: #468749; /*Cor do texto*/
 }
+
 
 p {
   color:#468749; /*Cor do texto*/
