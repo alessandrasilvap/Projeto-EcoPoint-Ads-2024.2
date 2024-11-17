@@ -1,13 +1,28 @@
+//Evento de prévenção de comportamento padrão do formulário
+document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    recuperarSenha();
+});
+
+
+
 //Essa função pega os dados do input login e senha da tela de login;
 function recuperarSenha() {
-    var email_esquecisenha = document.getElementById('email_esquecisenha').value
+    var esquecisenha = document.getElementById('esquecisenha').value
     var usuarios = JSON.parse(localStorage.getItem('usuarios')) || [];
+
+    
+    // Verifica se o campo de e-mail está vazio
+    if (esquecisenha === '') {
+        alert('[ERRO] Por favor, insira seu e-mail.');
+        return;
+    }
 
 
     /*Procurando o usuário que corresponde ao login e à senha. Para isso, criei uma variavel,
     daí coloquei o nome da variável que eu coloquei acima e '.find' para encontrar o objeto e as propriedades usuario e senha*/
     var emailEncontrado = usuarios.find(function(usuario) {
-        return usuario.email === email_esquecisenha
+        return usuario.email === esquecisenha
     });
 
 
@@ -23,3 +38,10 @@ function recuperarSenha() {
         return false;
     }
 }
+
+
+
+document.getElementById('enviar').addEventListener('click', function(event) {
+    event.preventDefault();
+    recuperarSenha();
+});
