@@ -14,11 +14,13 @@ let currentQuestionIndex = 0
 let totalCorrect = 0
 
 
+
 function startGame() {
     $startGameButton.classList.add('hide'); //A função vai fazer com que o botão desapareça adicionando o 'hide'
     $questionsContainer.classList.remove('hide'); //A função vai fazer com que o botão apareça removendo o 'hide'
     displayNextQuestion(); //Depois a função 'displayNextQuestion()' é criada
 }
+
 
 
 function displayNextQuestion() { //Função criada para que as perguntas apareçam
@@ -55,6 +57,7 @@ function displayNextQuestion() { //Função criada para que as perguntas apareç
 }
 
 
+
 function resetState() {
     while($answersContainer.firstChild) {
         $answersContainer.removeChild($answersContainer.firstChild);
@@ -68,6 +71,7 @@ function resetState() {
     $nextQuestionButton.classList.add('hide'); 
     //Adiciona o 'hide' para que o botão 'Próxima pergunta' suma quando vai para a próxima questão
 }
+
 
 
 function selectAnswer(event) {
@@ -101,6 +105,7 @@ function selectAnswer(event) {
     //Incrementa a variável, isso significa que a variável será aumentada para o próximo valor
     currentQuestionIndex ++;
 }
+
 
 
 function finishGame() {
@@ -137,7 +142,7 @@ function finishGame() {
 
 
 
-//Um tipo de um banco de dados das perguntas e respostas
+//Tipo de banco de dados das perguntas e respostas
 const questions = [
     {
         question: 'Qual é o principal objetivo da reciclagem eletrônica?',
