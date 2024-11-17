@@ -5,7 +5,6 @@ header { /*Imagem no topo*/
 }
 
 
-
 input { /*Formatação do campo*/
   border-radius: 1em; /*Bordas arredondadas*/
   padding: 5px; /*Espaçamento entre o conteudo e borda*/
@@ -15,13 +14,13 @@ input { /*Formatação do campo*/
 }
 
 
-
 .noticias { /*Todas as notícias juntas*/
   display: flex; /*Permite organizar elementos em um container de forma flexível*/
   justify-content: center; /*Alinha os elementos horizontalmente*/
   gap: 20px; /*Define o espaçamento entre as linhas e colunas de um grid ou flexbox*/
   padding: 4%; /*Espaçamento entre o conteudo e borda*/
 }
+
 
 .item { /*Cada item por si só*/
   width: 200px; /*Largura*/
@@ -31,14 +30,17 @@ input { /*Formatação do campo*/
   overflow: hidden; /*Elemento que excede o seu tamanho não deve ser exibido*/
 }
 
+
 .item:hover {
   transform: scale(1.05); /*Redimensiona um elemento em 2D com uma escala de 1.05*/
 }
+
 
 .nova-image { /*imagem*/
   width: 100%; /*Largura*/
   height: auto; /*Mantém a proporção da imagem*/
 }
+
 
 .titulo {
   font-weight: bold; /*Deixa em negrito*/
@@ -47,9 +49,11 @@ input { /*Formatação do campo*/
   color: white; /*Cor da fonte*/
 }
 
+
 .item.expanded .noticias {
   display: block; /*Elemento será exibido como um bloco, ocupando toda a linha e gerando quebras de linha antes e depois do elemento*/
 }
+
 
 .lermais {
   display: block; /*Elemento será exibido como um bloco, ocupando toda a linha e gerando quebras de linha antes e depois do elemento*/
@@ -62,18 +66,19 @@ input { /*Formatação do campo*/
 
 
 button, .lermais {
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease; /*Controla a velocidade de uma animação quando há mudanças de propriedades*/
 }
+
 
 button:hover, .lermais:hover {
-  transform: translateY(-2px); /* Suave elevação ao passar o mouse */
+  transform: translateY(-2px); /*Suave elevação ao passar o mouse*/
 }
-
 
 
 .ler {
   color: black; /*Cor da fonte*/
 }
+
 
 p { /*O texto escrito no site*/
   font-size: 20px; /*Tamanho do texto*/
@@ -82,12 +87,14 @@ p { /*O texto escrito no site*/
   flex: 1; /*Alinha espaços*/
 }
   
+
 h1 { /*Título do site*/
   color: #468749; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
   font-size: 35px; /*Tamanho da fonte*/
   margin-left: 5%; /*Move o button 5% para a esquerda*/
 }
+
 
 h2 {
   color: #468749; /*Cor do texto*/
@@ -102,6 +109,7 @@ h2 {
   text-align: center; /*Alinha o texto no centro*/
 }
 
+
 button { /*Botões*/
   width: 9em; /*Largura*/
   height: 2em; /*Altura*/
@@ -112,11 +120,13 @@ button { /*Botões*/
   color: white; /*Cor do texto*/
 }
 
+
 a { /*Links*/
   color: white; /*Cor do texto*/
   text-decoration: none; /*Remove o sublinhado*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
+
 
 .chamada {
   font-size: 14px; /*Tamanho da fonte*/
@@ -125,15 +135,16 @@ a { /*Links*/
   margin-top: 10px; /*Distância entre um elemento e o elemento que está acima dele*/
 }
 
+
 .chamada strong {
   color: #468749; /*Cor do texto*/
   cursor: pointer; /*Altera o cursor do mouse quando ele passa sobre um elemento específico*/
 }
 
+
 .chamada strong:hover {
   text-decoration: underline; /*Usada para definir a formatação de sublinhado de um texto*/
 }
-
 
 
 footer { /*Rodape completo*/
@@ -142,28 +153,34 @@ footer { /*Rodape completo*/
   padding: 20px; /*Espaçamento entre o conteudo e borda*/
 }
 
+
 .footer-container { /*Todos os div estão dentro dessa classe*/
   display: flex; /*Permite organizar elementos em um container de forma flexível*/
   justify-content: space-between; /*Alinha os elementos horizontalmente*/
   width: 70%; /*Largura*/
 }
 
+
 .integrantes, .contatos { /*As duas listas*/
   margin: 0 20px; /*Espaçamento externo do elemento*/
 }
+
 
 .contatos { /*Lista de contato*/
   margin-bottom: 10px; /*Margem de botão*/
 }
 
-.lista { /*Lista dos nomes */
+
+.lista { /*Lista dos nomes*/
   list-style-type: none; /*Remove o marcador de lista*/
   padding: 0; /*Espaçamento entre o conteudo e borda*/
 }
 
+
 .nome { /*Os próprios nomes*/
   margin: 5px 0; /*Espaçamento externo do elemento*/
 }
+
 
 .contact-item { /*Os próprios itens*/
   display: flex; /*Permite organizar elementos em um container de forma flexível*/
@@ -171,10 +188,12 @@ footer { /*Rodape completo*/
   margin: 5px 0; /*Espaçamento externo do elemento*/
 }
 
+
 .contact-item i { /*Icones*/
   margin-right: 5px; /*Move os itens a 5px para a direita*/
   color: #fff; /*Cor do ícone */
 }
+
 
 .fas, .fab { /*Estilos para ícones*/
   font-size: 18px; /*Tamanho da fonte*/
