@@ -4,16 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mapa - Eco Point</title>
-    <link rel="shortcut icon" href="../imagens/icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="../css/mapa.css">
-    <link rel="stylesheet" href="../css/acessibfeedback.css">
-    <!--Google Material Symbols-->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/>
+    <link rel="shortcut icon" href="../imagens/icone.ico" type="image/x-icon"> <!--Ícones do site-->
+    <link rel="stylesheet" href="../css/mapa.css"> <!--Código CSS do site todo-->
+    <link rel="stylesheet" href="../css/acesibfeedback.css"> <!--Código CSS do painel de acessibilidade e da caixa de feedback-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!--Link para utilização de ícones Font Awesome-->
-    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> <!-- Inclui o CSS do Leaflet, onde Leaflet é uma biblioteca JavaScript de código aberto que permite a criação de aplicativos de mapeamento virtuais-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" /> <!--Inclui o CSS do Leaflet, onde Leaflet é uma biblioteca JavaScript de código aberto que permite a criação de aplicativos de mapeamento virtuais-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"/> <!--Google Material Symbols-->
 </head>
 <body>
-    <header> <!--Aqui fica a foto do Eco point, hospedada no CSS --> </header>
+    <header></header>
+    <div id="user-info" style="position: absolute; top: 16em; right: 10px; display: none;">
+        <span id="nomenatela"></span>
+        <span id="arrow" onclick="toggleMenu()">▼</span>
+        <!--O dropdown aparecerá ao clicar na setinha, permitindo que o usuário saia da sessão-->
+        <div id="dropdown" style="display: none;">
+            <div id="logout" onclick="logout()">Sair</div>
+        </div>
+    </div>
     <div class="conteudo">
         <nav id="menu">
             <ul class="menu5">
@@ -24,14 +31,6 @@
             </ul>
         </nav>
         <br>
-        <div id="user-info" style="position: absolute; top: 16em; right: 10px; display: none;">
-            <span id="nomenatela"></span>
-            <span id="arrow" onclick="toggleMenu()">▼</span>
-            <!--O dropdown aparecerá ao clicar na setinha, permitindo que o usuário saia da sessão-->
-            <div id="dropdown" style="display: none;">
-                <div id="logout" onclick="logout()">Sair</div>
-            </div>
-        </div>
         <br>
         <section id="mapa">
             <h1>Mapa</h1>
@@ -96,7 +95,7 @@
         </section>
         <!--Menu de Acessibilidade-->
         <div id="menu-acessibilidade" class="menu-acessibilidade">
-            <div class="btnAbre" onclick="toggleMenu()">
+            <div class="btnAbre" onclick="toggleAcessMenu()">
             <span class="material-symbols-outlined">accessible_forward</span>
             </div>
             <div id="painel-acessibilidade" class="painel-acessibilidade">
@@ -113,13 +112,13 @@
         <!--Menu de Feedback-->
         <div id="menu-feedback" class="menu-feedback">
             <div class="btnFeedback" onclick="toggleFeedbackMenu()">
-                <span class="material-symbols-outlined">feedback</span>
+            <span class="material-symbols-outlined">feedback</span>
             </div>
             <div id="painel-feedback" class="painel-feedback">
                 <h3>Deixe seu Feedback</h3>
                 <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
-                    Abaixo escreva um feedback sobre nosso site e sua experiência dentro dele.
-                    Não se esqueça, pode fazer isso quando e quantas vezes quiser!!</p>
+                Abaixo escreva um feedback sobre nosso site e sua experiência dentro dele.
+                Não se esqueça, pode fazer isso quando e quantas vezes quiser!!</p>
                 <textarea id="feedback-text" rows="5" placeholder="Digite aqui seu feedback..."></textarea>
                 <button onclick="enviarFeedback()">Enviar Feedback</button>
             </div>
@@ -156,8 +155,7 @@
             </div>
         </footer>
     </div>
-    <script src="../js/menulateral.js"></script>
-    <script src="../js/acessibfeedback.js"></script>
-    <script src="../js/acessibfeedback.js"></script>
+    <script src="../js/acessibfeedback.js"></script> <!--Código JS do painel de acessibilidade e da caixa de feedback-->
+    <script src="../js/menulateral.js"></script> <!--Código JS do menu de autenticação do usuário-->
 </body>
 </html>
