@@ -1,3 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 1400px){
+  
+   .caixaesquerda input{ 
+  max-width: 350px; /*Largura máxima*/
+  }
+
+  .caixadireita input {
+    max-width: 350px;
+  }
+}
+
+@media only screen and (max-width: 1275px){
+  
+  .caixaesquerda input{ 
+ max-width: 300px; /*Largura máxima*/
+ }
+
+ .caixadireita input {
+   max-width: 300px;
+ }
+}
+
+
+@media only screen and (max-width: 1158px){
+  
+  .caixaesquerda input{ 
+ max-width: 250px; /*Largura máxima*/
+ }
+
+ .caixadireita input {
+   max-width: 250px;
+ }
+}
+
+
+@media only screen and (max-width: 1072px){
+  
+  .caixaesquerda input , .caixadireita input { 
+    max-width: 100%; /*Largura máxima*/
+ }
+
+
+
+}
+
+@media only screen and (max-width: 783px){
+  
+  #caixaesquerda, #caixadireita, .btn {
+    margin-left: 0; /* Remove qualquer margem esquerda */
+    transform: translateX(-80%); /* Move as caixas para o lado esquerdo */
+  
+  }
+
+  select {
+    width: 150px; /*Largura*/
+    max-height: 35px; /*Altura*/
+    font-size: 18px; /*Ajusta o tamanho do texto*/
+  }
+
+  #buscar {
+    width: 100px; /*Largura*/
+    max-height: 2.5rem; /*Altura*/
+  }
+  .titulo {
+    margin-top: 2rem;
+    margin-left: 7rem;
+    font-size: 45px;
+  }
+
+}
+
+
 header { /*Imagem no topo*/
   background-image: url(../imagens/barracadastro.png); /*Imagem*/
   padding: 6em; /*Espaçamento entre o conteudo e borda*/
@@ -95,8 +172,9 @@ select {
 
 
 #botoes { /*Posição dos botões*/
-  margin-left: 230px; /*Dimensão da margem esquerda*/
-  margin-top: 5%; /*Distância entre um elemento e o elemento que está acima dele*/
+  margin-left: 12.5%;
+  margin-bottom: 5%; /*Dimensão da margem esquerda*/
+  /*Distância entre um elemento e o elemento que está acima dele*/
 }
 
 
