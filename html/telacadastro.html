@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,10 +12,10 @@
 <body>
     <header></header>
     <div class="conteudo">
-    <h2>Cadastra-se</h2>
-    <form name="formulariocadastro" onsubmit="validarcadastro(event)">
+    <h2 class="titulo">Cadastre-se</h2>
+    <form name="formulariocadastro" onsubmit="validarcadastro(event)" class="formu">
         <section class="cadastro">
-            <div id="caixaesquerda">
+            <div id="caixaesquerda" class="caixaesquerda">
                 <h3>ENTRE NO MUNDO MAIS VERDE.</h3>
                 <input type="text" placeholder="Nome Completo:" id="nomecompleto" minlength="15" maxlength="80" size="50">
                 <br>
@@ -42,7 +42,7 @@
                 <br>
                 <input type="text" id="cpf" placeholder="Digite seu CPF" size="50">
             </div>
-            <div id="caixadireita">
+            <div id="caixadireita" class="caixadireita">
                 <h4>Informações Complementares:</h4>
                 <strong><p>Cep:</p></strong>
                 <input type="text" id="cep" placeholder="00000-000" required oninput="formatarCEP(this)"> <button type="button" id="buscar">Buscar</button>
@@ -68,9 +68,9 @@
             </div>
         </section>
         <section id="botoes">
-            <button type="submit">CADASTRAR</button>
-            <button type="button"><a href="../html/telalogin.html">VOLTAR</a></button> 
-            <button type="reset" id="botaolimpar">LIMPAR</button>
+            <button type="submit" class="btn">CADASTRAR</button>
+            <button type="button" class="btn"><a href="../html/telalogin.html">VOLTAR</a></button> 
+            <button type="reset" id="botaolimpar" class="btn">LIMPAR</button>
         </section>
         <!--Menu de Acessibilidade-->
         <div id="menu-acessibilidade" class="menu-acessibilidade">
