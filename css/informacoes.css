@@ -1,176 +1,173 @@
-header { /*Imagem no topo*/
-  background-image: url(../imagens/barracadastro.png); /*Imagem*/
-  padding: 6em; /*Espaçamento entre o conteudo e borda*/
-  background-position: center; /*Colocando a imagem no centro*/
+/* Estilo do Header */
+header {
+  background-image: url(../imagens/barracadastro.png); /* Imagem no topo */
+  padding: 6em; /* Espaçamento entre o conteúdo e a borda */
+  background-position: center; /* Centraliza a imagem */
 }
 
-
+/* Estilo das Imagens */
 img {
-  max-width: 100%; /*largura máxima*/
-  height: auto; /*Altura*/
+  max-width: 100%; /* Largura máxima */
+  height: auto; /* Altura automática */
 }
 
-
-.imagem  { /*Ajeitando a imagem*/
-  width: 350px; /*Largura*/
-  height: 350px; /*Altura*/
-  padding: 5px; /*Espaçamento entre o conteudo e borda*/
-  float: right; /*Posiciona um elemento no lado direito do seu contêiner, retirando-o do fluxo normal do documento*/
+/* Estilo para a imagem com a classe "imagem" */
+.imagem {
+  width: 350px; /* Largura */
+  height: 350px; /* Altura */
+  padding: 5px; /* Espaçamento entre o conteúdo e a borda */
+  float: right; /* Posiciona à direita */
 }
 
-
-.informacao { /*Ajeitando a primeira imagem*/
-  width: 800px; /*Largura*/
-  height: 600px; /*Altura*/
-  padding: 10px; /*Espaçamento entre o conteudo e borda*/
+/* Estilo para uma imagem maior */
+.informacao {
+  width: 800px; /* Largura */
+  height: 600px; /* Altura */
+  padding: 10px; /* Espaçamento entre o conteúdo e a borda */
 }
 
-
-.imagre { /*Ajeitando a ultima imagem*/
-  width: 90px; /*Largura*/
-  height: 90px; /*Altura*/
-  padding: 5px; /*Espaçamento entre o conteudo e borda*/
+/* Estilo para uma imagem pequena */
+.imagre, .imagree {
+  width: 90px; /* Largura */
+  height: 90px; /* Altura */
+  padding: 5px; /* Espaçamento entre o conteúdo e a borda */
 }
 
-
+/* Posiciona a imagem com a classe "imagree" à esquerda */
 .imagree {
-  width: 90px; /*Largura*/
-  height: 90px; /*Altura*/
-  padding: 5px; /*Espaçamento entre o conteudo e borda*/
-  float: left; /*Posiciona um elemento no lado direito do seu contêiner, retirando-o do fluxo normal do documento*/
+  float: left; /* Posiciona à esquerda */
 }
 
-
-.menu3 { /*Menu no topo da página*/
-  margin: 0px; /*Espaçamento externo do elemento*/
-  padding: 14px; /*Espaçamento entre o conteudo e borda*/ 
-  background-color: #468749; /*Cor da caixa*/
-  text-indent: 40px; /*Recuo da linha*/
-  text-align: center; /*Define o recuo do texto*/
+/* Estilo para o Menu no topo */
+.menu3 {
+  margin: 0px; /* Espaçamento externo */
+  padding: 14px; /* Espaçamento interno */
+  background-color: #468749; /* Cor de fundo */
+  text-indent: 40px; /* Recuo da linha */
+  text-align: center; /* Centraliza o texto */
 }
 
-
-a { /*Os links no menu*/
-  font-size: 20px; /*Tamanho da fonte*/
-  font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
-  color: white; /*Cor do texto*/
-  padding: 14px 14px; /*Espaçamento entre o conteudo e borda*/
-  text-decoration: none; /*Remove o sublinhado*/
+/* Estilo para os links do menu */
+a {
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: 'Times New Roman', Times, serif; /* Fonte */
+  color: white; /* Cor do texto */
+  padding: 14px 14px; /* Espaçamento interno */
+  text-decoration: none; /* Remove o sublinhado */
 }
 
-
-a:hover:not(#menu) { /*Ativa quando passa o mouse por cima dos links no menu*/
-  background-color: #2c612f; /*Cor de fundo*/
+/* Estilo para links do menu ao passar o mouse */
+a:hover:not(#menu) {
+  background-color: #2c612f; /* Cor de fundo */
 }
 
-
-#menu { /*Os links no menu*/
-  background-color: #04AA6D; /*Cor de fundo*/
+/* Estilo para o item "menu" */
+#menu {
+  background-color: #04AA6D; /* Cor de fundo */
 }
 
-
-/* Estilo para o header ou navbar */
+/* Estilo para o dropdown de usuário */
 #user-info {
-  width: 6em; /*Largura*/
-  height: 1em; /*Altura*/
-  background-color: #468749; /*Cor de fundo*/
-  border: 2px solid #ccc; /*Bordas para as caixas*/
-  border-radius: 5px; /*Bordas arredondadas*/
-  padding: 8px; /*Espaçamento entre o conteudo e borda*/
-  position: relative; /*Alterar a posição de um elemento em relação à sua posição inicial*/
-  text-align: center; /*Centraliza o conteúdo de elementos*/
+  width: 6em; /* Largura */
+  height: 1em; /* Altura */
+  background-color: #468749; /* Cor de fundo */
+  border: 2px solid #ccc; /* Bordas */
+  border-radius: 5px; /* Bordas arredondadas */
+  padding: 8px; /* Espaçamento interno */
+  position: relative; /* Posição relativa */
+  text-align: center; /* Centraliza o conteúdo */
 }
 
-
+/* Estilo para o dropdown do menu */
 #dropdown {
-  width: 6em; /*Largura*/
-  height: 2em; /*Altura*/
-  position: absolute; /*Alterar a posição de um elemento em relação à sua posição inicial*/
-  background-color: #468749; /*Cor do fundo*/
-  border: 2px solid #ccc; /*Bordas para as caixas*/
-  border-radius: 5px; /*Bordas arredondadas*/
-  display: none; /*Indica que um elemento não deve ser exibido na página*/
+  width: 6em; /* Largura */
+  height: 2em; /* Altura */
+  position: absolute; /* Posição absoluta */
+  background-color: #468749; /* Cor de fundo */
+  border: 2px solid #ccc; /* Bordas */
+  border-radius: 5px; /* Bordas arredondadas */
+  display: none; /* Inicialmente invisível */
 }
 
-
+/* Estilo para o botão de logout */
 #logout {
-  padding: 5px; /*Espaçamento entre o conteudo e borda*/
-  text-align: center; /*Centraliza o conteúdo de elementos*/
-  cursor: pointer; /*Especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento*/
+  padding: 5px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+  cursor: pointer; /* Altera o cursor */
 }
 
-
+/* Estilo para o logout ao passar o mouse */
 #logout:hover {
-  background-color: #2c612f; /*Cor do fundo*/
+  background-color: #2c612f; /* Cor de fundo */
 }
 
-
-#listas, p { /*Textos*/
-  font-size: 20px; /*Tamanho das letras*/
-  font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
+/* Estilo para os textos gerais */
+#listas, p {
+  font-size: 20px; /* Tamanho da fonte */
+  font-family: 'Times New Roman', Times, serif; /* Fonte */
 }
 
-
-h1 { /*Título do site*/
-  color: #468749; /*Cor do texto*/
-  font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
-  font-size: 35px; /*Tamanho da fonte*/
+/* Estilo para o título */
+h1 {
+  color: #468749; /* Cor do texto */
+  font-family: 'Times New Roman', Times, serif; /* Fonte */
+  font-size: 35px; /* Tamanho da fonte */
 }
 
-
+/* Estilo para seções */
 section {
-  margin: 5%; /*Espaçamento externo do elemento*/
+  margin: 5%; /* Espaçamento externo */
 }
 
-
-footer { /*Rodape completo*/
-  background-color: #468749; /*Cor do fundo*/
-  color: white; /*Cor do texto*/
-  padding: 20px; /*Espaçamento entre o conteudo e borda*/
+/* Estilo para o rodapé */
+footer {
+  background-color: #468749; /* Cor de fundo */
+  color: white; /* Cor do texto */
+  padding: 20px; /* Espaçamento interno */
 }
 
-
-.footer-container { /*Todos os div estão dentro dessa classe*/
-  display: flex; /*Permite organizar elementos em um container de forma flexível*/
-  justify-content: space-between; /*Distribui os elementos de forma igual ao longo da linha*/
-  width: 70%; /*Largura*/
+/* Estilo para o contêiner do rodapé */
+.footer-container {
+  display: flex; /* Flexbox */
+  justify-content: space-between; /* Espaçamento entre os elementos */
+  width: 70%; /* Largura */
 }
 
-
-.integrantes, .contatos { /*As duas listas*/
-  margin: 0 20px; /*Margem lateral*/
+/* Estilo para as listas de integrantes e contatos */
+.integrantes, .contatos {
+  margin: 0 20px; /* Margem lateral */
 }
 
-
-.contatos { /*Lista de contato*/
-  margin-bottom: 10px; /*Margem de botão*/
+/* Estilo para a lista de contatos */
+.contatos {
+  margin-bottom: 10px; /* Margem inferior */
 }
 
-
-.lista { /*Lista dos nomes*/
-  list-style-type: none; /*Remove o marcador de lista*/
-  padding: 0; /*Espaçamento entre o conteudo e borda*/
+/* Estilo para a lista */
+.lista {
+  list-style-type: none; /* Remove o marcador da lista */
+  padding: 0; /* Remove o espaçamento */
 }
 
-
-.nome { /*Os próprios nomes*/
-  margin: 5px 0; /*Espaçamento externo do elemento*/
+/* Estilo para os nomes da lista */
+.nome {
+  margin: 5px 0; /* Margem externa */
 }
 
-
-.contact-item { /*Os próprios itens*/
-  display: flex; /*Permite organizar elementos em um container de forma flexível*/
-  align-items: center; /*Alinha os itens no centro*/
-  margin: 5px 0; /*Espaçamento externo do elemento*/
+/* Estilo para os itens de contato */
+.contact-item {
+  display: flex; /* Flexbox */
+  align-items: center; /* Centraliza os itens */
+  margin: 5px 0; /* Margem externa */
 }
 
-
-.contact-item i { /*Icones*/
-  margin-right: 5px; /*Move os itens a 5px para a direita*/
-  color: #fff; /*Cor do ícone*/
+/* Estilo para os ícones nos itens de contato */
+.contact-item i {
+  margin-right: 5px; /* Espaço à direita */
+  color: #fff; /* Cor dos ícones */
 }
 
-
-.fas, .fab { /*Estilos para ícones*/
-  font-size: 18px; /*Tamanho da fonte*/
+/* Estilo para os ícones (Font Awesome) */
+.fas, .fab {
+  font-size: 18px; /* Tamanho da fonte */
 }
