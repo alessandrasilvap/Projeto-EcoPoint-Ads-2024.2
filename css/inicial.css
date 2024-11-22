@@ -62,6 +62,14 @@
     max-width: 80%;
     margin: 0;
  }
+
+ .noticias {
+  width: 100%;
+ }
+
+ .item {
+  width: 100%;
+ }
 }
 
 
@@ -79,8 +87,15 @@
  .menu-acessibilidade {
     margin-left: 70%;
  }
-}
 
+ .noticias {
+  width: 100%;
+ }
+
+ .item {
+  width: 100%;
+ }
+}
 
 
 .row::after {
@@ -141,10 +156,29 @@
 /* Media queries podem ajudar com isso. Podemos adicionar um breakpoint onde certas partes do design se comportarão de forma diferente em cada lado do breakpoint. */
 
 @media only screen and (max-width: 600px) {
-  .searchbtn, #searchbtn {
-    width: 8.33%;
+  .item {
+    width: 100%;  /* Cada item ocupa toda a largura disponível */
+  }
+
+
+
+}
+
+/* Para telas entre 600px e 1125px (tablets e desktops pequenos) */
+@media only screen and (max-width: 1125px) {
+  .item {
+    width: 45%; /* Dois itens lado a lado */
   }
 }
+
+/* Para telas maiores que 1125px (desktop) */
+@media only screen and (min-width: 1125px) {
+  .item {
+    width: 200px; /* Tamanho fixo */
+  }
+}
+
+
 /* xxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
 
 
@@ -164,20 +198,22 @@ input { /*Formatação do campo*/
 }
 
 
-.noticias { /*Todas as notícias juntas*/
-  display: flex; /*Permite organizar elementos em um container de forma flexível*/
-  justify-content: center; /*Alinha os elementos horizontalmente*/
-  gap: 20px; /*Define o espaçamento entre as linhas e colunas de um grid ou flexbox*/
-  padding: 4%; /*Espaçamento entre o conteudo e borda*/
+.noticias {
+  display: flex;
+  flex-wrap: wrap; /* Permite que os itens quebrem linha */
+  justify-content: center;
+  gap: 20px; /* Espaçamento entre os itens */
+  padding: 4%;
 }
 
 
-.item { /*Cada item por si só*/
-  width: 200px; /*Largura*/
-  background-color: white; /*Cor do fundo*/
-  border-radius: 8px; /*Bordas arredondadas*/
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
-  overflow: hidden; /*Elemento que excede o seu tamanho não deve ser exibido*/
+.item {
+ 
+  margin: 0 auto;  /* Centraliza os itens */
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
 }
 
 
