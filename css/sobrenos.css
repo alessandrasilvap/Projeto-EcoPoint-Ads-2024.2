@@ -1,156 +1,186 @@
-header { /*Imagem no topo*/
-  background-image: url(../imagens/barracadastro.png); /*Imagem*/
-  padding: 6em; /*Espaçamento entre o conteudo e borda*/
-  background-position: center; /*Colocando a imagem no centro*/
+/* Estilos gerais */
+header { 
+  background-image: url(../imagens/barracadastro.png); 
+  padding: 6em;
+  background-position: center;
 }
-
 
 img {
-  max-width: 100%; /*Define a largura máxima que um elemento pode ter*/
-  height: auto; /*Altura*/
+  max-width: 100%; 
+  height: auto;
 }
-
-
-img { /*Ajeitando as imagens*/
-  width: 600px; /*Largura*/
-  height: 400px; /*Altura*/
-  padding: 50px; /*Espaçamento entre o conteudo e borda*/
-}
-
 
 section {
-  margin: 5%; /*Espaço entre caixa e marguem da página*/
+  margin: 5%;
 }
 
-
-.menu2 { /*Menu no topo da página*/
-  margin: 0px; /*Espaço entre caixa e marguem da página*/
-  padding: 14px; /*Espaçamento entre o conteudo e borda*/
-  background-color: #468749; /*Cor da caixa*/
-  text-indent: 40px; /*Recuo da linha*/
-  text-align: center; /*Alinha o texto no centro*/
+.menu2 {
+  margin: 0px; 
+  padding: 14px;
+  background-color: #468749;
+  text-indent: 40px;
+  text-align: center;
 }
 
-
-a { /*Os links no menu*/
-  font-size: 20px; /*Tamanho da fonte*/
-  font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
-  color: white; /*Cor do texto*/
-  padding: 14px 14px; /*Espaçamento entre o conteudo e borda*/
-  text-decoration: none; /*Remove o sublinhado de links*/
+a {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  padding: 14px 14px;
+  text-decoration: none;
 }
 
-
-a:hover:not(#menu) { /*Ativa quando passa o mouse por cima dos links no menu*/
-  background-color: #2c612f; /*Cor da caixa*/
+a:hover:not(#menu) {
+  background-color: #2c612f;
 }
 
-
-#menu { /*Os links no menu*/
-  background-color: #04AA6D; /*Cor da caixa*/
+#menu {
+  background-color: #04AA6D;
 }
-
 
 /* Estilo para o header ou navbar */
 #user-info {
-  width: 6em; /*Largura*/
-  height: 1em; /*Altura*/
-  background-color: #468749; /*Cor do menu*/
-  border: 2px solid #ccc; /*Bordas para as caixas*/
-  border-radius: 5px; /*Bordas arredondadas para a seção*/
-  padding: 8px; /*Espaçamento entre o conteudo e borda*/
-  position: relative; /*Para que o dropdown fique posicionado corretamente*/
-  text-align: center; /*Alinha o texto no centro*/
+  width: 6em;
+  height: 1em;
+  background-color: #468749;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  padding: 8px;
+  position: relative;
+  text-align: center;
 }
-
 
 #dropdown {
-  width: 6em; /*Largura*/
-  height: 2em; /*Altura*/
-  position: absolute; /*Definir a posição de um elemento*/
-  background-color: #468749; /*Cor do menu*/
-  border: 2px solid #ccc; /*Bordas para as caixas*/
-  border-radius: 5px; /*Bordas arredondadas para a seção*/
-  display: none; /*Inicialmente escondido*/
+  width: 6em;
+  height: 2em;
+  position: absolute;
+  background-color: #468749;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  display: none;
 }
-
 
 #logout {
-  padding: 5px; /*Espaçamento entre o conteudo e borda*/
-  text-align: center; /*Alinha o texto no centro*/
-  cursor: pointer; /*Especifica o cursor do mouse mostrado quando o ponteiro do mouse está sobre um elemento*/
+  padding: 5px;
+  text-align: center;
+  cursor: pointer;
 }
-
 
 #logout:hover {
-  background-color: #2c612f; /*Cor do menu*/
+  background-color: #2c612f;
 }
 
-
-p { /*O texto escrito no site*/
-  font-size: 20px; /*Tamanho*/
-  font-family: 'Times New Roman', Times, serif; /*Fonte*/
-  margin: 20px; /*Margem lateral*/
-  flex: 1; /*Alinha espaços*/
-  margin-right: 20px; /*Espaço entre texto e imagem*/
+p {
+  font-size: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 20px;
+  flex: 1;
+  margin-right: 20px;
 }
 
-
-h1 { /*Título do site*/
-  color: #468749; /*Cor do texto*/
-  font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
-  font-size: 35px; /*Tamanho da fonte*/
+h1 {
+  color: #468749;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 35px;
 }
 
-
-footer { /*Rodape completo*/
-  background-color: #468749; /*Cor do rodape*/
-  color: white; /*Cor do texto*/
-  padding: 20px; /*Espaçamento entre o conteudo e borda*/
+footer {
+  background-color: #468749;
 }
 
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+  /* Menus e barra de navegação */
+  .menu2 {
+    text-indent: 0; /* Remove o recuo */
+    padding: 10px;
+  }
 
-.footer-container { /*Todos os div estão dentro dessa classe*/
-  display: flex; /*Utilizada para organizar os elementos*/
-  justify-content: space-between; /*Distribui os elementos de forma igual ao longo da linha*/
-  width: 70%; /*Largura*/
+  .menu2 a {
+    display: block; /* Faz com que os links se empilhem em uma coluna */
+    text-align: left;
+    padding: 10px;
+  }
+
+  header {
+    
+    background-repeat: no-repeat;
+    width: auto;
+  }
+
+  /* Ajustando o campo de nome e dropdown para telas menores */
+  #user-info {
+    width: 18.5%; /* Faz com que ocupe toda a largura */
+    position: relative;
+    top: 20%;
+    text-align: left;
+    padding: 5px;
+  }
+
+  #user-info span {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  /* Organizando o dropdown ao lado do menu */
+  #dropdown {
+    position: absolute;
+    right: 10px;
+    top: 100%;
+  }
+
+  /* Imagens responsivas */
+  img {
+    width: 100%; /* A imagem ocupa 100% da largura no dispositivo pequeno */
+    height: auto;
+  }
+
+  /* Ajustando os títulos */
+  h1 {
+    font-size: 28px; /* Ajusta o tamanho do título */
+  }
+
+  /* Ajuste no footer */
+  footer {
+    text-align: center;
+  }
+
+  footer .footer-container {
+    display: flex;
+    flex-direction: column; /* Organiza os itens do rodapé em coluna */
+    align-items: center;
+  }
+
+  footer .footer-container div {
+    margin-bottom: 10px; /* Espaço entre as seções */
+  }
+
+  footer .contact-item {
+    display: block;
+    margin: 5px 0;
+  }
 }
 
-
-.integrantes, .contatos { /*As duas listas*/
-  margin: 0 20px; /*Margem lateral*/
-}
-
-
-.contatos { /*Lista de contato*/
-  margin-bottom: 10px; /*Margem de botão*/
-}
+@media screen and (max-width: 480px) {
+  /* Ajustes adicionais para telas muito pequenas */
+  .menu2 a {
+    padding: 8px;
+    font-size: 16px; /* Menor tamanho de fonte */
+  }
 
 
-.lista { /*Lista dos nomes*/
-  list-style-type: none; /*Maneira abreviada de se escrever uma só declaração para duas das propriedades para listas*/
-  padding: 0; /*Espaçamento entre o conteudo e borda*/
-}
+  #user-info {
+    padding: 5px;
+    text-align: left;
+    width: 25.5%;
+  }
 
+  h1 {
+    font-size: 24px; /* Menor tamanho de título */
+  }
 
-.nome { /*Os próprios nomes*/
-  margin: 5px 0; /*Margem lateral*/
-}
-
-
-.contact-item { /*Os próprios itens*/
-  display: flex; /*Utilizada para organizar os elementos*/
-  align-items: center; /*Controlar o alinhamento de itens*/
-  margin: 5px 0; /*Margem lateral*/
-}
-
-
-.contact-item i { /*Icones*/
-  margin-right: 5px; /*Move os itens a 5px para a esquerda*/
-  color: #fff; /*Cor do ícone*/
-}
-
-
-.fas, .fab { /*Estilos para ícones*/
-  font-size: 18px; /*Tamanho da fonte*/
+  p {
+    font-size: 16px; /* Reduz o tamanho da fonte */
+    margin: 10px;
+  }
 }
