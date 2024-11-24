@@ -1,84 +1,3 @@
-/*Estilos Gerais Feedback*/
-#menu-feedback {
-    position: fixed; /*Fixa o menu no lugar*/
-    bottom: 10px; /*Fica 10px acima da parte inferior da tela*/
-    right: 10px; /*Fica 10px distante da borda direita*/
-    z-index: 9999; /*Garante que o menu fique sobre outros elementos*/
-}
-
-
-.btnFeedback {
-    background-color: #468749; /*Cor do fundo*/
-    color: white; /*Cor da fonte*/
-    border-radius: 50%; /*Bordas arredondadas*/
-    display: flex; /*Permite organizar elementos em um container de forma flexível*/
-    justify-content: center; /*Alinha os elementos horizontalmente*/
-    align-items: center; /*Alinha os itens no centro*/
-    width: 50px; /*Largura*/
-    height: 50px; /*Altura*/
-    cursor: pointer; /*Altera o cursor do mouse quando ele passa sobre um elemento específico*/
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
-}
-
-
-.material-symbols-outlined {
-    font-size: 30px; /*Tamanho da fonte*/
-}
-
-
-.painel-feedback {
-    display: none; /*Indica que um elemento não deve ser exibido na página*/
-    background-color: #fff; /*Cor do fundo*/
-    border: 1px solid #ccc; /*Bordas para as caixas*/
-    padding: 20px; /*Espaçamento entre o conteudo e borda*/
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
-    border-radius: 10px; /*Bordas arredondadas*/
-    width: 300px; /*Largura*/
-}
-
-
-.painel-feedback h3 {
-    margin-bottom: 10px; /*Define a margem inferior de um elemento*/
-    color: #4caa38; /*Cor da fonte*/
-}
-
-
-.painel-feedback p {
-    color: #4caa38; /*Cor da fonte*/
-}
-
-
-.painel-feedback textarea {
-    width: 100%; /*Largura*/
-    padding: 3px; /*Espaçamento entre o conteudo e borda*/
-    border-radius: 5px; /*Bordas arredondadas*/
-    border: 1px solid #ccc; /*Bordas para as caixas*/
-    margin-bottom: 10px; /*Define a margem inferior de um elemento*/
-}
-
-
-.painel-feedback button {
-    background-color: #468749; /*Cor de fundo*/
-    color: white; /*Cor da fonte*/
-    border: none; /*Bordas para as caixas*/
-    padding: 10px; /*Espaçamento entre o conteudo e borda*/
-    cursor: pointer; /*Altera o cursor do mouse quando ele passa sobre um elemento específico*/
-    border-radius: 5px; /*Bordas arredondadas*/
-    width: 100%; /*Largura*/
-}
-
-
-/*Responsividade*
-@media (max-width: 600px) {
-    .painel-feedback {
-        width: 90%; /*Faz o painel de feedback ocupar 90% da largura da tela em dispositivos móveis
-    }
-}*/
-
-
-
-
-
 /*Estilos Gerais Acessibilidade*/
 #menu-acessibilidade {
     position: fixed; /*Fixa o menu no lugar*/
@@ -147,4 +66,105 @@ label {
 .fundo-escuro {
     background-color: #333; /*Cor do fundo*/
     color: white; /*Cor da fonte*/
+}
+
+
+
+
+
+/*Estilos Gerais Feedback*/
+#menu-feedback {
+    position: fixed; /*Fixa o menu no lugar*/
+    bottom: 10px; /*Fica 10px acima da parte inferior da tela*/
+    right: 10px; /*Fica 10px distante da borda direita*/
+    z-index: 9999; /*Garante que o menu fique sobre outros elementos*/
+}
+
+
+.btnFeedback {
+    background-color: #468749; /*Cor do fundo*/
+    color: white; /*Cor da fonte*/
+    border-radius: 50%; /*Bordas arredondadas*/
+    display: flex; /*Permite organizar elementos em um container de forma flexível*/
+    justify-content: center; /*Alinha os elementos horizontalmente*/
+    align-items: center; /*Alinha os itens no centro*/
+    width: 50px; /*Largura*/
+    height: 50px; /*Altura*/
+    cursor: pointer; /*Altera o cursor do mouse quando ele passa sobre um elemento específico*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
+}
+
+
+.material-symbols-outlined {
+    font-size: 40px; /*Tamanho da fonte*/
+}
+
+
+.painel-feedback {
+    display: none; /*Indica que um elemento não deve ser exibido na página*/
+    background-color: #fff; /*Cor do fundo*/
+    border: 1px solid #ccc; /*Bordas para as caixas*/
+    padding: 20px; /*Espaçamento entre o conteudo e borda*/
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
+    border-radius: 10px; /*Bordas arredondadas*/
+    width: 300px; /*Largura*/
+}
+
+
+.painel-feedback h3 {
+    margin-bottom: 10px; /*Define a margem inferior de um elemento*/
+    color: #4caa38; /*Cor da fonte*/
+}
+
+
+.painel-feedback p {
+    color: #4caa38; /*Cor da fonte*/
+}
+
+
+.painel-feedback textarea {
+    width: 100%; /*Largura*/
+    padding: 3px; /*Espaçamento entre o conteudo e borda*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    border: 1px solid #ccc; /*Bordas para as caixas*/
+    margin-bottom: 10px; /*Define a margem inferior de um elemento*/
+}
+
+
+.painel-feedback button {
+    background-color: #468749; /*Cor de fundo*/
+    color: white; /*Cor da fonte*/
+    border: none; /*Bordas para as caixas*/
+    padding: 10px; /*Espaçamento entre o conteudo e borda*/
+    cursor: pointer; /*Altera o cursor do mouse quando ele passa sobre um elemento específico*/
+    border-radius: 5px; /*Bordas arredondadas*/
+    width: 100%; /*Largura*/
+}
+
+
+
+
+
+/*Responsividade*/
+/*Tablets*/
+@media(min-width: 600px) and (max-width: 912px){
+    #menu-feedback {
+        right: 24px; /*Move ambos os button 24px para a direita*/
+    }
+}
+
+
+/*Celulares*/
+@media(max-width: 450px) {
+    #menu-feedback {
+        right: 24px; /*Move ambos os button 24px para a direita*/
+    }
+}
+
+
+@media(max-width: 344px) {
+    #menu-feedback {
+        position: fixed; /*Fixa o menu no lugar*/
+        right: 10px;
+    }
 }
