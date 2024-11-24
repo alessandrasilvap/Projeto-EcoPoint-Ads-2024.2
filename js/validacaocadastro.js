@@ -129,7 +129,6 @@ document.getElementById('buscar').addEventListener('click', function() {
 
 
 document.getElementById('buscar').addEventListener('click', function() {
-document.getElementById('cep').value = '';
 document.getElementById('rua').textContent = '';
 document.getElementById('bairro').textContent = '';
 document.getElementById('cidade').textContent = '';
