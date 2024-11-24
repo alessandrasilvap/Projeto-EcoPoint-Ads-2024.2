@@ -29,8 +29,12 @@ document.getElementById('increaseFont').addEventListener('click', function() {
   if (currentFontSize < maxFontSize) {
     // Aumenta o tamanho da fonte em 2px
     content.style.fontSize = (currentFontSize + 2) + 'px';
+    // Ajusta o tamanho da caixa
+    content.style.height = content.scrollHeight + 'px';
   }
 });
+
+
 
 document.getElementById('decreaseFont').addEventListener('click', function() {
   //Seleciona o elemento que contém o conteúdo cujo tamanho de fonte será alterado
@@ -47,6 +51,8 @@ document.getElementById('decreaseFont').addEventListener('click', function() {
   if (currentFontSize > minFontSize) {
     // Diminui o tamanho da fonte em 2px
     content.style.fontSize = (currentFontSize - 2) + 'px';
+    // Ajusta o tamanho da caixa
+    content.style.height = content.scrollHeight + 'px';
   }
 });
 
@@ -84,7 +90,7 @@ function pararLeitura() {
 
 
 //Função para enviar o feedback
-function enviarFeedback() {
+function enviarFeedbackAceb() {
   const feedback = document.getElementById('feedback').value;
   if (feedback) {
     alert('Obrigado pelo seu feedback!');
