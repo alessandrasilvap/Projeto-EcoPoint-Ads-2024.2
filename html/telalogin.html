@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,7 @@
 <body>
     <div class="conteudo">
         <form name="formulariologin" action="#" method="post" autocomplete="off" target="_blank" novalidate>
-            <div class="comeco">
+            <div id="comeco">
                 <h1>Login</h1>
                 <input type="text" id="usuario" placeholder="Usuário:" maxlength="6" size="31">
                 <br>
@@ -30,35 +30,36 @@
                 <br>
             </div>
         </form>
-        <!--Menu de Acessibilidade-->
-        <div id="menu-acessibilidade" class="menu-acessibilidade">
-            <div class="btnAbre" onclick="toggleAcessMenu()">
-            <span class="material-symbols-outlined">accessible_forward</span>
-            </div>
-            <div id="painel-acessibilidade" class="painel-acessibilidade">
-                <button id="increaseFont">Aumentar Fonte</button>
-                <button id="decreaseFont">Diminuir Fonte</button>
-                <button onclick="mudarContraste()">Alterar Contraste</button>
-                <button onclick="lerConteudo()">Ler Conteúdo</button>
-                <button onclick="pararLeitura()">Parar Leitura</button>
-                <label for="feedback">Feedback de acessibilidade:</label>
-                <textarea id="feedback" rows="4" placeholder="Tem um problema de acessibilidade? Nós de um Feedback"></textarea>
-                <button onclick="enviarFeedback()">Enviar Feedback</button>
-            </div>
+    </div>
+    <!--Menu de Acessibilidade-->
+    <div id="menu-acessibilidade" class="menu-acessibilidade">
+        <div class="btnAbre" onclick="toggleAcessMenu()">
+        <span class="material-symbols-outlined">accessible_forward</span>
         </div>
-        <!--Menu de Feedback-->
-        <div id="menu-feedback" class="menu-feedback">
-            <div class="btnFeedback" onclick="toggleFeedbackMenu()">
-            <span class="material-symbols-outlined">feedback</span>
-            </div>
-            <div id="painel-feedback" class="painel-feedback">
-                <h3>Deixe seu Feedback</h3>
-                <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
-                Abaixo escreva um feedback sobre nosso site e sua experiência dentro dele.
-                Não se esqueça, pode fazer isso quando e quantas vezes quiser!!</p>
-                <textarea id="feedback-text" rows="5" placeholder="Digite aqui seu feedback..."></textarea>
-                <button onclick="enviarFeedback()">Enviar Feedback</button>
-            </div>
+        <div id="painel-acessibilidade" class="painel-acessibilidade">
+            <button id="increaseFont">Aumentar Fonte</button>
+            <button id="decreaseFont">Diminuir Fonte</button>
+            <button onclick="mudarContraste()">Alterar Contraste</button>
+            <button onclick="lerConteudo()">Ler Conteúdo</button>
+            <button onclick="pararLeitura()">Parar Leitura</button>
+            <br>
+            <label for="feedback">Feedback de acessibilidade:</label>
+            <textarea id="feedback" rows="4" placeholder="Tem um problema de acessibilidade? Nós de um Feedback"></textarea>
+            <button onclick="enviarFeedbackAceb()">Enviar Feedback</button>
+        </div>
+    </div>
+    <!--Menu de Feedback-->
+    <div id="menu-feedback" class="menu-feedback">
+        <div class="btnFeedback" onclick="toggleFeedbackMenu()">
+        <span class="material-symbols-outlined">feedback</span>
+        </div>
+        <div id="painel-feedback" class="painel-feedback">
+            <h3>Deixe seu Feedback</h3>
+            <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
+            Abaixo escreva um feedback sobre nosso site e sua experiência dentro dele.
+            Não se esqueça, pode fazer isso quando e quantas vezes quiser!!</p>
+            <textarea id="feedback-text" rows="5" placeholder="Digite aqui seu feedback..."></textarea>
+            <button onclick="enviarFeedback()">Enviar Feedback</button>
         </div>
     </div>
     <script src="../js/validacaologin.js"></script> <!--Código JS da validação do site todo-->
