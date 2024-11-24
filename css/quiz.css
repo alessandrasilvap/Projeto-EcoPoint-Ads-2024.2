@@ -9,12 +9,10 @@ button {
     color: #333; /*Cor do texto*/
     width: 98%; /*Largura*/
     max-width: 800px; /*Largura máxima*/
-
     border: 2px solid black; /*Bordas para as caixas*/
     border-radius: 6px; /*Bordas arredondadas*/
     padding: 16px; /*Espaçamento entre o conteudo e borda*/
     box-shadow: 0 0 2px 2px; /*Sombra sutil*/
-
     display: flex; /*Permite organizar elementos em um container de forma flexível*/
     flex-direction: column; /*Indica que os elementos flexíveis serão exibidos em uma única coluna, de cima para baixo*/
     justify-content: center; /*Alinha os elementos horizontalmente*/
@@ -43,7 +41,7 @@ button {
     display: grid; /*Permite dimensões, usando uma grade de linhas e colunas*/
     grid-template-columns: 1fr 1fr; /*Define os nomes das linhas e as funções de dimensionamento das colunas do grid*/
     gap: 16px; /*Define o espaçamento entre as linhas e colunas de um grid ou flexbox*/
-    margin-right: 9em; /*Move as caixas 20em para a direita*/
+    margin-right: 9em; /*Move as caixas 9em para a direita*/
 }
 
 
@@ -60,13 +58,13 @@ button {
 
 .final-message span {
     display: block; /*Define que um elemento será exibido como um bloco*/
-    margin-top: 8px; /*Define a distância entre um elemento e o elemento que está acima dele*/
+    margin-top: 8px; /*Move a mensagem 8px para baixo*/
     text-align: center; /*Centraliza o conteúdo de elementos*/
 }
 
 
 .next-questin {
-    margin-top: 32px; /*Define a distância entre um elemento e o elemento que está acima dele*/
+    margin-top: 32px; /*Move o texto 32px para baixo*/
 }
 
 
@@ -79,7 +77,6 @@ button {
     border-radius: 6px; /*Bordas arredondadas*/
     height: 55px; /*Altura*/
     padding: 0 32px; /*Espaçamento entre o conteudo e borda*/
-
     transition: filter 0.2s; /*Define um efeito de filtro com uma duração de 0,2 segundos*/
 }
 
@@ -106,4 +103,96 @@ button {
 
 .incorrect {
     background-color: #a10101; /*Cor do fundo*/
+}
+
+
+
+
+
+/*Responsividade*/
+/*Computadores*/
+@media (max-width: 1024px) {
+    .container {
+        max-width: 900px; /*Largura máxima*/
+    }
+
+    .answers-container {
+        margin-right: 5em; /*Move o texto 5em para a direta*/
+    }
+
+    .button {
+        height: 75px; /*Altura*/
+    }
+}
+
+
+/*Tablets*/
+@media(min-width: 600px) and (max-width: 912px){
+    .container {
+        width: 90%; /*Largura*/
+    }
+
+    .question {
+        font-size: 18px; /*Tamanho da letra*/
+    }
+
+    .answers-container {
+        margin-left: 5em; /*Move o texto 5em para a esquerda*/
+        display: grid; /*Permite criar layouts de grade bidimensionais*/
+        grid-template-columns: 1fr; /*Define os nomes das linhas e as funções de dimensionamento das colunas do grid*/
+    }
+
+    .button {
+        width: 450px; /*Largura*/
+        margin-right: 92px; /*Move os botões 92px para a direta*/
+    }
+}
+
+
+/*Celulares*/
+@media(max-width: 450px) {
+    .container {
+        width: 90%; /*Largura*/
+    }
+
+    .question {
+        font-size: 65%; /*Tamanho da letra*/
+    }
+
+    .answers-container {
+        display: grid; /*Permite criar layouts de grade bidimensionais*/
+        grid-template-columns: 1fr; /*Define os nomes das linhas e as funções de dimensionamento das colunas do grid*/
+        margin-left: 15em; /*Move o texto 15em para a esquerda*/
+    }
+
+    .button {
+        height: 65px; /*Altura*/
+    }
+}
+
+
+@media(max-width: 375px) {
+    .question {
+        font-size: 60%; /*Tamanho da letra*/
+    }
+
+    .answers-container {
+        margin-left: 13em; /*Move o texto 13em para a esquerda*/
+    }
+}
+
+
+@media(max-width: 344px) {
+    .question {
+      font-size: 90%; /*Tamanho da letra*/
+    }
+  
+    .answers-container {
+      margin-left: 11em; /*Move o texto 11em para a esquerda*/
+    }
+  
+    .button {
+      width: 300px; /*Largura*/
+      margin-right: 30px; /*Move os botões 30px para a direta*/
+    }
 }
