@@ -1,132 +1,12 @@
-/*xxxxxxxxxxxxx  Menu responsivo xxxxxxxxxxxxxx */
-
-* {
-  box-sizing: border-box;
-}
-
-
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/*  Todas essas colunas devem flutuar para a esquerda e ter um preenchimento de 15px: */
-
-[class*="col-"] {
-    float: left;
-    padding: 15px;
-    
-}
-
-/* Em vez de mudar os estilos quando a largura fica menor que 768px, devemos mudar o design quando a largura fica maior que 768px. Isso tornará nosso design Mobile First: */
-
-@media only screen and (max-width: 540px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
- }
- 
- 
-}
-
-
-@media only screen and (max-width: 1125px){
-
-  #pesquisa {
-    width: 90%;
-    margin: 1rem;
-  }
-
- 
- 
-}
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-@media only screen and (min-width: 768px) {
-  
-  /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-/* Media queries podem ajudar com isso. Podemos adicionar um breakpoint onde certas partes do design se comportarão de forma diferente em cada lado do breakpoint. */
-
-
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-
-
-
-
-
-
-
-
-
 body { /*Imagem de fundo*/
   background-image: url(../imagens/fotodofundo.png); /*Imagem*/
   background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
   background-attachment: fixed; /*Fixa a imagem*/
   background-size: cover; /*Ajusta a imagem*/
-  width: 100%; /*Largura*/
+  height: 100vh; /*Altura total da tela*/
+  margin: 0; /*Remove margem*/
 }
+
 
 input, select, button, textarea { /*Formatação dos campos de entrada*/
   border-radius: 4em; /*Bordas arredondadas*/
@@ -136,19 +16,31 @@ input, select, button, textarea { /*Formatação dos campos de entrada*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
 }
 
-.comeco { /*Formatação da caixa no meio*/
+
+#comeco { /*Formatação da caixa no meio*/
   width: 325px; /*Largura*/
   height: 400px; /*Altura*/
   top: 32%; /*Move a caixa 32% para baixo*/
-  left: 40%; /*Move a caixa 40% para a esquerda*/
+  left: 42%; /*Move a caixa 42% para a esquerda*/
   border: 1px double black; /*Bordas para as caixas*/
+  position: absolute; /*Alterar a posição de um elemento em relação à sua posição inicial*/
   padding: 20px; /*Espaçamento entre o conteudo e borda*/
   border-radius: 5%; /*Bordas arredondadas*/
   box-sizing: border-box; /*Altera a forma como o navegador calcula a largura e a altura de um elemento*/
+  transform: rotate(90); /*Rotação da caixa*/
   background-color: #4caa38; /*Cor do fundo*/
   text-indent: 95px; /*Define o recuo do texto*/
   opacity: 60%; /*Deixa meio transparente*/
   position: fixed; /*Fixa o quadrado na tela*/
+  min-height: fit-content; /*Define a altura mínima do fieldset como o conteúdo interno*/
+  height: auto; /*Permite que a altura do fieldset se adapte automaticamente ao conteúdo*/
+}
+
+
+.conteudo {
+  display: flex; /*Transforma o elemento em um container flexível*/
+  flex-direction: column; /*Define a direção dos elementos filhos como vertical (coluna)*/
+  overflow: auto; /*Permite que o conteúdo seja rolado se necessário*/
 }
 
 
@@ -161,15 +53,16 @@ input:hover, button:hover, select:hover, textarea:hover { /*Ativa borda e sombra
 input[type="text"], input[type="password"] {
   margin-left: 9px; /*Move ambos os inputs 9px para a esquerda*/
   margin-top: 2%;  /*Move ambos os inputs 2% para baixo*/
-  height: 10%;
 }
 
+
 h1 { /*Título*/
-  color: rgb(6, 49, 26); /*Cor do texto*/
+  color: black; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
   margin-left: 6px; /*Move o título 6px para a esquerda*/
   margin-top: 2%; /*Move o título 2% para baixo*/
 }
+
 
 button { /*Botões*/
   width: 265px; /*Largura*/
@@ -187,6 +80,103 @@ a { /*Links*/
   text-decoration: none; /*Remove o sublinhado*/
   border-radius: 4px; /*Bordas arredondadas*/
   text-indent: 5px; /*Define o recuo do texto*/
-  margin-left: 2px; /*Move ambos os inputs 2px para a esquerda*/
+  margin-left: 2px; /*Move ambos o texto 2px para a esquerda*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
+}
+
+
+
+
+
+/*Responsividade*/
+/*Computadores*/
+@media (max-width: 1280px) {
+  #comeco {
+    width: 25%; /*Largura*/
+    height: 55%; /*Altura*/
+    left: 43%; /*Move a caixa 43% para a esquerda*/
+  }
+}
+
+
+@media (max-width: 1024px) {
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  #comeco {
+    width: 33%; /*Largura*/
+    height: 60%; /*Altura*/
+    left: 34%; /*Move a caixa 34% para a esquerda*/
+    top: 25%; /*Move a caixa 25% para baixo*/
+  }
+}
+
+
+/*Tablets*/
+@media(min-width: 600px) and (max-width: 912px){
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  #comeco {
+    width: 40%; /*Largura*/
+    height: 37%; /*Altura*/
+    left: 30%; /*Move a caixa 30% para a esquerda*/
+    top: 35%; /*Move a caixa 35% para baixo*/
+  }
+}
+
+
+/*Celulares*/
+@media(max-width: 450px) {
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  #comeco {
+    width: 80%; /*Largura*/
+    height: 50%; /*Altura*/
+    left: 10%; /*Move a caixa 10% para a esquerda*/
+    top: 30%; /*Move a caixa 30% para baixo*/
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 540px) {
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  #comeco {
+    width: 60%; /*Largura*/
+    left: 20%; /*Move a caixa 20% para a esquerda*/
+  }
+}
+
+
+@media(max-width: 375px) {
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  #comeco {
+    width: 90%; /*Largura*/
+    height: 50%; /*Altura*/
+    left: 5%; /*Move a caixa 5% para a esquerda*/
+  }
+}
+
+
+@media(max-width: 344px) {
+  body { 
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  #comeco {
+    width: 95%; /*Largura*/
+    height: 50%; /*Altura*/
+    left: 2%; /*Move a caixa 2% para a esquerda*/
+    top: 30%; /*Move a caixa 30% para baixo*/
+  }
 }
