@@ -102,6 +102,8 @@ function formatarCEP(input) {
     input.value = cep;
 }
 
+
+
 document.getElementById('buscar').addEventListener('click', function() {
 
     const cep = document.getElementById('cep').value;
@@ -123,6 +125,8 @@ document.getElementById('buscar').addEventListener('click', function() {
         console.error('Erro:', error);
     });
 });
+
+
 
 document.getElementById('buscar').addEventListener('click', function() {
 document.getElementById('cep').value = '';
