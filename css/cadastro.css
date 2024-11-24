@@ -1,80 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-
-@media only screen and (max-width: 1400px){
-  
-   .caixaesquerda input{ 
-  max-width: 350px; /*Largura máxima*/
-  }
-
-  .caixadireita input {
-    max-width: 350px;
-  }
-}
-
-@media only screen and (max-width: 1275px){
-  
-  .caixaesquerda input{ 
- max-width: 300px; /*Largura máxima*/
- }
-
- .caixadireita input {
-   max-width: 300px;
- }
-}
-
-
-@media only screen and (max-width: 1158px){
-  
-  .caixaesquerda input{ 
- max-width: 250px; /*Largura máxima*/
- }
-
- .caixadireita input {
-   max-width: 250px;
- }
-}
-
-
-@media only screen and (max-width: 1072px){
-  
-  .caixaesquerda input , .caixadireita input { 
-    max-width: 100%; /*Largura máxima*/
- }
-
-
-
-}
-
-@media only screen and (max-width: 783px){
-  
-  #caixaesquerda, #caixadireita, .btn {
-    margin-left: 0; /* Remove qualquer margem esquerda */
-    transform: translateX(-80%); /* Move as caixas para o lado esquerdo */
-  
-  }
-
-  select {
-    width: 150px; /*Largura*/
-    max-height: 35px; /*Altura*/
-    font-size: 18px; /*Ajusta o tamanho do texto*/
-  }
-
-  #buscar {
-    width: 100px; /*Largura*/
-    max-height: 2.5rem; /*Altura*/
-  }
-  .titulo {
-    margin-top: 2rem;
-    margin-left: 7rem;
-    font-size: 45px;
-  }
-
-}
-
-
 header { /*Imagem no topo*/
   background-image: url(../imagens/barracadastro.png); /*Imagem*/
   padding: 6em; /*Espaçamento entre o conteudo e borda*/
@@ -139,8 +62,13 @@ select {
   border-radius: 5px; /*Bordas arredondadas*/
   background-color: #ffffff; /*Cor do fundo*/
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
-  height: 40rem; /*Altura*/
-  min-width: 300px; /*Largura minima*/
+}
+
+
+.conteudo {
+  display: flex; /*Transforma o elemento em um container flexível*/
+  flex-direction: column; /*Define a direção dos elementos filhos como vertical (coluna)*/
+  overflow: auto; /*Permite que o conteúdo seja rolado se necessário*/
 }
 
 
@@ -172,9 +100,8 @@ select {
 
 
 #botoes { /*Posição dos botões*/
-  margin-left: 12.5%;
-  margin-bottom: 5%; /*Dimensão da margem esquerda*/
-  /*Distância entre um elemento e o elemento que está acima dele*/
+  margin-left: 230px; /*Dimensão da margem esquerda*/
+  margin-top: 5%; /*Distância entre um elemento e o elemento que está acima dele*/
 }
 
 
@@ -213,7 +140,6 @@ h3 { /*Título da primeira caixa*/
   color: #468749; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
   margin-left: 6px; /*Dimensão da margem esquerda*/
-  top: 10%; /*Move o título 10% para baixo*/
   font-size: 130%; /*Tamanho da letra*/
 }
 
@@ -230,4 +156,131 @@ h4 { /*Título da segunda caixa*/
 p {
   color:#468749; /*Cor do texto*/
   margin-left: 10px; /*Move o título 10px para a esquerda*/
+}
+
+
+
+
+
+/*Responsividade*/
+/*Computadores*/
+@media (max-width: 1280px) {
+  #botoes {
+    margin-left: 15px; /*Move os botões 15px para a esquerda*/
+  }
+
+  .cadastro {
+    width: 65%; /*Largura*/
+  }
+}
+
+
+@media (max-width: 1024px) {
+  form {
+    margin-left: 5%; /*Move as caixas 5% para a esquerda*/
+  }
+
+  #botoes {
+    margin-right: 10em; /*Move os botões 10em para a direita*/
+  }
+
+  .cadastro {
+    width: 80%; /*Largura*/
+  }
+}
+
+
+/*Tablets*/
+@media(min-width: 600px) and (max-width: 912px){
+  form {
+    margin-left: 10%; /*Move as caixas 10% para a esquerda*/
+  }
+
+  #caixaesquerda, #caixadireita { /*Caixas que estão os campos*/
+    height: 60%; /*Altura*/
+  }
+
+  #botoes { /*Posição dos botões*/
+    margin-left: 95px; /*Move os botões 95px para a esquerda*/
+  }
+}
+
+
+/*Celulares*/
+@media(max-width: 450px) {
+  form {
+    margin-left: 15%; /*Move as caixas 3% para a esquerda*/
+  }
+
+  h2 {
+    font-size: 200%; /*Tamanho da letra*/
+  }
+  
+  h3 {
+    font-size: 90%; /*Tamanho da letra*/
+  }
+  
+  h4 {
+    font-size: 100%; /*Tamanho da letra*/
+  }
+
+  p {
+    font-size: 80%; /*Tamanho da letra*/
+  }
+
+  select {
+    font-size: 10px; /*Tamanho da letra*/
+  }
+
+  input, select, button, textarea {
+    height: 4%; /*Altura*/
+    max-width: 200px; /*Largura máxima*/
+  }
+
+  .cadastro {
+    width: 80%; /*Largura*/
+  }
+
+  #caixaesquerda, #caixadireita { /*Caixas que estão os campos*/
+    height: 35rem; /*Altura*/
+  }
+
+  #caixaesquerda input, #caixadireita input{
+    height: 1rem; /*Altura*/
+  }
+
+  #buscar {
+    width: 100px; /*Largura*/
+    height: 2rem; /*Altura*/
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 540px) {
+  form {
+    margin-left: 3%; /*Move as caixas 3% para a esquerda*/
+  }
+
+  .cadastro {
+    width: 90%; /*Largura*/
+  }
+
+  #botoes { /*Posição dos botões*/
+    margin-left: 95px; /*Move os botões 95px para a esquerda*/
+  }
+}
+
+
+@media(max-width: 360px) {
+  form {
+    margin-left: 2%; /*Move as caixas 2% para a esquerda*/
+  }
+
+  .cadastro {
+    width: 90%; /*Largura*/
+  }
+
+  #botoes { /*Posição dos botões*/
+    margin-left: 55px; /*Move os botões 55px para a esquerda*/
+  }
 }
