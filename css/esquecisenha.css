@@ -3,13 +3,14 @@ body { /*Imagem de fundo*/
   background-repeat: no-repeat; /*Se a imagem será repetida ou não*/
   background-attachment: fixed; /*Fixa a imagem no fundo*/
   background-size: cover; /*Ajusta a imagem*/
-  width: 100%; /*Largura*/
+  height: 100vh; /*Altura total da tela*/
+  margin: 0; /*Remove margem*/
 }
 
 
 fieldset { /*Formatação da caixa no meio*/
-  width: 800px; /*Largura*/
-  height: 400px; /*Altura*/
+  width: 40%; /*Largura*/
+  height: 42%; /*Altura*/
   top: 32%; /*Move a caixa 32% para baixo*/
   left: 30%; /*Move a caixa 30% para a esquerda*/
   border: 1px double black; /*Bordas para as caixas*/
@@ -17,10 +18,19 @@ fieldset { /*Formatação da caixa no meio*/
   padding: 2px; /*Espaçamento entre o conteudo e borda*/
   border-radius: 2%; /*Bordas arredondadas*/
   box-sizing: border-box; /*Altera a forma como o navegador calcula a largura e a altura de um elemento*/
-  transform: rotate(90); /*Rotação da caixa*/
   background-color: #4caa38; /*Cor da caixa*/
   text-indent: 10px; /*Define o recuo do texto*/
   opacity: 65%; /*Deixa meio transparente*/
+  transition: transform 0.5s; /*Utilizada para criar animações suaves*/
+  min-height: fit-content; /*Define a altura mínima do fieldset como o conteúdo interno*/
+  height: auto; /*Permite que a altura do fieldset se adapte automaticamente ao conteúdo*/
+}
+
+
+.conteudo {
+  display: flex; /*Transforma o elemento em um container flexível*/
+  flex-direction: column; /*Define a direção dos elementos filhos como vertical (coluna)*/
+  overflow: auto; /*Permite que o conteúdo seja rolado se necessário*/
 }
 
 
@@ -58,4 +68,99 @@ a { /*Links*/
   text-decoration: none; /*Remove o sublinhado*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
   text-align: center; /*Centraliza o conteúdo de elementos*/
+}
+
+
+
+
+
+/*Responsividade*/
+/*Computadores*/
+@media (max-width: 1280px) {
+  fieldset {
+    width: 45%; /*Largura*/
+    height: 55%; /*Altura*/
+    left: 35%; /*Move a caixa 35% para a esquerda*/
+  }
+}
+
+
+@media (max-width: 1024px) {
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  fieldset {
+    width: 50%; /*Largura*/
+    height: 67%; /*Altura*/
+    left: 29%; /*Move a caixa 29% para a esquerda*/
+  }
+}
+
+
+/*Tablets*/
+@media(min-width: 600px) and (max-width: 912px){
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  fieldset {
+    width: 80%; /*Largura*/
+    height: 37%; /*Altura*/
+    left: 8%; /*Move a caixa 8% para a esquerda*/
+  }
+}
+
+
+/*Celulares*/
+@media(max-width: 450px) {
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  fieldset {
+    width: 50%; /*Largura*/
+    height: 50%; /*Altura*/
+    left: 1%; /*Move a caixa 1% para a esquerda*/
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 540px) {
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  fieldset {
+    width: 90%; /*Largura*/
+    height: 59%; /*Altura*/
+    left: 5%; /*Move a caixa 5% para a esquerda*/
+  }
+}
+
+
+@media(max-width: 375px) {
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  fieldset {
+    width: 80%; /*Largura*/
+    height: 65%; /*Altura*/
+    left: 1%; /*Move a caixa 1% para a esquerda*/
+  }
+}
+
+
+@media(max-width: 344px) {
+  body {
+    background-position: top center; /*Define a posição inicial de uma imagem de fundo*/
+  }
+
+  fieldset {
+    width: 45%; /*Largura*/
+    height: 50%; /*Altura*/
+    left: 1%; /*Move a caixa 1% para a esquerda*/
+    top: 35%;/*Move a caixa 35% para baixo*/
+  }
 }
