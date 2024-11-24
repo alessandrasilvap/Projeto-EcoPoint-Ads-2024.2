@@ -44,36 +44,6 @@
             </ol>
             <p>Essas organizações muitas vezes colaboram com empresas e governos para desenvolver iniciativas que incentivem a reciclagem e o descarte responsável.</p>
         </section>
-        <!--Menu de Acessibilidade-->
-        <div id="menu-acessibilidade" class="menu-acessibilidade">
-            <div class="btnAbre" onclick="toggleAcessMenu()">
-            <span class="material-symbols-outlined">accessible_forward</span>
-            </div>
-            <div id="painel-acessibilidade" class="painel-acessibilidade">
-                <button id="increaseFont">Aumentar Fonte</button>
-                <button id="decreaseFont">Diminuir Fonte</button>
-                <button onclick="mudarContraste()">Alterar Contraste</button>
-                <button onclick="lerConteudo()">Ler Conteúdo</button>
-                <button onclick="pararLeitura()">Parar Leitura</button>
-                <label for="feedback">Feedback de acessibilidade:</label>
-                <textarea id="feedback" rows="4" placeholder="Tem um problema de acessibilidade? Nós de um Feedback"></textarea>
-                <button onclick="enviarFeedback()">Enviar Feedback</button>
-            </div>
-        </div>
-        <!--Menu de Feedback-->
-        <div id="menu-feedback" class="menu-feedback">
-            <div class="btnFeedback" onclick="toggleFeedbackMenu()">
-            <span class="material-symbols-outlined">feedback</span>
-            </div>
-            <div id="painel-feedback" class="painel-feedback">
-                <h3>Deixe seu Feedback</h3>
-                <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
-                Abaixo escreva um feedback sobre nosso site e sua experiência dentro dele.
-                Não se esqueça, pode fazer isso quando e quantas vezes quiser!!</p>
-                <textarea id="feedback-text" rows="5" placeholder="Digite aqui seu feedback..."></textarea>
-                <button onclick="enviarFeedback()">Enviar Feedback</button>
-            </div>
-        </div>
         <br>
         <br>
         <footer>
@@ -105,6 +75,37 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <!--Menu de Acessibilidade-->
+    <div id="menu-acessibilidade" class="menu-acessibilidade">
+        <div class="btnAbre" onclick="toggleAcessMenu()">
+        <span class="material-symbols-outlined">accessible_forward</span>
+        </div>
+        <div id="painel-acessibilidade" class="painel-acessibilidade">
+            <button id="increaseFont">Aumentar Fonte</button>
+            <button id="decreaseFont">Diminuir Fonte</button>
+            <button onclick="mudarContraste()">Alterar Contraste</button>
+            <button onclick="lerConteudo()">Ler Conteúdo</button>
+            <button onclick="pararLeitura()">Parar Leitura</button>
+            <br>
+            <label for="feedback">Feedback de acessibilidade:</label>
+            <textarea id="feedback" rows="4" placeholder="Tem um problema de acessibilidade? Nós de um Feedback"></textarea>
+            <button onclick="enviarFeedbackAceb()">Enviar Feedback</button>
+        </div>
+    </div>
+    <!--Menu de Feedback-->
+    <div id="menu-feedback" class="menu-feedback">
+        <div class="btnFeedback" onclick="toggleFeedbackMenu()">
+        <span class="material-symbols-outlined">feedback</span>
+        </div>
+        <div id="painel-feedback" class="painel-feedback">
+            <h3>Deixe seu Feedback</h3>
+            <p>Nosso site visa a mudança, nada melhor do que você nós ajudar de pertinho.
+            Abaixo escreva um feedback sobre nosso site e sua experiência dentro dele.
+            Não se esqueça, pode fazer isso quando e quantas vezes quiser!!</p>
+            <textarea id="feedback-text" rows="5" placeholder="Digite aqui seu feedback..."></textarea>
+            <button onclick="enviarFeedback()">Enviar Feedback</button>
+        </div>
     </div>
     <script src="../js/acessibfeedback.js"></script> <!--Código JS do painel de acessibilidade e da caixa de feedback-->
     <script src="../js/menulateral.js"></script> <!--Código JS do menu de autenticação do usuário-->
