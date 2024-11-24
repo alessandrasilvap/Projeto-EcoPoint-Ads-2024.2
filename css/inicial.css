@@ -1,187 +1,3 @@
-/*xxxxxxxxxxxxx  Menu responsivo xxxxxxxxxxxxxx */
-
-* {
-  box-sizing: border-box;
-}
-
-.menu ul {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  font-size: 15px;
-  
-}
-
-.menu li {
-  padding: 8px;
-  margin-bottom: 7px;
-  background-color: #468749;
-  color: rgb(255, 255, 255);
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}
-
-.menu li:hover{
-  transform: translateY(-1.5px);
-  background-color: #165538;
-  cursor: pointer;
-}
-
-
-
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-
-/*  Todas essas colunas devem flutuar para a esquerda e ter um preenchimento de 15px: */
-
-[class*="col-"] {
-    float: right;
-    padding: 15px;
-    
-}
-
-/* Em vez de mudar os estilos quando a largura fica menor que 768px, devemos mudar o design quando a largura fica maior que 768px. Isso tornará nosso design Mobile First: */
-
-@media only screen and (max-width: 740px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
- }
-
- #pesquisa{
-    max-width: 80%;
-    margin: 0;
- }
-
- .noticias {
-  width: 100%;
- }
-
- .item {
-  width: 100%;
- }
-}
-
-
-@media only screen and (max-width: 1125px){
-
-  #pesquisa {
-    width: 90%;
-    margin: 1rem;
-  }
-
- #searchbtn {
-    max-width: 50%;
- }
-
- .menu-acessibilidade {
-    margin-left: 70%;
- }
-
- .noticias {
-  width: 100%;
- }
-
- .item {
-  width: 100%;
- }
-}
-
-
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-
-@media only screen and (min-width: 768px) {
-  
-  /* For desktop: */
-.col-1 {width: 8.33%;}
-.col-2 {width: 16.66%;}
-.col-3 {width: 25%;}
-.col-4 {width: 33.33%;}
-.col-5 {width: 41.66%;}
-.col-6 {width: 50%;}
-.col-7 {width: 58.33%;}
-.col-8 {width: 66.66%;}
-.col-9 {width: 75%;}
-.col-10 {width: 83.33%;}
-.col-11 {width: 91.66%;}
-.col-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {width: 8.33%;}
-  .col-s-2 {width: 16.66%;}
-  .col-s-3 {width: 25%;}
-  .col-s-4 {width: 33.33%;}
-  .col-s-5 {width: 41.66%;}
-  .col-s-6 {width: 50%;}
-  .col-s-7 {width: 58.33%;}
-  .col-s-8 {width: 66.66%;}
-  .col-s-9 {width: 75%;}
-  .col-s-10 {width: 83.33%;}
-  .col-s-11 {width: 91.66%;}
-  .col-s-12 {width: 100%;}
-}
-
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {width: 8.33%;}
-  .col-2 {width: 16.66%;}
-  .col-3 {width: 25%;}
-  .col-4 {width: 33.33%;}
-  .col-5 {width: 41.66%;}
-  .col-6 {width: 50%;}
-  .col-7 {width: 58.33%;}
-  .col-8 {width: 66.66%;}
-  .col-9 {width: 75%;}
-  .col-10 {width: 83.33%;}
-  .col-11 {width: 91.66%;}
-  .col-12 {width: 100%;}
-}
-
-/* Media queries podem ajudar com isso. Podemos adicionar um breakpoint onde certas partes do design se comportarão de forma diferente em cada lado do breakpoint. */
-
-@media only screen and (max-width: 600px) {
-  .item {
-    width: 100%;  /* Cada item ocupa toda a largura disponível */
-  }
-
-
-
-}
-
-/* Para telas entre 600px e 1125px (tablets e desktops pequenos) */
-@media only screen and (max-width: 1125px) {
-  .item {
-    width: 45%; /* Dois itens lado a lado */
-  }
-}
-
-/* Para telas maiores que 1125px (desktop) */
-@media only screen and (min-width: 1125px) {
-  .item {
-    width: 200px; /* Tamanho fixo */
-  }
-}
-
-
-/* xxxxxxxxxxxxxxxxxxxxxxxxxxxxx */
-
-
 header { /*Imagem no topo*/
   background-image: url(../imagens/barracadastro.png); /*Imagem*/
   padding: 6em; /*Espaçamento entre o conteudo e borda*/
@@ -189,31 +5,46 @@ header { /*Imagem no topo*/
 }
 
 
-input { /*Formatação do campo*/
-  border-radius: 1em; /*Bordas arredondadas*/
-  padding: 5px; /*Espaçamento entre o conteudo e borda*/
-  margin-top: 1em; /*Dimensão da margem de baixo*/
-  margin-left: 30%; /*Dimensão da margem esquerda*/
-  height: 2em; /*Altura*/
+.menu ul {
+  list-style-type: none; /*Remove os marcadores padrão de todas as listas de um site*/
+  padding: 0; /*Espaçamento entre o conteudo e borda*/
+  margin: 0; /*Espaçamento externo do elemento*/
+  text-align: center; /*Centraliza os itens*/
+  font-size: 100%; /*Tamanho da fonte*/
+}
+
+
+.menu li {
+  padding: 8px; /*Espaçamento entre o conteudo e borda*/
+  margin-bottom: 7px; /*Margem inferior*/
+  background-color: #468749; /*Cor do fundo*/
+  color: rgb(255, 255, 255); /*Cor da fonte*/
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); /*Sombra sutil*/
+}
+
+
+.menu li:hover{
+  transform: translateY(-1.5px); /*Reposiciona um elemento verticalmente na página*/
+  background-color: #165538; /*Cor do fundo*/
+  cursor: pointer; /*Altera o cursor do mouse quando ele passa sobre um elemento específico*/
 }
 
 
 .noticias {
-  display: flex;
-  flex-wrap: wrap; /* Permite que os itens quebrem linha */
-  justify-content: center;
-  gap: 20px; /* Espaçamento entre os itens */
-  padding: 4%;
+  display: flex; /*Permite organizar elementos em um container de forma flexível*/
+  flex-wrap: wrap; /*Permite que os itens quebrem linha*/
+  justify-content: center; /*Alinha os elementos horizontalmente*/
+  gap: 20px; /*Espaçamento entre os itens*/
+  padding: 4%; /*Espaçamento entre o conteudo e borda*/
 }
 
 
 .item {
- 
-  margin: 0 auto;  /* Centraliza os itens */
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  margin: 0 auto;  /*Espaçamento externo do elemento*/
+  background-color: white; /*Cor do fundo*/
+  border-radius: 8px; /*Bordas arredondadas*/
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /*Sombra sutil*/
+  overflow: hidden; /*Corta o conteúdo que ultrapassa o tamanho de um elemento*/
 }
 
 
@@ -267,9 +98,9 @@ button:hover, .lermais:hover {
 
 
 p { /*O texto escrito no site*/
-  font-size: 20px; /*Tamanho do texto*/
+  font-size: 127%; /*Tamanho do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte*/
-  margin-left: 7%; /*Move o button 7% para a esquerda*/
+  margin-left: 7%; /*Move o texto 7% para a esquerda*/
   flex: 1; /*Alinha espaços*/
 }
   
@@ -277,16 +108,17 @@ p { /*O texto escrito no site*/
 h1 { /*Título do site*/
   color: #468749; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
-  font-size: 35px; /*Tamanho da fonte*/
-  margin-left: 5%; /*Move o button 5% para a esquerda*/
+  font-size: 250%; /*Tamanho da fonte*/
+  margin-left: 5%; /*Move o título 5% para a esquerda*/
 }
 
 
 h2 {
   color: #468749; /*Cor do texto*/
   font-family: 'Times New Roman', Times, serif; /*Fonte das letras*/
-  font-size: 30px; /*Tamanho da fonte*/
-  margin-left: 5%; /*Move o button 5% para a esquerda*/
+  font-size: 240%; /*Tamanho da fonte*/
+  margin-left: 5%; /*Move o título 5% para a esquerda*/
+  margin-top: 68%; /*Move o título 68% para baixo*/
 }
 
 
@@ -300,7 +132,7 @@ button { /*Botões*/
   width: 9em; /*Largura*/
   height: 2em; /*Altura*/
   text-decoration: none; /*Remove o sublinhado*/
-  margin-left: 5%; /*Move ambos os inputs 5% para a esquerda*/
+  margin-left: 5%; /*Move ambos os botões 5% para a esquerda*/
   font-family: 'Times New Roman', Times, serif; /*Fonte do texto*/
   background-color: #468749; /*Cor do fundo*/
   color: white; /*Cor do texto*/
@@ -315,7 +147,7 @@ a { /*Links*/
 
 
 .chamada {
-  font-size: 14px; /*Tamanho da fonte*/
+  font-size: 100%; /*Tamanho da fonte*/
   color: #0f0808; /*Cor do texto*/
   text-align: right; /*Alinha o texto na direita*/
   margin-top: 10px; /*Distância entre um elemento e o elemento que está acima dele*/
@@ -343,7 +175,8 @@ footer { /*Rodape completo*/
 .footer-container { /*Todos os div estão dentro dessa classe*/
   display: flex; /*Permite organizar elementos em um container de forma flexível*/
   justify-content: space-between; /*Alinha os elementos horizontalmente*/
-  width: 70%; /*Largura*/
+  width: 60%; /*Largura*/
+  margin-left: 250px; /*Move o texto 250px para a esquerda*/
 }
 
 
@@ -382,5 +215,177 @@ footer { /*Rodape completo*/
 
 
 .fas, .fab { /*Estilos para ícones*/
-  font-size: 18px; /*Tamanho da fonte*/
+  font-size: 120%; /*Tamanho da fonte*/
+}
+
+
+
+
+
+/*Responsividade das caixas de noticias*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+/*Todas essas colunas devem flutuar para a esquerda e ter um preenchimento de 15px*/
+[class*="col-"] {
+    float: right;
+    padding: 15px;
+    
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+}
+
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
+
+
+/*Media queries podem ajudar com isso. Podemos adicionar um breakpoint onde certas partes do design se comportarão de forma diferente em cada lado do breakpoint*/
+@media only screen and (max-width: 600px) {
+  .item {
+    width: 100%;  /*Cada item ocupa toda a largura disponível*/
+  }
+}
+
+
+/*Para telas entre 600px e 1125px (tablets e desktops pequenos)*/
+@media only screen and (max-width: 1125px) {
+  .item {
+    width: 45%; /*Dois itens lado a lado*/
+  }
+}
+
+
+/*Para telas maiores que 1125px (desktop)*/
+@media only screen and (min-width: 1125px) {
+  .item {
+    width: 200px; /*Tamanho fixo*/
+  }
+}
+
+
+
+
+
+/*Responsividade de todo o conteúdo*/
+/*Computadores*/
+@media (max-width: 1024px) {
+  .footer-container {
+    margin-left: 150px; /*Move o texto 150px para a esquerda*/
+  }
+}
+
+
+/*Tablets*/
+@media(min-width: 600px) and (max-width: 912px){
+  .footer-container {
+    margin-left: 150px; /*Move o texto 150px para a esquerda*/
+  }
+}
+
+
+/*Celulares*/
+@media(max-width: 450px) {
+  .col-2 {
+    width: 35%; /*Largura*/
+  }
+
+  [class*="col-"] {
+    padding: 10px; /*Espaçamento entre o conteudo e borda*/
+  }
+
+  .footer-container {
+    margin-left: 5px; /*Move o texto 5px para a esquerda*/
+  }
+}
+
+
+@media (min-width: 480px) and (max-width: 540px) {
+  .col-2 {
+    width: 25%; /*Largura*/
+  }
+
+  .footer-container {
+    margin-left: 80px; /*Move o texto 80px para a esquerda*/
+  }
+}
+
+
+@media(max-width: 344px) {
+  .col-2 {
+    width: 40%; /*Largura*/
+  }
+
+  [class*="col-"] {
+    padding: 12px; /*Espaçamento entre o conteudo e borda*/
+  }
+
+  .col-3 {
+    width: 45%; /*Largura*/
+  }
+  
+  .footer-container {
+    margin-left: 50px; /*Move o texto 50px para a esquerda*/
+  }
+
+  .footer-container {
+    display: grid; /*Permite criar layouts de grade bidimensionais*/
+    grid-template-columns: 1fr; /*Define os nomes das linhas e as funções de dimensionamento das colunas do grid*/
+  }
 }
