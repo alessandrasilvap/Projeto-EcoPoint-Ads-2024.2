@@ -1,4 +1,4 @@
-//'$startGameButton', por exemplo, está sendo usado quando uma variavel é criada com um elemento que já exista no html
+//'$startGameButton' está sendo usado quando uma variavel é criada com um elemento que já exista no html
 const $startGameButton = document.querySelector('.start-quiz');
 const $questionsContainer = document.querySelector('.questions-container');
 const $answersContainer = document.querySelector('.answers-container');
@@ -248,7 +248,7 @@ const questions = [
         answers: [
             { text: 'Contaminação do solo e da água', correct: true},
             { text: 'Aquecimento global', correct: false},
-            { text: 'Perda de biodiversidade faça uma quarta alternativa para cada questão', correct: false},
+            { text: 'Perda de biodiversidade', correct: false},
             { text: 'Alteração do ciclo de nutrientes', correct: false}
         ]
     }
